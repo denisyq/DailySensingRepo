@@ -28,9 +28,11 @@
 
 ## 已知问题（2026-10-04 首次执行时记录）
 
-- **邮件通道不可用**：执行环境中不存在 `mcp__agent-mail__SendMessage` / `agent_mail_upload_attachment` 工具，
-  且 `~/.agentmail/config.json` 未配置、`agentmail` SDK 未安装。邮件步骤因此无法完成。
-  修复方向：在移动端会话中连接 agent-mail 连接器，或提供 AgentMail API key 与 inbox 地址写入配置。
+- **邮件通道不可用（第 003 期未发邮件）**：本会话内不存在 `mcp__agent-mail__SendMessage` / `agent_mail_upload_attachment`
+  工具，`~/.agentmail/config.json` 未配置、AgentMail SDK 未安装，`gog` 与 `himalaya` 亦未安装。
+  用户已在手机端完成 agent-mail 配置，但 MCP 服务在会话启动时注入，本会话（配置前启动）未加载到。
+  待验证：云端定时任务每次新建会话，理论上会重新注入连接器，需观察第 004 期是否成功发出。
+  备选修复：直接在沙箱配置 AgentMail API key + inbox（~/.agentmail/config.json + pip install agentmail）。
 - GitHub 发布链路正常：Contents REST API 可用，Pages 详情页即时返回 200，无需等待 60–120 秒。
 
 ## 下期跟踪清单
