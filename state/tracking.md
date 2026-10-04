@@ -22,16 +22,18 @@
 | 试刊 | 2026-09-29 | ✅ | — | 归档首个条目（本地任务） |
 | 第 001 期 | 2026-10-01 | ✅ | — | 本地任务 dd9badfc |
 | 第 002 期 | 2026-10-03 | ✅ | ✅ | 本地任务 30658e6d；34 条选题 |
+| 第 003 期 | 2026-10-04 | ✅ | ✅ | 云端定时任务首次手动执行验证；32 条选题 / 15 条重点关注 |
 
-**下一期期号：第 003 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+**下一期期号：第 004 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 ## 下期跟踪清单
 
-- **成本**：DRAM / NAND / eMMC 10 月合约价与 Q4 报价；面板厂（BOE / 华星 / 惠科）Q4 涨价函实际落地幅度；是否有厂商跟进整机提价
-- **竞争**：TCL / 海信 Q3 财报与 2027 产品线预告；海信 RGB Mini LED 在 100"+ 的份额变化；Roku 首款 OLED（Pro Series $999 起 / LX $1,299，LX 10 月发货）市场反馈
-- **软件**：Chrome 154 是否追加 CVE；Vega OS 2.0 图标 Bug 修复进展；Google TV / Roku OS 版本更新
-- **AI**：Kimi K3.1 是否正式发布；阶跃 Step 5 于 10/15 开源；Gemini 4 Argon 是否放开至付费 API 与 Ultra 订阅；加州 AG 与 FTC 调查下一步
-- **代工 / License**：TPV 冠捷、MOKA 茂佳、KTC 康冠、兆驰 AMTC 在拉美 / 东欧的产能与 brand license 变动
+- **成本**：DRAM / NAND 10 月合约价与 Q4 报价的实际落地幅度；康宁玻璃涨价（最高 ≥15%）向 Q4 面板报价的传导；面板厂 10 月实际稼动率（预计降至 79.6%）能否延续控产协同
+- **竞争**：海信 U7T Pro RGB-Mini LED 出海定价与 CES 2027 产品线；TCL / 雷鸟鹤 6 Ultra 2027 是否进入欧洲市场；Roku Pro Series LX OLED（144Hz + 偏振抗反光，传闻 $1,299）是否于 10 月如期发货；98/100 吋段价格战是否提前
+- **软件**：Chrome 154 是否追加 CVE；Gemini TV Controls 向 Android 14 机型扩展的进度；Roku OS 巴西 / 墨西哥重设计 Home Screen 上线时间
+- **AI**：阶跃 Step 5 完整权重版 10 月 15 日开源；Kimi K3.1 是否正式发布（100 万上下文 + 三档推理强度）；Gemini 4 Argon 是否放开至付费 API 与 Google AI Ultra 订阅；DeepSeek V4.1 Pro 是否结束灰度
+- **代工 / License**：TPV 向泰国、墨西哥转移产能的进度与对美履约成本；印度 SPPL（Thomson / Kodak / Blaupunkt 品牌 license）10 月后涨价 7% 是否落地
+- **渠道**：Walmart Fall Deals（10/5–11）与 Amazon Prime Big Deal Days（10/6–7）的实际折扣深度；节日季前是否形成新的电视价格基准
 
 ## 已验证可用信源
 
@@ -43,6 +45,10 @@
 - State of the Screens（电视 OS）
 - SDMC 官网
 - DataLearnerAI / ArtificialWatch（模型榜单）
+- PCMag / Tom's Guide / TechRadar（实测评测与延迟、亮度数据）
+- LEDinside（TrendForce 报告转载）
+- fpdisplay 液晶网（洛图科技月度面板价格预测）
+- 深交所公告 / 新浪财经（TPV、康冠等代工厂半年报）
 
 ## 信源规范
 
