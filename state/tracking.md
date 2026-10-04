@@ -63,3 +63,5 @@
 
 Omdia / TrendForce / 群智 / 洛图 / 奥维 等机构数据常只能经二手或 SEO 聚合站获取，
 来源字段必须标注「经转载整理」，不得把聚合站伪装成一手媒体。
+
+- 2026-10-04 18:35 邮件通道修复并实测：AgentMail MCP 不可用（其 CDN 封锁沙箱出口 IP + 本会话未注入），改用 163 SMTP 直发（denisyq@163.com → yanqing.lu@samsung.com，465 SSL），实测 SEND_OK；以「国际 AI 情报 2026-10-01→10-04」作为补发内容验证通道。定时任务 Prompt 已升级（v3）：SMTP 为主路径、agent-mail 为备用、PushNotification 不可用时最终回复首行降级告警。
