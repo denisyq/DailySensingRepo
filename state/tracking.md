@@ -24,8 +24,9 @@
 | 第 002 期 | 2026-10-03 | ✅ | ✅ | 本地任务 30658e6d；34 条选题 |
 | 第 003 期 | 2026-10-04 | ✅ | ❌ | 云端定时任务首次手动执行验证；32 条选题 / 15 条重点关注；邮件未发出（执行环境无可用邮件通道，见「已知问题」） |
 | 第 004 期 | 2026-10-05 | ✅ | ✅ | 云端定时任务；19 条选题（电视 13 / Web 2 / AI 4）；三条主线：芯片成本反超面板、欧洲/美洲增长 + Mini LED 反超 TCL、Gemini/Kimi 长上下文模型 |
+| 第 005 期 | 2026-10-06 | ✅ | ✅ | 云端定时任务；18 条选题（电视 11 / Web 3 / AI 4）；三条主线：Omdia 处理板成本占比 45–50% 首超面板、Prime Big Deal Days+Walmart 大促同期开打、Gemini 4 Argon 发布（100 万输出 token） |
 
-**下一期期号：第 005 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+**下一期期号：第 006 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 ## 已知问题（2026-10-04 首次执行时记录）
 
@@ -35,16 +36,17 @@
   待验证：云端定时任务每次新建会话，理论上会重新注入连接器，需观察第 004 期是否成功发出。
   备选修复：直接在沙箱配置 AgentMail API key + inbox（~/.agentmail/config.json + pip install agentmail）。
 - GitHub 发布链路正常：Contents REST API 可用，Pages 详情页即时返回 200，无需等待 60–120 秒。
+- **第 004、005 期邮件均成功（163 SMTP 直发 denisyq@163.com → yanqing.lu@samsung.com，465 SSL）**：实测 SEND_OK，主路径打通。
 
-## 下期跟踪清单（第 004 期续）
+## 下期跟踪清单（第 005 期续）
 
-- **成本**：10 月面板「持平 vs 续跌」分歧走向（洛图称持平、WitsView 称 55" 续跌 8.1%）；康宁玻璃 ≥15% 涨价向 Q4 面板报价的实际传导；DRAM/NAND/Wi-Fi 高位（处理板占比 45–50%）是否迫使入门机型减配或涨价
-- **竞争**：Roku LX OLED（144Hz + 偏振抗反光，$1,299）10 月上市首测与输入延迟；海信 U7T Pro RGB-Mini LED 出海定价与 CES 2027 节奏；三星 Micro RGB R95H/R85H 各区域铺货与 7 年 Tizen 承诺落地
-- **份额**：Omdia Q2 西欧 +9.5% / 东欧 +14.5% / 拉美 +12.8% 的 Q3 延续性；三星 Mini LED 28.2% 能否守住第一（TCL 反扑）；LG OLED 52.2% 与三星 QD-OLED/Micro RGB 的高端之争
-- **软件**：Chrome 155 正式 Stable 进度与 V8/ANGLE/GPU CVE 补丁跟进；Google TV Gemini 控设置/Photos 再创作向更多品牌扩展；三星 Vision AI Companion 整合 Gemini/Perplexity/Copilot 的区域覆盖
-- **AI**：Kimi K3.1 是否于 10 月正式发布（100 万上下文 + 三档推理）；阶跃 Step 5 完整权重 10/15 开源与电视端可用性；Gemini 4 Argon 是否放开至付费 API；DeepSeek V4.1 Pro 是否结束灰度
-- **代工 / License**：TPV 纯代工第一 + Mini-LED design wins 毛利；MOKA 绑定 Whale OS 10 turnkey 的 license 扩展；LGD 串联 WOLED 与「翻转」非 FMM RGB OLED 对 OLED 面板成本的长期压制
-- **渠道**：Walmart Deals（10/5–11）与 Amazon Prime Big Deal Days（10/6–7）实际折扣深度；黑五价格基准是否因面板/芯片成本上行而收窄
+- **成本**：存储/芯片价格是否进一步传导至三星 SKU——入门机型（32"/40–43" LCD）涨价或减配（降内存/降 Wi-Fi）是否现实验证；DRAM $25 / NAND $30.50 / Wi-Fi 模块 $118.2 后续月度走势；Omdia「处理板占比 45–50%」是否延续至 Q4
+- **面板**：10 月报价全面持平（65" $173 / 55" $123 / 43" $63 / 32" $35）后，Q4 面板厂喊涨能否落地；若 TV 涨价成功是否带动显示器跟涨
+- **渠道**：Amazon Prime Big Deal Days（10/6–7）与 Walmart Deals（10/5–11）实际折扣深度 vs 黑五基准——在面板/芯片双上行背景下折扣是否收窄；三星 S90H 65" 史低 $1,497.99 后续是否回涨
+- **竞争**：TCL SQD Mini LED 出海定价与三星 Mini LED（28.2% Q2 第一）守位；海信 UX2026 / 小米首款 RGB-Mini LED 量产铺货与价格；三星 Micro RGB R95H/R85H 各区域铺货与 7 年 Tizen 承诺落地；Roku OLED LX（10 月，$1,299，144Hz）首测与输入延迟
+- **份额**：Omdia H2 全球出货节奏与高端化对冲；Counterpoint 三星 17% / TCL 14% 差距是否继续收窄；西欧高端化（均价 $881.65）与东欧性价比（中国品牌 TCL/海信份额升至 5.9%/6.0%）延续性
+- **软件/Web**：Chrome 155/156 发布与 V8/ANGLE/GPU CVE 补丁跟进；AV2 v1.0.0 发布后硬件解码 IP（Allegro DVT / VeriSilicon）与芯片路线图；WebGPU/WebCodecs Baseline 对齐 Tizen 浏览器内核
+- **AI**：Gemini 4 Argon 向付费 API / Google AI Ultra 开放节奏（当前经 Fairwind 受控）；DeepSeek V4.1 开源权重第三方评测与质量确认；Kimi K3.1 / Step 5 完整权重开源与电视端可用性；三星 Vision AI Companion 四模型（Bixby/Gemini/Copilot/Perplexity）区域覆盖扩展
 
 ## 已验证可用信源
 
@@ -67,4 +69,4 @@ Omdia / TrendForce / 群智 / 洛图 / 奥维 等机构数据常只能经二手�
 来源字段必须标注「经转载整理」，不得把聚合站伪装成一手媒体。
 
 - 2026-10-04 18:35 邮件通道修复并实测：AgentMail MCP 不可用（其 CDN 封锁沙箱出口 IP + 本会话未注入），改用 163 SMTP 直发（denisyq@163.com → yanqing.lu@samsung.com，465 SSL），实测 SEND_OK；以「国际 AI 情报 2026-10-01→10-04」作为补发内容验证通道。定时任务 Prompt 已升级（v3）：SMTP 为主路径、agent-mail 为备用、PushNotification 不可用时最终回复首行降级告警。
-- 第 004 期（2026-10-05）起：主交付为 163 SMTP 直发日报 HTML 附件；GitHub 发布与邮件均完成后，于台账本期行标记 ✅/❌ 并回写。
+- 第 004 期（2026-10-05）、第 005 期（2026-10-06）起：主交付为 163 SMTP 直发日报 HTML 附件；GitHub 发布与邮件均完成后，于台账本期行标记 ✅/❌ 并回写。
