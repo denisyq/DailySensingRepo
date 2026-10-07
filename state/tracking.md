@@ -26,7 +26,7 @@
 | 第 004 期 | 2026-10-05 | ✅ | ✅ | 云端定时任务；19 条选题（电视 13 / Web 2 / AI 4）；三条主线：芯片成本反超面板、欧洲/美洲增长 + Mini LED 反超 TCL、Gemini/Kimi 长上下文模型 |
 | 第 005 期 | 2026-10-06 | ✅ | ✅ | 云端定时任务；18 条选题（电视 11 / Web 3 / AI 4）；三条主线：Omdia 处理板成本占比 45–50% 首超面板、Prime Big Deal Days+Walmart 大促同期开打、Gemini 4 Argon 发布（100 万输出 token） |
 | 第 006 期 | 2026-10-07 | ✅ | ✅ | 云端定时任务；19 条选题（电视 12 / Web 3 / AI 4）；三条主线：中国 LCD 三雄 Q4 面板涨价 + 存储芯片成本反超面板（处理板占 BOM 45–50%）、TCL 欧洲高端化蚕食份额 + Roku $999 OLED 入局、OpenAI Dots 常驻 Agent + Gemini 4 Argon 百万 token |
-| 第 007 期 | 2026-10-08 | — | — | 云端定时任务；16 条选题（电视 11 / Web 3 / AI 2）；三条主线：Omdia Q2'26 三星 28.2% 反超 TCL 登顶 + 半导体成本历史性反超面板（主板占 BOM 45–50%）+ 群智 Q3 -3.5%/Q4 -6.8%「前高后低」、三星/LG/索尼/海信 2026 旗舰混战（Micro RGB/QD-OLED/True RGB/RGB-Mini LED）+ Roku OLED LX 入局、Chrome 155 单次 247 项安全修复 + WebCodecs/WebGPU Baseline + OpenAI GPT-6 Intelligent UI/Gemini 4 Argon |
+| 第 007 期 | 2026-10-08 | ✅ | ✅ | 云端定时任务；16 条选题（电视 11 / Web 3 / AI 2）；三条主线：Omdia Q2'26 三星 28.2% 反超 TCL 登顶 + 半导体成本历史性反超面板（主板占 BOM 45–50%）+ 群智 Q3 -3.5%/Q4 -6.8%「前高后低」、三星/LG/索尼/海信 2026 旗舰混战（Micro RGB/QD-OLED/True RGB/RGB-Mini LED）+ Roku OLED LX 入局、Chrome 155 单次 247 项安全修复 + WebCodecs/WebGPU Baseline + OpenAI GPT-6 Intelligent UI/Gemini 4 Argon |
 
 **下一期期号：第 008 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
