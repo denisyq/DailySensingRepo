@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日 sensing 情报日报 · 第 008 期 · 2026-10-09</title>
+<style>
+  :root {
+    --bg:#0d1117; --bg2:#161b22; --bg3:#1c2230; --border:#2a3140;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff;
+    --red:#f85149; --yellow:#d29922; --gray:#6e7681;
+    --tv:#3fb950; --web:#58a6ff; --ai:#bc8cff;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,"Segoe UI","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; font-size:15px;
+  }
+  .wrap { max-width:1180px; margin:0 auto; padding:0 20px 60px; }
+  header.top {
+    background:linear-gradient(135deg,#161b22,#0d1117 60%);
+    border-bottom:1px solid var(--border); padding:34px 20px 26px; text-align:center;
+  }
+  .top .issue { color:var(--accent); font-size:14px; letter-spacing:2px; font-weight:600; }
+  .top h1 { margin:8px 0 4px; font-size:30px; font-weight:700; }
+  .top .date { color:var(--muted); font-size:15px; }
+  .stats { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+  .stat { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:14px 22px; min-width:140px; }
+  .stat .n { font-size:26px; font-weight:700; }
+  .stat .l { color:var(--muted); font-size:13px; margin-top:2px; }
+  .stat.tv .n { color:var(--tv); } .stat.web .n { color:var(--web); } .stat.ai .n { color:var(--ai); }
+  nav {
+    position:sticky; top:0; z-index:20; background:rgba(13,17,23,.92);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--border);
+    padding:12px 20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;
+  }
+  nav a { color:var(--text); text-decoration:none; background:var(--bg2); border:1px solid var(--border);
+    padding:7px 16px; border-radius:20px; font-size:13px; transition:.2s; }
+  nav a:hover { border-color:var(--accent); color:var(--accent); }
+  section { margin-top:38px; }
+  .section-title { font-size:21px; border-left:4px solid var(--accent); padding-left:12px; margin-bottom:18px; display:flex; align-items:center; gap:10px; }
+  .sec-count { color:var(--muted); font-size:14px; font-weight:400; }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .dot-tv { background:var(--tv); } .dot-web { background:var(--web); } .dot-ai { background:var(--ai); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+  .card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:18px; display:flex; flex-direction:column; transition:.2s; }
+  .card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .card-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+  .badge { font-size:12px; font-weight:600; padding:3px 10px; border-radius:20px; }
+  .badge-red { background:rgba(248,81,73,.15); color:var(--red); border:1px solid rgba(248,81,73,.4); }
+  .badge-yellow { background:rgba(210,153,34,.15); color:var(--yellow); border:1px solid rgba(210,153,34,.4); }
+  .badge-gray { background:rgba(110,118,129,.15); color:var(--gray); border:1px solid rgba(110,118,129,.4); }
+  .card-tag { font-size:12px; color:var(--muted); background:var(--bg3); padding:3px 10px; border-radius:6px; }
+  .card-title { font-size:16px; margin:0 0 8px; line-height:1.45; }
+  .card-meta { font-size:12.5px; color:var(--muted); margin-bottom:10px; }
+  .card-summary { font-size:13.5px; color:#c9d1d9; margin:0 0 12px; flex:1; }
+  .impact { background:var(--bg3); border-left:3px solid var(--accent); border-radius:8px; padding:10px 12px; margin-bottom:12px; }
+  .impact-label { font-size:11.5px; color:var(--accent); font-weight:600; letter-spacing:.5px; }
+  .impact p { margin:5px 0 0; font-size:13px; color:#dbe3ec; }
+  .card-link { align-self:flex-start; color:var(--accent); text-decoration:none; font-size:13px; font-weight:600; }
+  .card-link:hover { text-decoration:underline; }
+  footer { margin-top:48px; border-top:1px solid var(--border); padding-top:22px; color:var(--muted); font-size:13px; }
+  footer h4 { color:var(--text); margin:0 0 8px; }
+  footer ul { margin:6px 0; padding-left:20px; }
+  footer li { margin-bottom:4px; }
+  .next { background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:14px 18px; margin-top:14px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="issue">第 008 期</div>
+  <h1>每日 sensing 情报日报</h1>
+  <div class="date">2026-10-09 ｜ 面向：三星电视高级产品经理</div>
+  <div class="stats">
+    <div class="stat tv"><div class="n">11</div><div class="l">电视产业</div></div>
+    <div class="stat web"><div class="n">3</div><div class="l">Web / 浏览器内核</div></div>
+    <div class="stat ai"><div class="n">5</div><div class="l">AI / Agent</div></div>
+  </div>
+</header>
+<nav>
+  <a href="#tv">📺 电视产业（11）</a>
+  <a href="#web">🌐 Web / 浏览器内核（3）</a>
+  <a href="#ai">🤖 AI / Agent（5）</a>
+  <a href="#next">🔭 下期跟踪</a>
+</nav>
+<div class="wrap">
+  
+    <section id="tv">
+      <h2 class="section-title"><span class="dot dot-tv"></span>电视产业 <span class="sec-count">11 条</span></h2>
+      <div class="grid">
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">成本结构</span>
+      </div>
+      <h3 class="card-title">电视主板成本历史性反超显示屏：DRAM 4.4 倍、NAND 9 倍、Wi-Fi 模组赶上面板</h3>
+      <div class="card-meta">TechRadar（数据：Omdia，经 DigiTimes 转载整理） ｜ 2026-10-03</div>
+      <p class="card-summary">Omdia 数据显示，受 AI 数据中心挤占产能，通用 DRAM 单价 8 月达 $25（同比 4.4 倍），NAND Flash 升至 $30.5（同比约 9 倍）；55" UHD 主板（含 DRAM/NAND/Wi-Fi）涨至 $118.2，逼近同尺寸面板均价 $123、超过最低报价 $116。32" HD 主板占整机成本从 2025Q2 的 ~10% 飙至 2026Q3 的 45–50%。短缺预计延续至 2027 年及以后。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>对三星最敏感的是入门/小尺寸机型：面板不再是最大成本项，主板反超意味着低价走量策略利润被吞噬。需评估 32/40–43" 机型涨价或减配（降内存、降 Wi-Fi 规格）的可行性，并在中高端用 AI/画质溢价对冲。</p>
+      </div>
+      <a class="card-link" href="https://techrad.ar/sn6Z" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">成本结构</span>
+      </div>
+      <h3 class="card-title">10 月电视面板报价全面持平：65" $173 / 55" $123 / 43" $63 / 32" $35</h3>
+      <div class="card-meta">腾讯网（数据：TrendForce 集邦咨询《2026 面板价格预测月度报告》，经转载整理） ｜ 2026-10-05</div>
+      <p class="card-summary">TrendForce 预计 2026 年 10 月电视面板整体价格延续持平：65" 均价 $173（区间 $166–176）、55" $123（$116–126）、43" $63（$61–65）、32" $35.0（$34–36）。显示器、笔电面板同预期持稳。面板厂 9 月中曾发涨价通知并计划国庆减产，但市场接受度待观察。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>面板端成本压力暂缓，与半导体涨价形成‘一平一涨’剪刀差。三星采购议价窗口期利于锁定面板成本，但整机 BOM 仍被存储/Wi-Fi 推高，定价需综合考量。</p>
+      </div>
+      <a class="card-link" href="https://new.qq.com/rain/a/20261005A081SY00" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">型号规划</span>
+      </div>
+      <h3 class="card-title">三星 2026 全系亮相：Micro RGB（R95H/R85H）+ 四代 QD-OLED（S99H）+ Neo QLED，Vision AI 与 7 年 Tizen 更新</h3>
+      <div class="card-meta">Mix Vale / Teki Mobile / HiFi.Fan（区域发布：巴西、北欧） ｜ 2026-09-15</div>
+      <p class="card-summary">三星 2026 阵容以 Micro RGB 旗舰 R95H（85"，165Hz，4.2.2/70W，R$ 42,499）与更亲民的 R85H（55/65/75"，144Hz）领衔；OLED 端新增四代 QD-OLED S99H 与 S95H（48/55/65"，亮度近 3000 nits、165Hz 游戏）；Neo QLED QN70H/QN80H 与 The Frame Pro 同步更新。全系搭载 Vision AI Companion（Bixby+Gemini、Copilot、Perplexity），承诺 7 年 Tizen 软件更新。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>三星以‘Micro RGB / QD-OLED / Neo QLED’三技术矩阵卡位高端，并以 7 年更新 + AI 伴侣构建差异化护城河。型号规划上应明确各技术定位与价格锚点，AI 功能（语音、画质、体育模式）须成为 2026 主卖点。</p>
+      </div>
+      <a class="card-link" href="https://www.mixvale.com.br/2026/09/15/samsung-traz-ao-brasil-telas-com-micro-rgb-e-recursos-de-ia/amp" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">型号规划</span>
+      </div>
+      <h3 class="card-title">三星或被传削减 Neo QLED、2028 前停产（ETNews 未证实）；Mini LED 出货 H1 同比 +200%</h3>
+      <div class="card-meta">TechPolarity（援引 ETNews，未经三星官方确认） ｜ 2026-09</div>
+      <p class="card-summary">韩国媒体 ETNews 报道三星可能缩减 Neo QLED 产量、最早 2028 年停产，但三星 2026 产品资料仍将 Neo QLED 列为高端主力，因此‘2028 停产’应视为未确认路线图猜测。TrendForce 数据显示三星 Mini LED 电视 H1 2026 出货同比增超 200%，Micro RGB 成为新高端 LCD 战略。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>无论 Neo QLED 是否收缩，产品重心向 Mini LED / Micro RGB 倾斜的趋势明确。建议型号规划重估 Neo QLED 定位，强化 Micro RGB 旗舰叙事，避免对单一技术线的过度承诺。</p>
+      </div>
+      <a class="card-link" href="https://www.techpolarity.com/article/samsung-may-rethink-qled-televisions-as-mini-led-and-micro-rgb-come-to-forefront" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">软件路标</span>
+      </div>
+      <h3 class="card-title">LG 2026：webOS 26 + 内置 Gemini/Copilot，OLED G6/C6 165Hz，115" QNED evo Mini LED，5 年 Re:New</h3>
+      <div class="card-meta">LG India News Room / SmartTVs.org ｜ 2026-08-11</div>
+      <p class="card-summary">LG 2026 AI TV 阵容全系运行 webOS 26，集成 Google Gemini 与 Microsoft Copilot（上下文搜索/问答）、Voice ID 个性化、AI Concierge，并提供 5 年系统升级（Re:New）。旗舰 OLED evo G6/C6 搭载 α11 AI Gen3（亮度达常规 OLED 3.9 倍、165Hz、Dolby Vision/Atmos、G-Sync）；QNED evo Mini LED 最高 115"，Motion Booster 达 330Hz。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>LG 用‘webOS 26 + 内置 Gemini/Copilot + 5 年更新’正面狙击三星 Vision AI 与 Tizen 长更新。三星需在 AI 助手深度、跨设备协同与更新年限上保持领先，否则高端软件体验优势被追平。</p>
+      </div>
+      <a class="card-link" href="https://www.lgindianewsroom.com/lg-expands-its-premium-tv-portfolio-with-new-ultra-large-ai-tvs-and-next-gen-mini-led-technology" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">竞争</span>
+      </div>
+      <h3 class="card-title">Roku 首款 OLED 电视开售：$999 起（120Hz），LX 144Hz 10 月登场、65" LX $1,599（10/22）</h3>
+      <div class="card-meta">科技快报 / iClarified / SpecPair（援引 Business Insider、FlatpanelsHD） ｜ 2026-10</div>
+      <p class="card-summary">流媒体平台 Roku 正式切入 OLED 硬件：标准 Pro Series OLED 55/65" 售 $999（120Hz、Dolby Vision、4×HDMI 2.1、Roku Smart Picture Max）；更高阶 Pro Series LX OLED 10 月开售，MSRP $1,299，65" LX 为 $1,599（10/22 上市），144Hz VRR、先进偏光抗反射、亮度翻倍，采用 LG Display 高阶面板。Fox 已同意以 $220 亿收购 Roku。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>OS 厂商下场做硬件，直接冲击 LG/Samsung 入门 OLED 与三星 Tizen 的广告/服务收入模型。三星需警惕‘Roku OS 零广告 + 自研 OLED’对价格敏感用户的虹吸，并审视 Tizen 服务变现策略。</p>
+      </div>
+      <a class="card-link" href="https://www.citreport.com/news/205203-1.html" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">竞争</span>
+      </div>
+      <h3 class="card-title">索尼 BRAVIA 2026：True RGB 9 II/7 II + QD-OLED 8 II + Mini LED 5，Google TV 内置 Gemini</h3>
+      <div class="card-meta">Gzmato / NewsVoir（索尼印度发布） ｜ 2026-09-28</div>
+      <p class="card-summary">索尼 2026 五大系列横跨三技术：旗舰 BRAVIA 9 II（True RGB，65–115"，RGB Backlight Master Drive Pro、抗眩光、10 单元音响，¥19,999 起）、7 II（True RGB，50–98"，¥10,999 起）、8 II（QD-OLED，55/65/77"）、5（Mini LED）、3（4K LED）。印度发布的 7 II 搭载 Cognitive Processor XR 与 Google TV with Gemini，主打客厅级色彩与 AI 搜索。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>索尼以‘True RGB + 自研 XR 画质芯片 + Google TV Gemini’走画质+生态双线。三星在 True RGB 路线（Micro RGB）需以亮度/无烧屏+AI 差异化回应，并关注 Google TV 阵营的 AI 整合速度。</p>
+      </div>
+      <a class="card-link" href="https://gzmato.com/blog/post/sony-bravia-2026-buying-guide-true-rgb-oled" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">竞争</span>
+      </div>
+      <h3 class="card-title">海信 116" UX2026 RGB-Mini LED：10000 nits、43008 分区、110% BT.2020，JUOS 家庭 AI OS + 2028 欧洲杯赞助</h3>
+      <div class="card-meta">腾讯网 / 快科技（IFA 2026 报道） ｜ 2026-09-06</div>
+      <p class="card-summary">海信 IFA 2026 欧洲首秀 116" UX2026，搭载‘玲珑 4 芯真彩背光’RGB-Mini LED（红绿蓝+独立青光），43008 控色分区、10000 nits 真彩亮度、110% BT.2020、信芯 H7 Pro，全球首发杜比视界第二代。软件层发布行业首个家庭智能伴侣级 AI OS——JUOS（星海大模型，‘超级小聚’可问屏/识人/跨设备调度）。海信同步官宣成为 2028 欧洲杯全球官方合作伙伴。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>海信以‘RGB-Mini LED 旗舰 + JUOS 主动式家庭 AI + 欧洲杯顶级赛事赞助’三连击加速欧洲高端化，直接蚕食韩系份额。三星欧洲大屏/高端策略须正视中国品牌的画质与 AI 双线追赶。</p>
+      </div>
+      <a class="card-link" href="https://news.mydrivers.com/1/1148/1148808.htm" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-gray">⚪ 背景参考</span>
+        <span class="card-tag">市场格局</span>
+      </div>
+      <h3 class="card-title">全球电视出货 H1 +4%、Q3 预计 -3%：世界杯前置与存储涨价需求前移</h3>
+      <div class="card-meta">银河证券 / 搜狐（援引奥维睿沃、Omdia，经转载整理） ｜ 2026-09-29</div>
+      <p class="card-summary">2026H1 全球 TV 出货同比 +4%（Q1 +4.5%、Q2 +3.4%），主因存储涨价需求前移与世界杯备货；奥维睿沃预计 Q3 在赛事结束与成本上涨压力下同比 -3%，全年维度出货持平。品牌格局加速分化：H1 TCL、海信全球份额分别 +0.8/+0.3pct 至 15.6%/14.7%；三星 VD/DA、LG MS 部门 Q2 营业利润率分别为 -0.1%/4.3%，环比下滑。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>下半年量减、中企份额攀升，三星需以高端化/大屏/AI 与服务对冲量减。全年‘持平’基调下，结构升级（Mini LED、大尺寸、AI）比规模更关键。</p>
+      </div>
+      <a class="card-link" href="https://www.sohu.com/a/1084907267_121123888" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-gray">⚪ 背景参考</span>
+        <span class="card-tag">市场格局</span>
+      </div>
+      <h3 class="card-title">TrendForce：8 月全球电视品牌出货环比 +15%，三星旺季备货、TCL 持续出海</h3>
+      <div class="card-meta">TrendForce（Monthly Global TV Brands Shipment Tracker, Sep. 2026） ｜ 2026-09-30</div>
+      <p class="card-summary">TrendForce 月度追踪显示，8 月全球电视品牌出货环比 +15%：三星拉升旺季备货，TCL 持续扩大海外部署。报告涵盖品牌/区域/尺寸出货、品牌-面板矩阵与尺寸预测。另据其 Quarterly TV Market Update 3Q26，聚焦两大韩系品牌 2027 ODM 策略分化，及四大品牌如何以新技术/超大尺寸/AI TV 重def高端、守主流。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>三星旺季拉货积极，但 Q3 后劲受需求前置与成本压制。TCL 出海势头是欧洲/美洲份额变量的关键观察点，应纳入竞争监测。</p>
+      </div>
+      <a class="card-link" href="https://www.trendforce.com/research/download/RP260930YU" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">软件路标</span>
+      </div>
+      <h3 class="card-title">Tizen 10 + Gemini + 7 年更新：软件长周期成三星对抗中企的新护城河</h3>
+      <div class="card-meta">Mundo Conectado / TechBriefly（Tizen 10 家电推送） ｜ 2026-09</div>
+      <p class="card-summary">三星 2026 电视确认提供最长 7 年 Tizen 系统更新（2026 年上市机型），Bixby 已接入 Gemini 提供富上下文搜索，并加入 AI 体育模式（可隔离/静音解说人声）。Tizen 10 亦于 9 月起分阶段推送到 Family Hub 冰箱等家电，带来 Now Brief、What's For Today 等 Gemini 驱动的 AI 功能。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>在硬件同质化下，7 年更新 + 跨设备 AI 生态是三星区别于中企的关键叙事。建议把‘长期软件支持’作为高端机型核心卖点，并加快 Gemini 本土化与中文场景落地。</p>
+      </div>
+      <a class="card-link" href="https://www.mundoconectado.com.br/samsung/linha-tvs-samsung-2026" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div></div>
+    </section>
+  
+    <section id="web">
+      <h2 class="section-title"><span class="dot dot-web"></span>Web 与浏览器内核 <span class="sec-count">3 条</span></h2>
+      <div class="grid">
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">安全内核</span>
+      </div>
+      <h3 class="card-title">Chrome 154/155 密集安全更新：ANGLE 缓冲区溢出 CVSS 9.6、V8 类型混淆、WebRTC 释放后使用</h3>
+      <div class="card-meta">Lemon Web / SentinelOne（CVE 详情）；Chrome Releases 官方博客 ｜ 2026-10</div>
+      <p class="card-summary">Google 10 月连发 Chrome 安全更新：修复超 32 项漏洞，最关键为 ANGLE 缓冲区溢出 CVE-2026-102331（CVSS 9.6），以及多个 V8 类型混淆（CVE-2026-102299 等）、GPU/WebGPU/Skia/Media 内存安全缺陷。WebRTC 释放后使用 CVE-2026-106268 与 CSS CVE-2026-106269 均影响 155.0.8059.39 之前版本，远程可借恶意网页在沙箱内执行代码。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>Chromium 安全补丁密集，三星 Tizen 浏览器/三星 Internet 内核升级节奏须紧跟。流媒体 DRM 与 WebRTC 通话安全面直接受内核版本影响，应建立 CVE 跟踪与季度内核升级机制。</p>
+      </div>
+      <a class="card-link" href="https://www.lemon-web.net/lemon-blog/cybersecurity/google-chrome-update-fixes-more-than-32-security-vulnerabilities-across-windows-mac-and-linux" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">功能路标</span>
+      </div>
+      <h3 class="card-title">Web 平台 Baseline 2026：WebGPU/WebTransport/WebCodecs 已达生产可用，WebNN 仍试验</h3>
+      <div class="card-meta">CSDN 博客 / World Programming（浏览器支持目录） ｜ 2026</div>
+      <p class="card-summary">2026 年 Web 平台成熟度：WebGPU 于 2026-01 进入 Baseline（Chrome/Edge/Firefox/Safari 26+ 稳定），WebTransport 2026-03 补齐 Safari 26.4，WebCodecs 接近 Baseline（Safari 26 全支持、Firefox 桌面就绪），WebNN 仍仅 Chrome Origin Trial。三星 Internet 支持 WebCodecs（17+）、WebGPU 尚缺。AV1 在 Chrome 70+/Safari 17（硬解设备）可用。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>WebGPU + WebCodecs 已可生产落地，意味着电视端浏览器内‘端侧 AI 推理（WebNN/WebGPU）+ 视频超分/转码（WebCodecs）’具备技术可行性。三星 Internet 补齐 WebGPU 是 2026 功能路标要务。</p>
+      </div>
+      <a class="card-link" href="https://blog.csdn.net/guwentian/article/details/165007069" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-gray">⚪ 背景参考</span>
+        <span class="card-tag">编解码</span>
+      </div>
+      <h3 class="card-title">Chromium 156 与编解码现实：AV1 内建，H.264/AAC 因授权在开源构建中缺失</h3>
+      <div class="card-meta">CODECS.COM（Chromium 156.0.8069.0 / Chrome Dev 156 说明） ｜ 2026-09</div>
+      <p class="card-summary">Chromium 开源构建（156.0.8069.0）含 Blink、V8、WebGPU、AV1/VP9/WebP/AVIF/Opus 等免授权格式，但因专利授权不含 H.264 视频与 AAC 音频解码、不含 Widevine DRM——导致 Netflix/Disney+/Prime Video 等无法播放或仅无声。Chrome Dev 156.0.8072.0 已到，HEVC 依赖操作系统解码器。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>电视流媒体体验高度依赖 H.264/HEVC + Widevine DRM，三星必须维持授权编解码与 DRM 支持（而非纯开源内核），否则主流 OTT 应用不可用。选型时勿误用无 DRM 的开源方案。</p>
+      </div>
+      <a class="card-link" href="https://free-codecs.com/download/chromium.htm" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div></div>
+    </section>
+  
+    <section id="ai">
+      <h2 class="section-title"><span class="dot dot-ai"></span>AI 技术与 Agent <span class="sec-count">5 条</span></h2>
+      <div class="grid">
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">AI 形态</span>
+      </div>
+      <h3 class="card-title">OpenAI GPT-6 全量上线 + Intelligent UI：回答内嵌图表/按钮/表单的可交互界面</h3>
+      <div class="card-meta">华尔街见闻 / AI Impact Hub / CSDN AI日报（OpenAI 官方 10/7 公告） ｜ 2026-10-07</div>
+      <p class="card-summary">OpenAI 于 10/7 向全球 ChatGPT 用户全量上线 GPT-6（付费 Sol / 免费及 Go 用 Luna），取代 GPT-5.6，强化越狱与生化/网络滥用防护（Astra 安全）。最大亮点是 Intelligent UI：回答不再仅文本，可自动混入图表、对照、可点击按钮、表单甚至即时小工具（如分账器、计算器），并支持‘边想边答’。10/8 扩至 Free/Go。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>交互式 AI UI 形态成熟，可直接迁移到电视端 Vision AI Companion：用可点击卡片/表单做‘画质一键优化’‘赛事提醒设置’等。三星应规划电视内可交互 AI 组件，而非纯语音问答。</p>
+      </div>
+      <a class="card-link" href="https://www.163.com/dy/article/L8MVMP2B05198NMR.html" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-red">🔴 重点关注</span>
+        <span class="card-tag">AI 形态</span>
+      </div>
+      <h3 class="card-title">Google Gemini 常驻工作 Agent（10/8）+ Nano Banana 2.1 图像模型 GA</h3>
+      <div class="card-meta">AI Impact Hub（Google 10/8 公告） ｜ 2026-10-08</div>
+      <p class="card-summary">Google 10/8 推出常驻 Gemini 工作 Agent：运行于云端、跨设备保留上下文、笔记本合上后仍能续跑任务，连接 Workspace、Microsoft 365、Slack，含企业权限与花费控制。同日 Nano Banana 2.1 图像/编辑模型 GA，强化视觉设计、蒙版编辑与主体一致性，覆盖 Gemini App、Search AI Mode、AI Studio、Flow、广告等。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>持久化 Agent + 跨应用执行是家庭 AI 的方向标。三星 Vision AI 可从‘被动应答’升级为‘常驻任务执行’（如持续跟踪赛事、自动生成家庭周报），并借鉴跨设备上下文保留能力。</p>
+      </div>
+      <a class="card-link" href="https://www.aiimpacthub.com/ai-news" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">端侧 Agent</span>
+      </div>
+      <h3 class="card-title">Anthropic Claude Haiku 5.5 成本降 75%，Sierra+Meta 推个人 Agent 协议（OAuth 权限）</h3>
+      <div class="card-meta">AI Impact Hub（Anthropic / Sierra 10/6–7 公告） ｜ 2026-10-07</div>
+      <p class="card-summary">Anthropic 发布 Claude Haiku 5.5：迄今最快最便宜最强小模型，平均运行成本较 4.5 降约 75%，≤10 万 token 请求 API 价降 90%，可作 Opus 5.5/Sonnet 5.5 的‘子智能体’；Sonnet 5.5 缓存读取价减半。Sierra 10/6 联合 Meta 及 Shopify/Stripe/Walmart 推 Personal Agent Protocol（v0.1），以 OAuth 会话 + 用户可控读写权限规范商业 Agent 交互。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>小模型成本骤降 + Agent 权限协议标准化，显著降低电视端本地/轻量 Agent 的落地成本与合规门槛。三星可借端侧小模型做隐私敏感的家庭指令，并用标准协议接入外部服务。</p>
+      </div>
+      <a class="card-link" href="https://www.aiimpacthub.com/ai-news" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">模型格局</span>
+      </div>
+      <h3 class="card-title">LMArena 代码榜：GPT-6 Astra 居首、Kimi K3 开源登顶前端；端侧小模型（Liquid AI/Microsoft）涌现</h3>
+      <div class="card-meta">AITNT Arena / DataLearner / Swfte（LMArena 2026-10 快照） ｜ 2026-10-07</div>
+      <p class="card-summary">全栈编程 Arena（10/7）：gpt-6-astra-max 以 1757 Elo 居首，claude-opus-5.5-max 1739 第二，gpt-6-sol-max 1706 第三。前端代码 Arena 中 Moonshot Kimi K3 以 1679 Elo 成为首个登顶的开源/开放权重模型。同期 Liquid AI 发布 d1-3B / d1-omni-600M 本地决策模型（llama.cpp 可跑），微软发布可本地运行的 AI 代码模型与 Surface Laptop Ultra。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>国产开源模型（Kimi/GLM/DeepSeek）逼近前沿且可本地部署，电视端中文 AI 助手的成本与合规风险下降。三星可评估接入开放权重模型做端侧中文 NLU/多轮对话，降低云端依赖。</p>
+      </div>
+      <a class="card-link" href="https://www.aitntnews.com/arena/code/fullstack/" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="badge badge-yellow">🟡 值得跟踪</span>
+        <span class="card-tag">竞争</span>
+      </div>
+      <h3 class="card-title">家庭 AI 伴侣落地加速：海信 JUOS、长虹云帆、小度 agent 化重构客厅入口</h3>
+      <div class="card-meta">环球家电 / 深圳新闻网 / 自贡 AI 协会 ｜ 2026-09</div>
+      <p class="card-summary">海信 JUOS（8/31 发布）以‘超级小聚’为系统级家庭 AI 载体，支持碎片线索搜片、边看边问、息屏陪伴、小聚识人（千人千面桌面）、跨设备调度，获大屏 AI L3 最高等级认证；长虹云帆大模型三层融合、多轮理解准确率 91%；小度完成智能体化升级，可拆解任务、统筹工具闭环（儿童看护、长辈健康）。家庭 AI OS 成为新战场。</p>
+      <div class="impact">
+        <span class="impact-label">产品经理视角 · 影响</span>
+        <p>竞争对手已把‘家庭 AI 伴侣’作为差异化主战场，三星 Vision AI 须加速从语音助手升级为可主动服务全家的系统级 Agent，避免大屏沦为‘被动显示器’。</p>
+      </div>
+      <a class="card-link" href="https://www.sznews.com/news/content/mb/2026-09/01/content_32160983.htm" target="_blank" rel="noopener">查看原文 ↗</a>
+    </div></div>
+    </section>
+
+  <section id="next">
+    <h2 class="section-title"><span class="dot dot-web"></span>下期跟踪清单（基于本期待验证线索）</h2>
+    <div class="next">
+      <ul>
+        <li><b>成本：</b>Omdia「主板占 BOM 45–50%」是否延续至 Q4；DRAM $25 / NAND $30.5 / Wi-Fi $118.2 后续月度走势；入门机型（32"/40–43"）涨价或减配（降内存/降 Wi-Fi）是否现实验证；存储短缺延续至 2027 对三星低端走量策略的传导。</li>
+        <li><b>面板：</b>10 月报价全面持平后，Q4 BOE/华星/惠科喊涨能否落地；康宁玻璃基板调价对面板成本的传导；面板「以价换量」是否会因需求前置而加深。</li>
+        <li><b>竞争：</b>三星 Micro RGB R95H/R85H、四代 QD-OLED S99H、S95H（~3000 nits/165Hz）vs LG G6/C6（webOS 26+Gemini/Copilot）、索尼 9 II/7 II True RGB、海信 116" UX2026（JUOS+欧洲杯）的实测与份额；Roku OLED LX 10/22 首测与对入门 OLED 的挤压。</li>
+        <li><b>软件/Web：</b>Chromium 154/155 安全补丁对应 Tizen/三星 Internet 内核升级节奏；三星 Internet 补齐 WebGPU（当前 WebCodecs 已支持 17+）；AV2/H.266(VVC) 硬件解码 IP 与芯片路线图；Roku OS「零广告」对 Tizen 服务收入模型的冲击。</li>
+        <li><b>AI：</b>GPT-6 Intelligent UI、Gemini 常驻 Agent 向电视端 Vision AI Companion 迁移可行性（可交互 AI 卡片）；国产开源模型（Kimi K3/GLM/DeepSeek）在电视端中文 AI 助手的本地部署与合规；家庭 AI OS（JUOS/小度）对三星大屏入口的争夺。</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <h4>生成说明</h4>
+    <p>生成时间：2026-10-09 06:00 (GMT+8) ｜ 数据来源：WebSearch 公开检索（Omdia / TrendForce / Counterpoint / 群智咨询等机构数据经一手媒体或转载整理标注，未伪造成一手媒体）；机构原始数据若仅见于二手/SEO 聚合站，已在来源字段注明「经转载整理」。</p>
+    <p>重要程度：🔴 重点关注 ｜ 🟡 值得跟踪 ｜ ⚪ 背景参考。每条情报附真实可追溯来源链接。</p>
+    <div class="next">
+      <b>下期预告（第 009 期）：</b>聚焦 Q4 面板涨价落地验证、存储短缺月度走势、三星/海信/索尼/ LG 2026 旗舰实测对比，以及 GPT-6 Intelligent UI 与 Gemini 常驻 Agent 在电视端的落地路径。
+    </div>
+  </footer>
+</div>
+</body>
+</html>
