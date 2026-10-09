@@ -29,7 +29,9 @@
 | 第 007 期 | 2026-10-08 | ✅ | ✅ | 云端定时任务；16 条选题（电视 11 / Web 3 / AI 2）；三条主线：Omdia Q2'26 三星 28.2% 反超 TCL 登顶 + 半导体成本历史性反超面板（主板占 BOM 45–50%）+ 群智 Q3 -3.5%/Q4 -6.8%「前高后低」、三星/LG/索尼/海信 2026 旗舰混战（Micro RGB/QD-OLED/True RGB/RGB-Mini LED）+ Roku OLED LX 入局、Chrome 155 单次 247 项安全修复 + WebCodecs/WebGPU Baseline + OpenAI GPT-6 Intelligent UI/Gemini 4 Argon |
 | 第 008 期 | 2026-10-09 | ✅ | ✅ | 云端定时任务；19 条选题（电视 11 / Web 3 / AI 5）；三条主线：电视主板成本历史性反超面板（DRAM 4.4×/NAND 9×/Wi-Fi 模块 $118.2，主板占 BOM 45–50%，短缺延续至 2027）、三星 2026 全系 Micro RGB(R95H/R85H)/四代 QD-OLED(S99H)/Neo QLED + Vision AI + 7 年 Tizen，Roku OLED $999 起/LX 144Hz 10 月冲击入门 OLED、海信 116" UX2026 RGB-Mini LED + JUOS + 2028 欧洲杯、LG webOS 26 内置 Gemini/Copilot；Chrome 154/155 密集安全更新（ANGLE CVSS 9.6）、WebGPU/WebCodecs 进 Baseline 2026；GPT-6 + Intelligent UI 全量上线、Gemini 常驻工作 Agent、Kimi K3 开源登顶前端代码榜 |
 
-**下一期期号：第 009 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+| 第 009 期 | 2026-10-10 | ✅ | ✅ | 云端定时任务；20 条选题（电视 12 / Web 3 / AI 5）；三条主线：10月面板报价连续两月全持平但存储暴涨致主板占BOM 45–50%历史性反超面板（DRAM 4.4×/NAND 9×，短缺延续至2027）、三星2026全系Micro RGB/QD-OLED/Neo QLED+Vision AI+7年Tizen 与 Roku OLED $999/LX 144Hz 10月开售(Fox $220亿收购)、TCL欧洲+17.2%/海信UX2026 116" RGB-Mini LED夺6项IFA奖；Chrome 155单次247项修复(4 Critical)、WebGPU/WebTransport进Baseline；OpenAI GPT-6+Intelligent UI全量推送、Gemini 4 Argon百万输出token、Kimi K3 2.8T登顶前端代码Arena、端侧AI Agent落地机顶盒 |
+
+**下一期期号：第 010 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 ## 已知问题（2026-10-04 首次执行时记录）
 
@@ -41,7 +43,7 @@
 - GitHub 发布链路正常：Contents REST API 可用，Pages 详情页即时返回 200，无需等待 60–120 秒。
 - **第 004、005 期邮件均成功（163 SMTP 直发 denisyq@163.com → yanqing.lu@samsung.com，465 SSL）**：实测 SEND_OK，主路径打通。
 
-## 下期跟踪清单（第 008 期续）
+## 下期跟踪清单（第 009 期续）
 
 - **成本**：Omdia「处理板占 BOM 45–50%」是否延续至 Q4；DRAM $25 / NAND $30.50 / Wi-Fi 模块 $118.2 后续月度走势；入门机型（32"/40–43" LCD）涨价或减配（降内存/降 Wi-Fi）是否现实验证；群智 Q3 -3.5%/Q4 -6.8% 是否兑现，三星如何以高端/大屏/AI 对冲量减
 - **面板**：10 月报价全面持平（65" $173 / 55" $123 / 43" $63 / 32" $35）后，Q4 面板厂（BOE/华星/惠科）喊涨能否落地；若 TV 涨价成功是否带动显示器跟涨；康宁玻璃基板 +15% 调价对面板成本的传导
