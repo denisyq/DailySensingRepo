@@ -31,7 +31,9 @@
 
 | 第 009 期 | 2026-10-10 | ✅ | ✅ | 云端定时任务；20 条选题（电视 12 / Web 3 / AI 5）；三条主线：10月面板报价连续两月全持平但存储暴涨致主板占BOM 45–50%历史性反超面板（DRAM 4.4×/NAND 9×，短缺延续至2027）、三星2026全系Micro RGB/QD-OLED/Neo QLED+Vision AI+7年Tizen 与 Roku OLED $999/LX 144Hz 10月开售(Fox $220亿收购)、TCL欧洲+17.2%/海信UX2026 116" RGB-Mini LED夺6项IFA奖；Chrome 155单次247项修复(4 Critical)、WebGPU/WebTransport进Baseline；OpenAI GPT-6+Intelligent UI全量推送、Gemini 4 Argon百万输出token、Kimi K3 2.8T登顶前端代码Arena、端侧AI Agent落地机顶盒 |
 
-**下一期期号：第 010 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+| 第 010 期 | 2026-10-11 | ✅ | ✅ | 云端定时任务；22 条选题（电视 13 / Web 4 / AI 5）；三条主线：10月电视面板全尺寸持平（65" $173/55" $123/43" $63/32" $35）但 Q4 结构性分化、中大尺寸或上调 1–3 美元、原材料涨 4–7%；三星 Q3 营业利润 107.4 万亿韩元创纪录却难掩电视+家电或亏 5000 亿韩元、LG MS 事业本部全年有望扭亏；存储 Q4 续涨 DRAM +10–15%/NAND +15–20%（占 BOM 30–40%）；海信 UR8S RGB MiniLED 印度上市、LG Mini RGB evo/$3600 实测短板、端侧 AI 协处理器入电视；Chrome 155 修复 247 项漏洞（4 Critical UAF 含 Chromecast）、原生 JPEG XL；Gemini agent 与 OpenAI Dot 同月落地，Agent 进入「给目标」自主执行范式 |
+
+**下一期期号：第 011 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 ## 已知问题（2026-10-04 首次执行时记录）
 
@@ -43,14 +45,14 @@
 - GitHub 发布链路正常：Contents REST API 可用，Pages 详情页即时返回 200，无需等待 60–120 秒。
 - **第 004、005 期邮件均成功（163 SMTP 直发 denisyq@163.com → yanqing.lu@samsung.com，465 SSL）**：实测 SEND_OK，主路径打通。
 
-## 下期跟踪清单（第 009 期续）
+## 下期跟踪清单（第 010 期续）
 
-- **成本**：Omdia「处理板占 BOM 45–50%」是否延续至 Q4；DRAM $25 / NAND $30.50 / Wi-Fi 模块 $118.2 后续月度走势；入门机型（32"/40–43" LCD）涨价或减配（降内存/降 Wi-Fi）是否现实验证；群智 Q3 -3.5%/Q4 -6.8% 是否兑现，三星如何以高端/大屏/AI 对冲量减
-- **面板**：10 月报价全面持平（65" $173 / 55" $123 / 43" $63 / 32" $35）后，Q4 面板厂（BOE/华星/惠科）喊涨能否落地；若 TV 涨价成功是否带动显示器跟涨；康宁玻璃基板 +15% 调价对面板成本的传导
-- **竞争**：三星 2026 全系（S95H QD-OLED 165Hz / R95H Micro RGB / Tizen 10 七年更新）vs LG G6/C6（α11 Gen3、webOS 26 内置 Gemini+Copilot）vs 索尼 Bravia 9 II/7 II True RGB vs 海信 UX2026 116" RGB-Mini LED（10000 nits/43008 分区）的实测对比；Roku OLED LX 10 月 $1,299(144Hz) 首测与输入延迟、对 LG/Samsung 入门 OLED 的份额挤压；ODM 8 月回暖（MOKA 130 万、TPV +75.4%）的可持续性
-- **份额**：Omdia Q2 三星 28.2% 登顶的可持续性；Mini LED 占 13%、RGB LED 29.5 万台（海信份额降至 42.9%）的后续；西欧高端化与东欧/拉美性价比（中国品牌 TCL/海信）延续性
-- **软件/Web**：Chrome 155（247 项修复、4 个 Critical use-after-free）对应 Chromium 安全补丁与 Tizen 内核升级节奏；Tizen 浏览器对齐 WebCodecs/WebGPU Baseline（注意三星 Internet 仍无 WebGPU）；AV2 定稿后硬件解码 IP（Allegro DVT / Chips&Media / VeriSilicon）与芯片路线图；Roku OS「零广告」对三星 Tizen 广告/服务收入模型的冲击评估
-- **AI**：OpenAI GPT-6 + Intelligent UI（对话内嵌图表/按钮/表单、Sol/Luna/Astra）向电视端 Vision AI Companion 迁移可行性（可交互 AI 卡片）；Gemini 4 Argon 向付费 API / Google AI Ultra 开放节奏与电视端集成可能；国产长上下文开源模型（DeepSeek/Kimi/GLM）在电视端中文 AI 助手的多语言/合规部署
+- **面板**：10 月实际成交价能否守住 65" $173 / 55" $123 / 43" $63 / 32" $35；BOE/华星/惠科涨价函在 Q4 是否落地为大尺寸 +1~3 美元；上游拆料成本 +4~7%、AI 抢材料产能的传导节奏；11–12 月稼动率小幅修复后价格是否回吐；8 月平均尺寸 51.2 英寸（+2.1 英寸）、55"+ 份额 45.4% 的大屏化延续性
+- **成本**：DRAM Q4 +10–15%、NAND +15–20% 合约价兑现情况；DDR4 8GB 现货 $148 vs DDR5 8GB $133 折价扩大是否推动 2027 平台内存迁移；原厂库存 10 天级别何时缓解；入门机型（32"/40–43"）减配（降内存/降 Wi-Fi 规格）是否出现实机验证
+- **竞争与业绩**：三星 VD/DA Q3 约 5000 亿韩元亏损在 10 月 29 日业绩说明会上的正式口径与后续降本举措（AX 转型、低端外包）；LG MS 事业本部全年扭亏最终数字与 webOS 服务收入贡献；三星退出中国大陆电视市场后海外份额与渠道的再分配
+- **新品**：海信 UR8S RGB MiniLED（3500nits/180Hz/₹11.9 万起）在印度/欧洲的实际定价与首销；LG Mini RGB evo MRGB85 与 MRGB95B($3600) 的实测短板（无 DV2/无 HDR10+、webOS 导航）能否被三星 Micro RGB 用作差异化话术；RGB LED 品类海信份额从 77.2% 降至 42.9% 后的格局
+- **平台/软件**：Chrome 156（计划 10/20 发布）安全修复与 Tizen 内核同步窗口，重点盯 Chromecast 组件 UAF（CVE-2026-106382）在投屏接收端的补丁覆盖；JPEG XL（HDR/宽色域/渐进式）在 Tizen 图片管线的可行性；Google TV Gemini Deep Dives/Sports Briefs 与下一代 TV Streamer（麦克风+在场感知）对电视 AI 交互门槛的抬高
+- **AI**：Gemini agent 从 private preview 转 GA 的定价与区域开放节奏；OpenAI Dot / Meta Muse 的留存与硬件化进展；1-bit 量化（8.2B→1.15GB）与 EmbeddingGemma 在 8 TOPS 级电视 SoC 上的实测算力需求；Qwen3.6-Plus（OmniDocBench 91.2）/DeepSeek V4.1 Flash 作为电视端中文 AI 助手第二供应商的可行性
 
 ## 已验证可用信源
 
