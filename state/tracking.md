@@ -46,7 +46,10 @@
 | 第 016 期 | 2026-10-17 | ✅ | ✅ | 云端定时任务；35 条选题（电视 21 / Web 6 / AI 8，🔴重点 13 条）；三条主线：①成本侧康宁 Q4 起玻璃基板涨价不低于 15%，叠加 PCB、驱动 IC 后面板厂 BOM 已累计涨 5%~6%，CINNO 称 10 月头部厂高世代线稼动率降至约 83%（与 TrendForce 79.6%、洛图「10 月全线持平」并列使用），Omdia 称 55 吋 4K LCD 主板成本 Q3 已达 118.2 美元（去年同期 3.5 倍、首超面板最低价），TrendForce Q4 DRAM +10–15%/NAND +15–20% 与摩根士丹利「Q4 见顶」两种口径并存；②财务与产品：Kiwoom 预测三星 Q4 营业利润 116 万亿韩元，但 VD/DA Q3 亏 4000 亿、Q4 预计亏 6000 亿韩元，10/29 完整财报为降本口径关键节点；83 吋 QD-OLED 定档 2027（UL Solutions 画质验证完成、牙山母玻璃工艺优化中），S99H 包揽 HDTVTest Shootout 2026 三冠而索尼 Bravia 9 II 以 32.54 分反超 LG G6（30.00）拿下第二，R95H Micro RGB 65 吋降至 2799 美元与自家 S95H/S99H OLED 同价；需求侧美国假日季零售首破 1 万亿美元（NRF +4.2%、Adobe 黑五线上 129 亿美元、贝恩五天 850 亿美元 +8.75%）与中国 9 月出货 270.2 万台 -7.5%、双 11 预计零售量 -5% 而零售额持平形成对读；供应链晶晨冲刺港股（电视 SoC 份额 16.8% 居第二、高端已进三星供应链 Q4 量产）但因囤存储 H1 存货升至 35.39 亿元、经营现金流转负；③平台与 AI：Kagan 美国 TV OS 份额 Roku 24% 居首而增速仅 1%、Tizen 15% 列第三但同比 +7%，Roku 官方称其 OS 内存/闪存占用远低于竞品、内存涨价反成其授权优势；Chrome 155.0.8059.84/85 修复 10 项含 Prerender UAF（Critical）、新增 Workers CVE-2026-110914（CVSS 8.6）与 SiteIsolation CVE-2026-102322、156 定档 10/20、Electron 45 同日转稳且 42 同日 EOL、AV2 1.0.0 落地仍无量产解码；AI 侧 Meta Muse Spark Open（8160 亿总参/420 亿激活/100 万 token）开源榜仅 39 分居中国模型之后、420 名 AI 科学家联署呼吁对具备网络攻击能力的模型实施 airgap、Agent 形态从独立 App 剥离进入企业协作网络并演变为个人智能体混战 |
 | 第 017 期 | 2026-10-18 | ✅ | ✅ | 云端定时任务；35 条选题（电视 20 / Web 6 / AI 9，🔴重点 12 条）；三条主线：①成本侧 TrendForce「Q4 面板成本 +4~7%」与「Q4 电视需求 -4%」「10 月稼动率 79.6%」三口径并存，叠加 Q4 存储合约价上调（DRAM +10~15% / NAND +15~20% / eSSD +23~28%），Omdia 称 55 吋 4K LCD 主板 Q3 已达 118.2 美元、首超 116 美元面板最低价，小尺寸电视主板占 BOM 45–50%，成本结构反转从「趋势」变成「已发生」；②财务与产品线：三星 Q3 营业利润 107.4 万亿韩元反超英伟达，但 VD/DA 亏 5000~7400 亿韩元、MX 亏 1.4~1.5 万亿韩元，10/29 完整财报是降本口径关键节点；83 吋 QD-OLED 定档 2027（CES 2027 首发、2027 H1 北美/韩国先行），而 QLED 产量由 1000 万台砍至 200~300 万台、Neo QLED 2027 收缩 / 2028 退出（韩媒报道，未经官方确认）；③竞争与技术：TrendForce 称 2026 年 Mini LED 电视出货 2500 万台、渗透率破 10%（COB 约 50%），Omdia Q2 全球出货 4880 万台（西欧 +9.5% / 北美 +4.7% / 东欧 +14.5% / 拉美 +12.8% / 中国 -15.1%）且三星以 28.2% 登顶 Mini LED；端侧 AI 落到电视（瑞芯微 RK1828、海信 100 吋 RGB-Mini LED 实时 2D→3D）；Chrome 156 引入 WebGPU 保守深度、HTML-in-Canvas 进入破坏性 API 变更期；DeepSeek V4.1-Flash-1017 以 DeepSWE 77.0 分居首 |
 
-**下一期期号：第 018 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+| 第 018 期 | 2026-10-19 | ✅ | ✅ | 云端定时任务；39 条选题（电视 23 / Web 8 / AI 8，🔴重点 14 条）；三条主线：①成本反转从「趋势」变为「已发生」——Omdia 称 55 吋 4K LCD 主板成本 Q3 达 118.2 美元（去年同期 33.9 美元的 3.5 倍、首超 116 美元裸面板）、32 吋 HD 处理板占元件成本从 2025Q2 约 10% 升至 2026Q3 近 50%，DRAM 8 月 25 美元（4.4×）/NAND 30.5 美元（8.9×）/Wi-Fi 模块超 118 美元，叠加 TrendForce Q4 一般型 DRAM +10~15%、NAND +15~20%（含 HBM 整体 DRAM +15~20%）；存储涨价已向存量硬件传导，NVIDIA 上市 7 年的 Shield TV Pro 美国售价上调 50%。②需求与竞争：TrendForce 称 2026 年 Mini LED 背光电视出货 2500 万台、渗透率首破 10%（总出货超 3000 万台、+60%），三星凭取消量子点膜的 M70/M80 平价系列预计市占 30%+ 重夺第一（「减配换价」路线），RGB Mini LED 电视全年出货估超 170 万台并挑战 200 万台；Omdia Q2 全球出货 4880 万台（西欧 +9.5% / 北美 +4.7% / 东欧 +14.5% / 拉美 +12.8% / 中国 -15.1%）、高端电视（ASP≥$1,000）出货 +9.3% 且北美明年 +21.9%，洛图称中国 9 月出货 270.2 万台 -7.5%、双 11 量跌额平（-5% / 持平）。③产品与平台：83 吋 QD-OLED 定档 2027（CES 2027 首发、2027H1 北美与韩国先行），海信 U7T Pro 与 E7S Pro+ 把 RGB Mini LED 从「一家一款」推到 11 品牌 95 款且首发杜比视界第二代 MAX（三星不支持 Dolby Vision，需以 HDR10+ Advanced 补齐），Kagan 美国 TV OS 中 Roku 24% 但增速仅 +1%、Tizen 15% 同比 +7%，流媒体硬件因存储成本全线提价（Fire TV 8/21、Roku +33~60%、Apple TV 4K 涨至 $199/$249）；Web 侧 Chrome 156 进稳定通道、WebAssembly Core 2/JS API 2/Web API 2 于 10/3 进 CRD、Electron 42 线 10/20 终止支持；AI 侧阶跃开源 Step 5 Preview（600B/27B 激活、1M 上下文）并发布 Agent 原生手机 STEPX Neo，个人智能体进入大厂集体跟进期。 |
+
+**下一期期号：第 019 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 
 
@@ -113,3 +116,29 @@ Omdia / TrendForce / 群智 / 洛图 / 奥维 等机构数据常只能经二手�
   本期方法论要点：TrendForce「面板成本 +4~7%」是成本口径，「Q4 需求 -4%」是需求口径，「稼动率 79.6%」是供给侧口径，
   CINNO/洛图的「交易价持平」是成交价口径，四者需并列表述、禁止混用于同一 BOM 测算；
   QLED 减产与 Neo QLED 退出为韩媒单源报道，已标注「未经官方确认」，暂不作为 2027 产品线规划输入。
+
+
+- 第 018 期（2026-10-19）：云端定时任务，交付核对结果——GitHub Pages 首页与报告详情页 ✅，163 SMTP 邮件（含 HTML 附件）✅。
+  本期新增信源：HD Guru / AVCaesar / Shift Delete（Omdia 主板与存储成本数据，经转载整理）、每经网与中原电子月报（TrendForce Q4 存储报价，经转载整理）、
+  Digital Today（NVIDIA Shield TV Pro 涨价 50%）、家电网与九方智投与 LEDinside（TrendForce Mini LED 与 RGB Mini LED 数据，经转载整理）、
+  工商时报（集雅社营收稿转引 TrendForce RGB Mini LED 出货）、网易与电子工程专辑与液晶网（83 吋 QD-OLED，韩媒转载）、
+  21 世纪经济报道（TrendForce 面板稼动率与成本深度整理）、中国经营报（京东方—康宁联合创新空间与 24 层玻璃基载板）、
+  fnnews（Omdia 高端电视与 chipflation，经 GripLabs 翻译转载）、Reuters / The Edge Malaysia（三星 Q3 初步业绩）、
+  中国能源网与华商网与深显协（洛图科技 9 月中国出货与双 11 预测、一体化电视政策，经转载整理）、
+  NRF 与 Adobe Analytics（北美假日季预测，经台视财经与优时派转载）、Warranty Week（Omdia Q2 全球出货与区域增速，经转载整理）、
+  The Asian Banker（TCL 电子 2026 中期业绩）、新华报业与腾讯网（海信 U7T Pro 与 E7S Pro+）、
+  新浪（电视内存减配，SEO 聚合站，已标注未经独立核实）、State of the Screens（Kagan 美国 TV OS 份额）、
+  GadgetHub 与 MakeUseOf（Fire TV / Roku / Apple TV / Google TV 涨价，经转载整理）、Samsung US 官方促销页与 Tom's Guide（北美促销价）、
+  TCL 科技一季报与东方财富 F10（茂佳与兆驰 ODM 出货，引洛图数据）、Root-Nation 与 KrakaTech（R95H 实测）、
+  Chromeosphere 与 Versio.io 与 Vulnios（Chrome 156 与安全公告，经转载整理）、pk-sharma 简报（Chrome VRP 奖励调整，转载）、
+  W3C Web Media API 社区组官方报告（一手）、Loopdesk（WebCodecs 状态核对）、Web Coding Center（WebGPU CRD 进度）、
+  Electron Releases 官方与 endoflife.date（一手）、Fora Soft（AV2 与专利池，转载）、
+  ModelScope 魔搭社区（阶跃 Step 5 Preview 开源，一手）、A5 站长网与 OFweek（个人智能体综述，转载）、
+  智东西与中新网（STEPX Neo 发布会）、ModelGrep（开源模型榜，第三方聚合非官方）、
+  HeadsUpAI 与 RunAIHome（Nemotron 3.5 Super VL 与 2-bit 量化，厂商自报基准）、新浪家居（海信 JUOS 官方口径实测）、
+  今日头条（晶晨 6nm SoC 进三星供应链，自媒体单源，标注未经官方确认）。
+  本期方法论要点：Omdia「主板成本 118.2 美元」是 55 吋单点口径、「32 吋处理板占近 50%」是小尺寸口径、
+  TrendForce「Q4 存储 +10~20%」是合约价口径、「Q4 面板成本 +4~7%」是成本口径、「稼动率 79.6%」是供给侧口径、
+  洛图/CINNO「报价持平」是成交价口径，六者需并列表述、禁止混用于同一 BOM 测算；
+  TrendForce「Mini LED 渗透率破 10%」是出货口径、「RGB Mini LED 170~200 万台」是细分品类口径，二者不可相加；
+  ModelGrep 榜单为第三方聚合、RunAIHome 基准多为厂商自报，均不作为选型唯一依据。
