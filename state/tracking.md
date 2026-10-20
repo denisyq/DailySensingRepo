@@ -50,7 +50,9 @@
 
 | 第 019 期 | 2026-10-20 | ✅ | ✅ | 云端定时任务；43 条选题（电视 25 / Web 9 / AI 9，🔴重点 12 条）；三条主线：①成本端三大面板厂同步公开发函调价、10 月稼动率降至 79.6%，TrendForce 上修 Q4 面板成本 +4~7%（集中 65 吋及以上），康宁玻璃 Q4 涨不低于 15%、面板 BOM 已累计上浮 5~6%，叠加电视内存价格近四倍暴涨，整机厂进入实质性降配阶段；Omdia 确认 55 吋 4K LCD 主板成本 Q3 达 118.2 美元、首超 116 美元面板，降本主战场从面板转向半导体与内存；②竞争端 TCL 电子 H1 Mini LED 出货 243 万台（+77.1%）、海外毛利 +70.6%，H1 全球份额 16.1% 逼近三星 18.8%，TCL+海信北美合计超 30%，索尼电视业务 2027 年 4 月并入 TCL 控股合资公司，形成「索尼画质口碑 + TCL 成本结构」的垂直一体化；③平台与 AI 端 VIDAA 借 Omdia 测试把系统流畅度做成 78 vs 62 的可引用指标、Roku 以低内存占用为授权卖点（内存涨价放大其优势），MiniMax M3.1 Flash（Automation-Bench 62.8 第一）与 DeepSeek V4.1-Flash-1017（DeepSWE 77.0 第一）把 Agent 执行成本压到极低区间，NVIDIA Nemotron 3.5 Bolt 74B-A9B 经 2bit 量化压进约 24GB。 |
 
-**下一期期号：第 020 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+| 第 020 期 | 2026-10-21 | ✅ | ✅ | 云端定时任务；47 条选题（电视 26 / Web 10 / AI 11）；三条主线：①成本端三重背离——TrendForce 10 月电视面板报价连续第二月全线持平（65" $173 / 55" $123 / 43" $63 / 32" $35），但三大面板厂涨价函 Q4 生效、康宁玻璃基板涨不低于 15%、Q4 面板总成本环比 +4~7%、10 月稼动率压至 79.6%；存储侧反向信号，群智咨询 26Q4 消费级 DRAM 涨幅收敛至个位数（DDR4 +8% / LPDDR4X +5.3%）、NAND 内部倒挂（企业级 SSD +12% 对消费级 UFS +5.2%），风险从价格转向低容量料号排产优先级；②竞争端 TCL 电子前三季度收入 910~977 亿港元（+10~18%）、经调归母净利 21.1~22.5 亿港元（+45~55%），海外电视收入占比 72.2%、毛利 +70.6%、北美均价 +18%、Mini LED 出货 243 万台（+77.1%），索尼电视并入 TCL 控股合资公司确认 2027-04 运营（TCL 51% 掌握运营控制），RGB Mini LED 价格带被击穿（REDMI 55" 国补后 2299 元 / 小米 S Pro 85" 7649 元）；③AI 侧 Agent 成本线下移到可测算区间（MiniMax M3.1 Flash Agent 类综合成本降至前代三成、输入 ¥1/输出 ¥4 每百万 token、10-23 开放权重；DeepSeek 开源生产级推理引擎 DeepInfer；小米 MiMo-V2.6-Pro 登顶开源榜），同时 Agent 反向侵入电视本体——TechCrunch 报道 dumbtv / cleanyourtv 用 Claude Code 卸载 25 个预装包、替换 launcher、关闭 ACR。 |
+
+**下一期期号：第 021 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 
 
@@ -64,16 +66,17 @@
 - GitHub 发布链路正常：Contents REST API 可用，Pages 详情页即时返回 200，无需等待 60–120 秒。
 - **第 004、005 期邮件均成功（163 SMTP 直发 denisyq@163.com → yanqing.lu@samsung.com，465 SSL）**：实测 SEND_OK，主路径打通。
 
-## 下期跟踪清单（第 019 期续）
+## 下期跟踪清单（第 020 期续）
 
-- **成本与 BOM（最高优先级）**：11 月面板报价是否结束连续两月持平（当前口径 65" $173 / 55" $123 / 43" $63 / 32" $35）；TrendForce「Q4 电视面板成本 +4~7%」「Q4 电视需求 -4%」「10 月稼动率 79.6%」三口径在 11 月是否收敛，与 CINNO「成交价企稳」、康宁「原材料 +15%」三套口径必须分开使用；Q4 存储合约价（DRAM +10~15% / NAND +15~20%）实际落地幅度与摩根士丹利「Q4 见顶」的验证；电视内存近四倍暴涨后整机厂降配的具体档位（哪些尺寸段内存规格下修）
-- **财报与组织**：10/29 三星 Q3 完整财报中 VD/DA 实际亏损（券商口径 4000~8000 亿韩元）与降本口径表述；Samsung Display 亏损幅度与 QD-OLED 稼动率；降本是否落到电视主板/存储配置
-- **型号与产品线**：83 吋 QD-OLED 的 CES 2027 首展与 2027 H1 上市节奏（北美/韩国先行）；QLED 产量 1000 万台→200~300 万台、Neo QLED 2027 收缩 / 2028 退出是否有官方确认（仍为韩媒报道）；Micro RGB 全尺寸线与 The Frame 98 吋产能分配；R85H 第三方实测短板（亮度均匀性、局部调光）是否推动算法迭代
-- **竞争与促销**：TCL 电子 H1 海外毛利 +70.6% 的持续性，TCL+海信北美合计超 30% 后的价格带外溢；索尼电视并入 TCL 控股合资公司（2027-04 运营）后的产品线划分与品牌授权细节；海信 100 吋以上 55.1% 份额下三星超大尺寸反击策略；RGB Mini LED 价格带下探（小米 S Pro 5354 元起）对 Neo QLED 的挤压
-- **供应链与代工**：晶晨 NPU 芯片累计出货 2000 万颗后的三星 Q4 量产机型与单价；瑞芯微 RK1828 实时 2D→3D 在电视 SoC 上的对标方案；茂佳 Q1 45.8 亿元 / 兆驰 H1 560 万台的 ODM 排序与 2027 报价弹性；被动元件（三星电机 X5R MLCC +25~30%）后续是否扩散到电源板其他料号
-- **软件与平台**：电视 OS 支持周期竞赛（Tizen 7 年 vs VIDAA 欧洲 8 年）；美国 TV OS 份额 Roku 28% / Tizen 23% 的后续变化，Roku「低内存占用」授权卖点在内存涨价背景下的扩散速度；流媒体盒子集体涨价（Shield TV Pro 涨 50% 至 $299.99）对电视内置 OS 价值的影响；是否需要为 Tizen 建立公开可验证的性能指标体系以对冲 VIDAA/Omdia 速度测试话术
-- **Web**：Chrome 10 月两轮 47 项漏洞修复（8 Critical，含 Prerender UAF CVE-2026-110922 野外利用）后 Tizen 内嵌 Chromium 的补丁基线差距；Chrome 156 桌面稳定版是否确认转正；WebCodecs 仍为 W3C 工作草案、未进 Baseline（支持率 91%）对播放器架构的约束；WebKit I420P10/P12 高位深像素格式何时默认开启；WebGPU float32-blendable（真机 89.4% / Android 56.28%）、display-p3-linear、snorm10-10-10-2、shader-f16 在电视 GPU 上的可用性；Electron 42.x EOL 后内部工具链迁移
-- **AI**：MiniMax M3.1 Flash（Automation-Bench 62.8 / ¥1~¥4）与 DeepSeek V4.1-Flash-1017（DeepSWE 77.0）的 Flash 双强格局下，电视端「云端 Agent + 端侧轻量模型」混合架构的成本测算；NVIDIA Nemotron 3.5 Bolt（74B-A9B / 2bit / 24GB） Era 下电视硬件路线图的本地推理显存预算；在 Agent harness 内训练（LFM2.5-24B-A2B）路线对电视 GUI Agent（遥控器语义 + 焦点状态）的可行性与参数量门槛
+- **成本与 BOM（最高优先级）**：11 月面板报价是否结束连续两月持平（当前口径 65" $173 / 55" $123 / 43" $63 / 32" $35）；三大面板厂 Q4 涨价函是否转化为实际成交价（TrendForce 成本口径 vs CINNO/洛图成交价口径能否收敛）；康宁玻璃基板 Q4 起涨不低于 15% 后是否出现第二轮传导；群智咨询「26Q4 消费级 DRAM 涨幅收敛到个位数（DDR4 +8% / LPDDR4X +5.3%）」与 TrendForce「Q4 一般型 DRAM +10~15% / NAND +15~20%」两个口径的分歧如何解释，需按「合约价 vs 现货价」「消费级 vs 企业级」拆开使用；NAND 内部倒挂（企业级 +12% / 消费级 UFS +5.2%）是否意味着电视端 eMMC/UFS 供给改善；低容量料号排产优先级是否成为实际交付瓶颈
+- **财报与组织**：10/29 三星 Q3 完整财报中 VD/DA 实际亏损幅度与「存储涨价向整机传导」的官方表述；Samsung Display 亏损与 QD-OLED 稼动率；三星电子 Q3 营业利润 107.4 万亿韩元创纪录下的电视业务降本口径
+- **型号与产品线**：83 吋 QD-OLED 的 CES 2027 首展与 2027H1 上市节奏（北美/韩国先行）；S90H 北美促销价（Best Buy 折扣）是否预示 2026 线清库节奏；Micro RGB（R95H/R85H）全尺寸线与产能分配；QLED 减产 / Neo QLED 2027 收缩是否有官方确认（仍为韩媒单源）
+- **竞争与促销**：TCL 电子 11 月中旬正式业绩公告中的分区域毛利与互联网业务收入，验证「利润增速远超收入增速」的可持续性；索尼电视并入 TCL 控股合资公司（2027-04 运营）后的产品线划分与品牌授权细节；RGB Mini LED 价格带下探（REDMI 2299 元 / 小米 S Pro 85" 7649 元 / Vidda 发现 X RGB 10-21 预售）对 Neo QLED 的挤压；10-30 Vidda 发现 X RGB 正式价格与实测画质（串色、光晕、持久亮度）
+- **供应链与代工**：晶晨 6nm SoC 与端侧 NPU（A311Y3 8TOPS）在三星 Q4 量产机型中的落地与单价；瑞芯微 RK182X 协处理器对标方案；茂佳/兆驰/康冠 ODM 排序与 2027 报价弹性；被动元件（MLCC +25~30%）是否扩散到电源板其他料号
+- **软件与平台**：电视 OS 支持周期竞赛（Tizen 7 年 vs VIDAA 欧洲 8 年）；美国 TV OS 份额（Roku 24% 增速 +1% / Tizen 15% 同比 +7%）后续变化；流媒体盒子集体涨价对电视内置 OS 价值的影响；Samsung TV Plus 等 FAST 频道在广告变现承压下的定位
+- **AI 反噬风险（新增，高优先级）**：dumbtv / cleanyourtv 类「用 Agent 卸载预装包、替换 launcher、关闭 ACR」做法的用户规模与厂商响应（索尼/TCL/飞利浦/海信/小米、Fire TV 已被端到端测试）；是否需要在 Tizen 侧提供官方「精简模式 / 隐私开关」以对冲；ACR 数据变现合规风险
+- **Web**：Chrome 156 桌面稳定版是否确认转正（当前最新 156.0.8078.x）与 CVE-2026-113341 等内存破坏漏洞的补丁节奏；Tizen 内嵌 Chromium 的补丁基线差距；WebCodecs 仍为非 Baseline 草案对播放器架构的约束；AV2 1.0.0 定稿后 10/23 iRTE2026 上 NVIDIA 演讲给出的硬件解码时间表线索；Electron 42 线 EOL 后内部工具链迁移
+- **AI**：MiniMax M3.1 Flash 权重 10-23 开放后的本地部署可行性与实测；DeepSeek DeepInfer 中可迁移模块（eplb/policy.py、投机解码、SWA 有界重放）对电视端 Agent 服务端设计的参考价值；小米 MiMo-V2.6-Pro（1M 上下文全模态）与 Gemini 4 Argon 的后续实测；端侧小模型（2-bit 量化 / NPU 协处理器）在电视硬件路线图中的显存预算
 
 ## 已验证可用信源
 
@@ -143,3 +146,23 @@ Omdia / TrendForce / 群智 / 洛图 / 奥维 等机构数据常只能经二手�
   洛图/CINNO「报价持平」是成交价口径，六者需并列表述、禁止混用于同一 BOM 测算；
   TrendForce「Mini LED 渗透率破 10%」是出货口径、「RGB Mini LED 170~200 万台」是细分品类口径，二者不可相加；
   ModelGrep 榜单为第三方聚合、RunAIHome 基准多为厂商自报，均不作为选型唯一依据。
+
+- 第 020 期（2026-10-21）：云端定时任务，交付核对结果见本表格 GitHub / 邮件两列。
+  本期新增信源：LEDinside（TrendForce 10 月面板报价，经转载整理）、中国家电网（三大面板厂涨价函、康宁 +15%、稼动率 79.6%）、
+  今日头条·CINNO（面板采购策略）、群智咨询（26Q4 DRAM/NAND 涨幅收敛，经凤凰网转载）、工商时报（Q4 NAND +30%）、
+  TrendForce Q4 合约价与长鑫（转载）、HKEXnews（TCL 电子前三季度预告，一手披露）、财华社（TCL 拆解）、
+  ET Telecom（索尼—TCL 合资公司与索尼印度表态）、Omdia Q2'26（转载）、SlashGear / Business Insider（S90H 北美促销与实测）、
+  晶晨 SoC 与集微咨询端侧 AI（转载）、fpdisplay（三星显示）、财联社（高盛 LG Display）、UBI Research（份额，转载）、
+  腾讯新闻与 LEDinside（小米 S Pro / REDMI）、什么值得买（Vidda）、快科技（洛图 9 月，转载）、JMInsights（RGB 规模）、
+  Business Wire（Adobe 北美假日季）、流媒体网（Samsung TV Plus）、东方财富（三星电子 Q3）；
+  Web 侧 WhatIsMyBrowser（Chrome 版本）、OffSeq（CVE-2026-113341）、cr-status（Chrome 156 release notes）、
+  Electron Releases 官方、Safeguard（Electron 9 月公告）、凤凰海南与 MSU（AV2 / TencentAV2 iRTE2026）、
+  StreamingMeme（Bitmovin V3）、WolfTV（codec 码率科普）；
+  AI 侧 AICoder（DeepSeek DeepInfer）、ExplainX（DeepInfer 边界核实）、腾讯云与腾讯新闻（MiniMax M3.1 Flash）、
+  头条与 IT之家与快科技（小米 MiMo-V2.6-Pro）、The Hindu BusinessLine（Gemini 4 Argon）、澎湃（Meta Muse Spark）、
+  TechCrunch（dumbtv / cleanyourtv，一手报道）、Mediasat（ACR，转载）、慕课网（路由式架构）。
+  本期方法论要点：群智咨询「26Q4 消费级 DRAM 涨幅收敛到个位数」是消费级合约价口径，TrendForce「Q4 DRAM +10~15% / NAND +15~20%」
+  是整体合约价口径、工商时报「Q4 NAND +30%」为单一品类极端预测，三者不可混用于同一 BOM 测算；
+  TrendForce「面板报价持平」是成交价口径、「Q4 面板成本 +4~7%」是成本口径、「稼动率 79.6%」是供给侧口径、
+  「康宁玻璃 +15%」是原材料口径，四者需并列表述；TCL 电子「收入 +10~18% / 经调净利 +45~55%」为业绩预告区间，
+  非审计数据，正式数据以 11 月中旬公告为准。
