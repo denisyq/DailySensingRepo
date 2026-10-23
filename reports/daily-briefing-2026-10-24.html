@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日情报日报 2026-10-24 · TV / Web / AI · 第 023 期</title>
+<style>
+:root{
+  --bg:#0d1117; --bg2:#161b22; --card:#161b22; --line:#30363d;
+  --fg:#e6edf3; --fg2:#9198a1; --accent:#58a6ff; --accent2:#7ee787;
+  --red:#f85149; --yellow:#d29922; --gray:#8b949e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px}
+header.hero{background:linear-gradient(135deg,#0d1117 0%,#161b22 60%,#1c2333 100%);
+  border-bottom:1px solid var(--line);padding:44px 0 34px;margin-bottom:28px}
+header.hero .wrap{padding-bottom:0}
+.kicker{color:var(--accent);font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+h1{font-size:30px;margin:10px 0 6px;font-weight:700;letter-spacing:-.02em}
+.sub{color:var(--fg2);font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px 18px;min-width:132px}
+.stat .n{font-size:22px;font-weight:700;color:var(--accent)}
+.stat .l{font-size:12px;color:var(--fg2);margin-top:2px}
+nav.sections{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-bottom:28px}
+nav.sections .wrap{display:flex;gap:8px;padding:10px 20px;flex-wrap:wrap}
+nav.sections a{color:var(--fg2);text-decoration:none;font-size:13px;padding:6px 14px;
+  border:1px solid var(--line);border-radius:20px;transition:.15s}
+nav.sections a:hover{color:var(--fg);border-color:var(--accent);background:#1f2733}
+section{margin-bottom:44px;scroll-margin-top:64px}
+h2.sec{font-size:20px;margin:0 0 4px;padding-bottom:10px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:10px}
+h2.sec .dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+h2.sec .cnt{margin-left:auto;font-size:12px;color:var(--fg2);font-weight:400}
+.sec-desc{color:var(--fg2);font-size:13px;margin:10px 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gray);
+  border-radius:12px;padding:18px 20px;margin-bottom:16px;transition:.15s}
+.card:hover{border-color:#3d444d;transform:translateY(-1px)}
+.card.red{border-left-color:var(--red)}
+.card.yellow{border-left-color:var(--yellow)}
+.card.gray{border-left-color:var(--gray)}
+.card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.idx{font-size:11px;color:var(--fg2);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  border:1px solid var(--line);border-radius:5px;padding:1px 7px}
+.badge{font-size:11px;padding:2px 9px;border-radius:11px;border:1px solid;white-space:nowrap}
+.badge.red{color:var(--red);border-color:rgba(248,81,73,.45);background:rgba(248,81,73,.1)}
+.badge.yellow{color:var(--yellow);border-color:rgba(210,153,34,.45);background:rgba(210,153,34,.1)}
+.badge.gray{color:var(--gray);border-color:rgba(139,148,158,.4);background:rgba(139,148,158,.08)}
+.card h3{font-size:16px;margin:0 0 8px;font-weight:650;line-height:1.5}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--fg2);margin-bottom:12px}
+.m-src{color:#a5b3c2}
+.summary{font-size:14px;color:#c9d1d9;margin:0 0 12px;text-align:justify}
+.impact{font-size:13.5px;color:#d6e0ea;background:#1b2230;border:1px dashed #30363d;
+  border-radius:8px;padding:10px 12px;margin-bottom:10px}
+.impact-tag{display:inline-block;font-size:11px;color:var(--accent2);border:1px solid rgba(126,231,135,.4);
+  background:rgba(126,231,135,.08);border-radius:5px;padding:1px 7px;margin-right:8px;font-weight:600}
+.note{font-size:11.5px;color:#8b949e;background:#12171f;border-radius:6px;padding:6px 10px;margin-bottom:10px}
+.link{font-size:13px;color:var(--accent);text-decoration:none;word-break:break-all}
+.link:hover{text-decoration:underline}
+footer{border-top:1px solid var(--line);margin-top:40px;padding-top:22px;color:var(--fg2);font-size:12.5px}
+footer h4{color:var(--fg);font-size:13px;margin:0 0 8px}
+footer ul{margin:0 0 14px;padding-left:18px}
+footer li{margin-bottom:4px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin:6px 0 18px;color:var(--fg2)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Daily Sensing Briefing · 三星电视高级产品经理</div>
+    <h1>每日情报日报 · 2026-10-24</h1>
+    <div class="sub">第 023 期 · 电视产业 / Web 与浏览器内核 / AI 与 Agent · 共 51 条选题</div>
+    <div class="stats">
+      <div class="stat"><div class="n">51</div><div class="l">选题总数</div></div>
+      <div class="stat"><div class="n">30</div><div class="l">电视产业</div></div>
+      <div class="stat"><div class="n">10</div><div class="l">Web 与浏览器</div></div>
+      <div class="stat"><div class="n">11</div><div class="l">AI 与 Agent</div></div>
+      <div class="stat"><div class="n">21</div><div class="l">🔴 重点关注</div></div>
+      <div class="stat"><div class="n">23</div><div class="l">🟡 值得跟踪</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">⚪ 背景参考</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="sections">
+  <div class="wrap">
+    <a href="#tv">📺 电视产业（30）</a>
+    <a href="#web">🌐 Web 与浏览器内核（10）</a>
+    <a href="#ai">🤖 AI 与 Agent（11）</a>
+    <a href="#footer">页脚与下期预告</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="legend">
+    <span>重要程度：<b style="color:var(--red)">🔴 重点关注</b>　<b style="color:var(--yellow)">🟡 值得跟踪</b>　<b style="color:var(--gray)">⚪ 背景参考</b></span>
+  </div>
+
+  <section id="tv">
+    <h2 class="sec"><span class="dot" style="background:var(--red)"></span>📺 电视产业<span class="cnt">30 条 · 权重最高</span></h2>
+    <div class="sec-desc">市场与份额、面板与成本、新品与型号、代工与 license、硬件 BOM、电视软件与功能、区域表现。</div>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-01</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>TrendForce 10 月下旬面板报价连续第二月全线持平，三张涨价函发出五周报价未动</h3>
+      <div class="meta">
+        <span class="m-src">来源：观察者网 / 新浪财经（引 TrendForce 集邦咨询）</span>
+        <span class="m-date">2026-10-23（TrendForce 数据 10-20）</span>
+      </div>
+      <p class="summary">10 月 20 日 TrendForce 报价：电视面板 65 吋均价 173 美元、55 吋 123 美元、43 吋 63 美元、32 吋 35 美元，与 9 月分毫不差；笔电面板自 2026 年 2 月起未变价。此时距京东方、TCL 华星、惠科 9 月中旬先后发出涨价通知已过去五周。TrendForce 研究副总范博毓称，面板厂只能通过产能调控与「宣告涨价」营造氛围，Q4 电视品牌采购需求较 Q3 衰退约 5%，品牌更可能用采购量调节来试探底线。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>2027 年面板预算可以按「持平基线」建模，不必把面板涨价当作提价理由；Q4 采购谈判应主打「以量换价」而非接受涨价。真正的成本压力在存储与玻璃基板，降本主战场不变。</div>
+      <div class="note">来源注明：经转载整理（一手为 TrendForce 集邦咨询报价）</div>
+      <a class="link" href="https://news.qq.com/rain/a/20261023A02P9800" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-02</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>面板厂稼动率压至 79.6%，11 月能否守住 80% 是本轮涨价成败的分水岭</h3>
+      <div class="meta">
+        <span class="m-src">来源：观察者网</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">一个多月里，京东方、TCL 华星、惠科把大世代线稼动率压到 79.6%，环比下降 4.2 个百分点，靠减产撑价格，但报价单一格没动。三家合计占全球电视面板供应约 70%，但涨价函末尾均写着「以双方最终确认的合约或订单为准」——对上游康宁的涨价函是「通知」，面板厂发给电视品牌的是「请求」。业内共识是看 11 月稼动率能否守住 80% 附近（79.6% 带有假期检修成分），若回升到 85% 以上，这轮涨价基本落空。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>11 月稼动率读数应列为月度必看指标：若回升至 85%+，2027 上半年面板谈判可从「接涨价」转为「压价」。小尺寸（32/43 吋）品牌抵触最强，是压价优先突破口。</div>
+      
+      <a class="link" href="https://k.sina.com.cn/article_1887344341_707e96d504001x04i.html?kdurlshow=1" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-03</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>成本侧压力实打实：Q4 面板总成本环比 +4%~7%，康宁玻璃基板 Q4 起 +15% 直接生效</h3>
+      <div class="meta">
+        <span class="m-src">来源：观察者网（引 TrendForce / 康宁公告 / 京东方投关记录）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">康宁 9 月 11 日宣布显示玻璃基板自 Q4 起全球提价 15% 及以上；AI 服务器挤占 IC、PCB、MLCC 产能抬高物料价，TrendForce 测算 Q4 电视面板总成本环比上升 4% 至 7%，但显示面板的供应价格涨幅是 0，成本账全由面板厂自己硬扛。京东方 10 月 16 日投关活动记录给出传导路径：存储涨价推高终端成本、抑制消费电子需求，2026 年主流应用终端销量预计均同比下滑，压力传导至面板端。TCL 华星 CEO 赵军同样确认存储涨价冲击覆盖全品类。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>面板厂正在自行吸收成本，「面板不涨价」不等于「成本压力缓解」。2027 年 BOM 需为第二轮传导预留缓冲，尤其是玻璃基板已确定 +15% 的部分。</div>
+      
+      <a class="link" href="https://news.qq.com/rain/a/20261023A02P9800" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-04</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>4GB DDR4 合约价一年涨超 4 倍，DRAM 在电视 BOM 占比从 2.5%-3% 升至 6%-7%</h3>
+      <div class="meta">
+        <span class="m-src">来源：新黄河·大鱼财经（引洛图科技 RUNTO）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">4K 电视普遍采用的 4GB DDR4 内存合约价一年涨幅超 4 倍，DRAM 在电视 BOM 成本中的占比从 2.5%-3% 攀升至 6%-7%，部分机型存储成本直逼占整机成本 40%-50% 的面板。同期洛图数据显示：2026 年 9 月国内电视品牌整机出货 270.2 万台（同比 -7.5%、环比 +12.2%），1-9 月累计 2190.7 万台、同比 -8.3%，年内仅 2 月录得同比正增长；奥维云网口径 2026H1 国内彩电零售量 1249 万台、同比 -9.2%。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>存储已稳居电视第二大成本项。低阶机型的运存/闪存规格必须重新定义：合封 vs 分立、DDR 容量档位、eMMC 容量下限都要重开一轮评审，否则 $300 级机型毛利会被吃穿。</div>
+      
+      <a class="link" href="https://www.toutiao.com/article/7699834945929331215/" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-05</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>减配实锤：TCL 75T7M Pro 从 8 月 3800 元 / 4GB 运存，变为双 11 标价 4800 元 / 3GB 运存</h3>
+      <div class="meta">
+        <span class="m-src">来源：什么值得买社区</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">社区用户比对发现，TCL 75T7M Pro 今年 8 月售 3800 元时为 4GB 运存，9 月 4000 元出头，双 11 标价 4800 元但运存降为 3GB——涨价 1000 元、配置还降一档。文章同时指出，双 11 电视到手价上涨的真凶是存储而非面板，另一个是「先涨后降」的标价套路。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>竞品已开始用「减配换版」消化存储涨价。若三星在同价位段保持 4GB 运存，应把它显性化为差异化卖点（流畅度/更新寿命）；若也要降配，需提前评估对 Tizen 长期 OTA 的影响。</div>
+      <div class="note">来源注明：社区单源，未经官方确认</div>
+      <a class="link" href="https://post.smzdm.com/p/am93l40z" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-06</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>Q4 存储合约价涨幅全面上修：企业级 SSD +23%~28%，NAND 由 +0~5% 上调至 +15~20%</h3>
+      <div class="meta">
+        <span class="m-src">来源：腾讯新闻（引 10 月中旬存储渠道调研）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">10 月中旬存储渠道调研显示 2026 年 Q4 合约价涨幅预期全面上修：企业级 SSD 预计单季上涨 23% 至 28%、涨幅居各品类之首；PC 用 DRAM 环比上涨 13% 至 18%；分品类看 DRAM 环比涨幅由 3%-8% 上调至 10%-15%，NAND 闪存由 0%-5% 上调至 15%-20%，包含 HBM 在内的整体 DRAM 价格预计环比上涨 15%-20%。长周期同步上修：2027 年 HBM 均价预计同比上涨约 121%，HBM4e 价格突破 5 美元/Gb。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>与群智「消费级涨幅收敛到个位数」口径并存，二者分化本身就是机会点：消费级料号（DDR4/LPDDR4X/eMMC）仍是可谈判窗口，应把电视用量集中到这一档锁定长协。</div>
+      <div class="note">来源注明：经转载整理（渠道调研口径，非厂商公告）</div>
+      <a class="link" href="https://news.qq.com/rain/a/20261023A08WZ400" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-07</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>DRAM/NAND 现货与合约背离：DDR5 16Gb $61.10、DDR4 16Gb 持平 $83.117，eMMC 8G 跌至 $16.643</h3>
+      <div class="meta">
+        <span class="m-src">来源：MemoryIndex（引 TrendForce / DRAMeXchange Daily Express）</span>
+        <span class="m-date">2026-10-22</span>
+      </div>
+      <p class="summary">10 月 22 日现货板：DDR5 16Gb 4800/5600 均价 61.100 美元（+0.38%），eTT 28.800 美元；DDR4 8Gb 3200 涨 0.46% 至 47.000 美元，DDR4 16Gb 3200 持平于 83.117 美元。TrendForce 描述成交清淡、部分供应商下调报价而买方不愿采购。NAND 现货继续走弱：eMMC 4G 降至 12.886 美元、8G 至 16.643 美元、16G 至 18.444 美元，32G/64G/128G 分别持稳于 25.879/26.933/31.557 美元。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>DRAM 强、NAND 弱的分化在现货端最明显。电视闪存（eMMC）是当下最容易谈出降幅的料号，建议把 eMMC 采购节奏前移并锁定 4Q/1Q 价格。</div>
+      <div class="note">来源注明：第三方聚合站，现货报价口径（非合约价）</div>
+      <a class="link" href="https://memoryindex.io/dram-prices" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-08</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>LG Display Q3：营业利润同比骤降 42%，管理层首度把「chipflation」写进业绩归因</h3>
+      <div class="meta">
+        <span class="m-src">来源：LG Display 官方新闻稿 + Motley Fool 电话会纪要</span>
+        <span class="m-date">2026-10-22</span>
+      </div>
+      <p class="summary">LG Display Q3 营收 6.277 万亿韩元（环比 +12%、同比 -10%），营业利润 2506 亿韩元（同比 -42%），净利 7556 亿韩元，EBITDA 利润率 19.3%。面积出货 370 万平方米（环比 +4%），单位面积 ASP 1250 美元（环比 +16%），OLED 营收占比冲上 67% 的历史高位（移动端独占 42%）。公司明示：韩元兑美元汇率下行 6% 与「chipflation」共同压缩了 ASP 管理能力；CFO 金圣贤警告 chipflation 正在推高全行业整机价格，高端产品需求尤其放缓。Q4 指引：出货面积 +10%、ASP 仅低个位数增长。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>韩国面板厂首次以官方口径承认「存储涨价 → 整机涨价 → 高端需求走弱」的双向挤压。这意味着 2027 年高端机型不能只靠提价转嫁成本，必须同步做规格与价值感的再设计。</div>
+      <div class="note">来源注明：一手（官方新闻稿）＋电话会纪要</div>
+      <a class="link" href="https://lgcorp.com/main/media/release/30705" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-09</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>OLED 增长引擎换挡：大尺寸 OLED 增量从电视转向显示器，电视不再主战场</h3>
+      <div class="meta">
+        <span class="m-src">来源：集微网 / 腾讯新闻（引 LG Display 电话会与 Omdia）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">LG Display 三季度财报会预计 2026 年大尺寸 OLED 面板出货同比增长约 20%、达 700 万片区间上限，其中显示器占比由 2025 年的 10%-15% 升至约 20%；2026 年全球 OLED 显示器面板出货预计增长 79% 至 610 万片。Omdia 口径：2026 年全球大尺寸 OLED 显示面板出货同比增长 18.8% 至 3880 万片，而含 LCD 在内的全球大尺寸显示面板整体出货预计同比下降 2.3% 至 9.169 亿片。2026Q1 OLED 已占 LG Display 面板出货 60%，电视面板仅 16%。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>QD-OLED 若只押电视场景，就是在与 W-OLED 争夺一个停滞的池子。三星显示应把显示器/电竞 OLED 的产能与型号规划提前到 2027 年主线。</div>
+      <div class="note">来源注明：经转载整理（一手为 LG Display 电话会）</div>
+      <a class="link" href="https://www.toutiao.com/article/7699758843132035594/" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-10</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>UBI Research：2027 年电视用 OLED 出货 1480 万片、年均 +11.2%，渗透受价格与烧屏焦虑制约</h3>
+      <div class="meta">
+        <span class="m-src">来源：腾讯新闻（引 UBI Research）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">UBI Research 预计 2027 年电视用 OLED 出货量将达 1480 万片，年均增长率 11.2%，销售额 91.8 亿美元，占中大尺寸 OLED 市场总销售额的 62.8%。文章分析电视 OLED 的两大障碍：一是同尺寸 LCD 与 OLED 的价差仍是现实门槛（2024 年中国大陆厂商液晶电视面板出货占全球约 66%，规模效应压低 LCD 价格曲线），Mini LED 背光又分流了准高端需求；二是烧屏焦虑——游戏血条、电视台标、桌面任务栏等静态元素长期显示存在残影风险。耐人寻味的是，游戏玩家恰是静态元素暴露最长的群体，但游戏显示器反而率先跑通商业化。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「烧屏焦虑」仍是可打的差异化牌：三星 QD-OLED 应把寿命/残影实测数据做成零售端可验证的卖点，而不是停留在峰值亮度参数竞争。</div>
+      <div class="note">来源注明：经转载整理（一手为 UBI Research）</div>
+      <a class="link" href="https://news.qq.com/rain/a/20261023A0900A00" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-11</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>洛图科技 Q4 预测：11/12 月大概率继续持平或小幅上探，中大尺寸韧性强、小尺寸阻力极大</h3>
+      <div class="meta">
+        <span class="m-src">来源：洛图科技 RUNTO</span>
+        <span class="m-date">2026-09-29 发布</span>
+      </div>
+      <p class="summary">洛图对 11 月和 12 月的判断是：暂看价格继续持平，存在小幅惯性下跌的可能，但更大概率是小幅度上探和中小客户接受涨价。Q4 整体是「需求环比走弱、供给收缩托底、成本上行」的博弈行情，价格难大涨，更多是止跌、小幅结构性提价，可能出现「纸面涨价、实际成交价涨幅有限甚至持平」。尺寸将呈现分化：中大尺寸（55/65/75/85 吋）韧性较强、更易兑现小幅涨价，中小尺寸（32/43/50 吋）阻力极大、品牌抵触较强。全年走势「Q1 涨-Q2 稳-Q3 跌-Q4 稳」，年末价格与 2026 年 1 月基本持平。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>2027 年小尺寸机型可按「面板不涨」建模，大尺寸需预留 1-3 美元上探空间；尺寸线规划要把「大屏成本弹性更优」这一点显性化——这也与零售端均价上行逻辑一致。</div>
+      
+      <a class="link" href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN20260929145723a6b38d1f" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-12</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>均价上涨 229 元：电视「卖得更贵」靠结构升级而非提价，入门级利润被存储挤压</h3>
+      <div class="meta">
+        <span class="m-src">来源：消费者报道（引洛图科技零售数据 / Omdia 10 月报告）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">洛图零售数据：2026 上半年中国电视市场全渠道零售量 1198 万台（同比 -12.7%）、销售额 499.4 亿元（-7.7%），均价升至 4169 元、同比上涨 229 元（+5.8%）。Omdia 10 月报告指出元器件成本上涨和存储芯片短缺正对电视厂商利润率形成压力，入门级机型受影响尤为明显——平均售价 300 美元的 65 吋液晶电视，存储成本仅增加几美元就可能挤压利润或迫使提价。奥维睿沃分析师车菲菲称：相同技术规格下尺寸越大受元件涨价影响越小，小尺寸零售价在涨、大尺寸零售价普遍在降。奥维云网数据：2026 年前 42 周线上销售额前十品牌中八个均价同比上升，海信、创维、Vidda、雷鸟、小米、华为涨幅在 6% 以上。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>均价上行是结构现象而非普涨。三星在海外应复制「大屏 + 高端下探」的组合，避免在小尺寸段跟涨——那正是毛利最薄、存储敏感度最高的区间。</div>
+      <div class="note">来源注明：经转载整理（一手为洛图零售数据与 Omdia 报告）</div>
+      <a class="link" href="https://www.163.com/dy/article/L9V492GI0512AHTN.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-13</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>RGB-Mini LED：Omdia 预测 2030 年出货 710 万台、占高端电视收入 49%，2029 年反超 OLED</h3>
+      <div class="meta">
+        <span class="m-src">来源：第一家电网 / 腾讯搜索（引奥维云网与 Omdia）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">Omdia 预测全球 RGB-Mini LED 电视出货将从 2026 年的 110 万台增长到 2030 年的 710 万台（五年增幅超 500%），2030 年占全球高端电视市场营收的 49%，并在 2029 年实现对 OLED 的反超；同时预测 2027 年全球电视出货下滑 1%，但均价超 1000 美元的高端电视出货增长 9.3%。市场端：双 11 首周（第 42 周）海信 RGB-Mini LED 电视单周销量较去年全年增长 1.8 倍，在该细分市场销量占有率达 62.3%。洛图 2026H1 零售监测：海信在 RGB-Mini LED 细分销量占比 79.5%，TCL 在 SQD-Mini LED 占比 69.3%。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>RGB 背光已是高端主战场。三星「微米级独立背光」必须尽快给出可与竞品直接对比的参数口径（分区数、峰值亮度、BT.2020 覆盖、色准 ΔE），否则零售端会被海信口径压过。</div>
+      <div class="note">来源注明：经转载整理（一手为 Omdia 与奥维云网）</div>
+      <a class="link" href="https://so.html5.qq.com/page/real/search_news?docid=70000021_5396adad8f976752" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-14</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>海信 U7T Pro 发布：4860 控色分区、4K 180Hz（HSR 360Hz）、4 路满血 HDMI 2.1、全球首批杜比视界二代 MAX</h3>
+      <div class="meta">
+        <span class="m-src">来源：IT之家 / 腾讯新闻</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">U7T Pro 采用红绿蓝三原色原生直出发光，灯芯从上一代 9 晶升级为 24 晶玲珑真彩光芯，搭配玲珑超聚光透镜 4.0，单灯亮度 +35%、峰值亮度 +30%、光晕降低 70%。IT之家实测 85 吋版控色分区达 4860 个，HDR 亮度映射精度从 512 阶翻倍至 2048 阶。核心画质处理为海信自研信芯 AI 画质芯片 H7，支持 AI 三维控色、108bits 控色精度、AI 自然光晕消融；屏幕原生 4K 180Hz，开启 HSR 疾速模式最高 360Hz。全球首批搭载杜比视界第二代 MAX，内置联合五位华语电影主创调校的 7 档影像大师模式。85 吋机身 44mm 内塞入 4.1.2 声道帝瓦雷音响（13 单元、240W）。侧面 4 路满血 HDMI 2.1 全部支持 4K@180Hz 原生输入，配千兆 Wi-Fi 6、JUOS 系统与 NAS 直连本地媒体中心。65/75/85/100 吋四版本，全系国补后起售 9999 元，85 吋到手 18499 元。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>竞品在刷新率（180Hz→360Hz 模式）与 HDMI 2.1 满血接口数量上已超过三星主流 Neo QLED 配置。2027 年游戏功能路标必须把「4 路满血 HDMI 2.1 + 原生 4K 180Hz」列为基线而非高配。</div>
+      
+      <a class="link" href="https://news.qq.com/rain/a/20261023A06QOE00" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-15</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>国产 RGB-Mini LED 阵营扩容：创维 A9H 4350 分区 / 4500nits / 300Hz，长虹 Q70S 8000nits</h3>
+      <div class="meta">
+        <span class="m-src">来源：腾讯网</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">创维 A9H 壁纸电视机身厚 3.9cm、90° 画框设计、宣称 100% 无缝贴墙，4K RGB-Mini LED，75 吋 3168 分区、85 吋 4350 分区，色域覆盖 103% BT.2020，色准 ΔE&lt;0.6，峰值亮度 4500nits，最高 300Hz 刷新率，搭载变色龙 AI 画质芯片 S7，配哈曼 7.1.2 全景声双回音壁（270W）。长虹追光 Q70S 与京东方联合定制黑晶广角无影屏 Pro，虹图 V7 AI 芯片 + 8 核微距光芯，2080 分区背光形成超 5000 个控光分区，26bits 精微控光、XDR Pro 8000nits 峰值亮度，动态对比度 8000 万:1，DCI-P3 98%，机身最厚 39mm，搭载 MT9655 旗舰芯片支持 4K 144Hz、VRR 与 ALLM。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>RGB-Mini LED 已从中日韩头部扩散到创维、长虹等第二梯队，且参数（分区数/亮度/刷新率）普遍超过同价位国际品牌。三星 2027 年中高端线需要重新校准「参数—价格」映射关系。</div>
+      <div class="note">来源注明：经转载整理</div>
+      <a class="link" href="https://new.qq.com/rain/a/20261023A0BWFF00" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-16</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>电视 SoC：TrendForce 下调 2026 全球电视出货至约 1.95 亿台（-0.6%），竞争维度转向「NPU 算力 + 生态适配」</h3>
+      <div class="meta">
+        <span class="m-src">来源：东方财富财富号 / 网易（晶晨）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">UHD SoC 渗透率 96.6%、LCD 电视 94.2%、前四强合计 89%。TrendForce 将 2026 年全球电视出货量下调至约 1.95 亿台、年减 0.6%，并指出新机种零售价调涨已势在必行。SoC 侧：联发科把电视 SoC 归入「智能边缘平台」而非独立产品线——电视是家庭中唯一同时具备持续供电、大屏交互与网络连接的设备，端侧 AI 推理场景密度高于手机或音箱；晶晨 6nm 边缘 AI SoC A311Y3（8 TOPS 自研 NPU、Arm Mali-G625 GPU）2026 年 6 月推出，已立项超 40 个项目，并成为 Google Home Gemini built-in 项目指定系统集成商；2025 年晶晨搭载自研端侧算力单元的芯片出货超 2000 万颗、同比增长近 160%。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>SoC 选型标准正从「解码能力 + 成本」迁移到「NPU 算力 + 生态适配」。三星需在 2027 年平台定义中给出明确 TOPS 门槛，并把端侧大模型生态绑定（如 Gemini 兼容性）纳入选型打分。</div>
+      
+      <a class="link" href="https://caifuhao.eastmoney.com/news/20261023145353035069540" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-17</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>芯片涨价幅度按「存储含量」分化：合封 KGD 阵营最高涨 80%，低存储占比厂商暂不调价</h3>
+      <div class="meta">
+        <span class="m-src">来源：腾讯新闻</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">国科微年内二度涨价，与格科微同属 KGD 合封阵营、涨幅完全同步（最高 80%），北京君正部分存储产品国内涨幅超 100%；思特威、研极微、中维世纪等配套与模组环节涨幅集中在 10%-20%。涨价幅度沿「存储含量」逐级递减：晶晨仅对 SoC 主力产品逐步上调价格，泰凌微、恒玄科技因存储成本占比小暂未公布明确调幅，乐鑫科技存储占营收约 10%、选择暂不调价，全志科技也未明确调价计划。根源是三星、SK 海力士、美光把晶圆/封测资源集中投向 HBM 与高容量 DDR，利基型存储与合封 KGD 供给被压缩。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>可用「存储含量」预判各供应商的涨价弹性：低存储占比料号（连接、音频、电源、小 MCU）议价空间更大，应优先长协锁定；高存储含量料号（SoC 合封方案）需重估合封 vs 分立的路线分叉。</div>
+      
+      <a class="link" href="https://news.qq.com/rain/a/20261023A0CR3B00" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-18</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>*ST 康佳 10 月 23 日正式摘牌，中国彩电尾部产能加速出清</h3>
+      <div class="meta">
+        <span class="m-src">来源：新黄河·大鱼财经（深交所公告交叉）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">10 月 23 日，*ST 康佳 A、*ST 康佳 B 正式在深交所摘牌，结束 34 年上市历程；与常规强制退市不同，康佳以主动终止上市方式离场、未设置退市整理期。行业格局：2026 年前三季度海信、创维、TCL 三大传统巨头合计拿下 61.9% 市场份额，小米以 18.7% 紧随其后；外资品牌持续退出国内市场——曾在国内市占超 18% 的三星已于 2026 年 5 月全面退出中国大陆电视零售业务，目前索尼、飞利浦、夏普三家外资品牌合计市占不足 4%。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>尾部品牌出清会让 ODM 产能与 license 资源向头部集中，三星的代工议价对象进一步收窄，需提前锁定 2027 年产能分配。</div>
+      
+      <a class="link" href="https://news.qq.com/rain/a/20261023A0CY8B00" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-19</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>索尼印度 FY26 音视频收入持平于 6529 亿卢比，三星印度同口径 +8.5%、LG +5.7%</h3>
+      <div class="meta">
+        <span class="m-src">来源：TradingView / StartupFeed（引索尼印度 RoC 备案）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">索尼印度消费音视频业务（含电视、家庭影院、个人音频）FY26 同比持平于 6529 亿卢比，整体营收微增 0.9% 至 7918 亿卢比，净利增长 19% 至 187 亿卢比；利润改善中约 17.53 亿卢比来自降低的版权与广告支出。同期三星印度音视频业务增长 8.5% 至 8056 亿卢比，LG 家庭娱乐增长 5.7% 至 6444 亿卢比。印度整体电视市场 FY26 预计增长 5%-6%（销量持平），32 吋以上电视 GST 从 28% 降至 18%（2025 年 9 月 22 日生效）。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>索尼在印度的停滞给了三星高端线明确的抢占窗口；同时应注意「利润来自费用压缩、而非营收增长」这一模式不可持续，三星印度需以产品组合而非费用控制维持盈利。</div>
+      <div class="note">来源注明：经转载整理（一手为 RoC 备案文件）</div>
+      <a class="link" href="https://www.tradingview.com/news/moodys:beab8cd69a1cc:0-sony-india-tv-audio-sales-stay-flat-in-fy26-despite-gst-boost" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-20</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>北美黑五早鸟价：三星 65 吋 S90H OLED $1,500，TCL 65 吋 QM8L $1,198，LG C6 55 吋 $1,000</h3>
+      <div class="meta">
+        <span class="m-src">来源：CNET / 9to5Google / CNCB News</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">CNET 早鸟黑五电视清单：TCL 65 吋 QM8L 降至 1198 美元（原价 2500 美元，编辑推荐奖），三星 65 吋 S90H OLED 降至 1500 美元（原价 2700 美元， glare-free 屏），LG 48 吋 C6 OLED 1100 美元，Roku 50 吋 Select QLED 250 美元，海信 100 吋 E7 QLED 3000 美元（144Hz、Mini LED 背光、内置低音炮）。9to5Google 补充 LG C6 系列：55 吋 1000 美元（赠 Xbox 手柄）、65 吋 1400 美元（赠 100 美元预付卡）、77 吋 2000 美元（赠 200 美元卡）、83 吋 3300 美元。Walmart 端：三星 43 吋 U8000H 198 美元、65 吋 M70HB Mini LED 428 美元、TCL 55 吋 Q6LR 298 美元、TCL 75 吋 QM7L 1198 美元。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>65 吋 OLED 已下探至 1500 美元，三星 S90H 与 LG C6 同价位贴身肉搏。价格底线需在 11 月正式期前重设，并同步准备 75/85 吋的阶梯差价，避免被 TCL QM8L 的 1198 美元价格-配置比挤压。</div>
+      
+      <a class="link" href="https://www.cnet.com/deals/best-early-black-friday-deals-2026/" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-21</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>三星 Micro RGB 加拿大限时降价最高 CA$7,000，高端库存压力显性化</h3>
+      <div class="meta">
+        <span class="m-src">来源：SamMobile</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">三星加拿大对 Micro RGB 全系给出限时折扣，按机型尺寸最高可省 CA$7,000。R85H（五个尺寸）：55 吋减 900、65 吋减 1200、75 吋减 1500、85 吋减 2500、100 吋减 7000 加元；R95H（三个尺寸）：65 吋减 1500、75 吋减 2000、85 吋减 3500 加元。购机还可捆绑优惠购买回音壁，旗舰 Q990H（11.1.4 声道，原价 2100 加元）可省 400 加元。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>Micro RGB 首次出现七千加元级别的清库力度，说明 100 吋以上高端库存压力真实存在。2027 年 Micro RGB 的定价带与产能分配需下调预期，并把 65/75 吋作为走量主力。</div>
+      
+      <a class="link" href="https://www.sammobile.com/news/save-up-to-7000-cad-on-samsung-micro-rgb-tvs-in-canada" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-22</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>OS 支持周期正成为零售卖点：Tizen 3-7 年 vs LG 4 年 vs Google TV 由厂商自定 vs VIDAA 8 年</h3>
+      <div class="meta">
+        <span class="m-src">来源：How-To Geek（Cory Gunther）</span>
+        <span class="m-date">2026-10-22</span>
+      </div>
+      <p class="summary">文章梳理各智能电视系统的更新承诺：多数三星（Tizen OS）电视保证 3-7 年更新，多数 LG 电视 4 年；Google TV 设备由厂商自定且 Google 不强制最低年限——Google TV Streamer 承诺至少 5 年，索尼部分 2025/2026 Bravia 机型 4-5 年（可用到 2030 年或更久），TCL 通常承诺自上市起至少 2 年安全更新，海信对自有 VIDAA OS 承诺 8 年、但对 Google TV 机型无具体年限（预计约 2-3 年）。Netflix 每年都会公布一批不再受支持的电视清单。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「能用几年」正在进入消费者决策链。三星的 7 年 Tizen 承诺应对标并超越 VIDAA 的 8 年，同时把承诺年限做进零售物料与包装，而不只写在官网脚注。</div>
+      <div class="note">来源注明：经转载整理（原载 How-To Geek）</div>
+      <a class="link" href="https://www.worldprogramming.org/posts/your-google-tv-has-an-expiration-date-heres-how-to-find-it-raftiy" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-23</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>AI 反噬电视：用 LLM + ADB 去广告、换 launcher 的开源项目扩散，Tizen 暂「免疫」但已有人变砖</h3>
+      <div class="meta">
+        <span class="m-src">来源：The Verge（经 AI News Feed 转载）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">The Verge 10 月 23 日报道，用户正借助大语言模型与开源工具为电视去广告、去追踪、精简系统并替换主屏，多个项目在一个周末内走红：cleanyourtv（原名 tv-vibehack，至 19 日改名）、tv-detox、dumbtv。它们利用 Android 已有的开发者模式与 ADB 调整设置、增删软件包，无需 root 或破解固件，且可逆；默认还会把内置 launcher 换成更简洁的版本（有人把主屏做成宝可梦小镇）。主要面向 Android / Google TV 电视（TCL、海信、索尼及部分旧款 Amazon Fire 产品），不适用于三星 Tizen OS 或 LG webOS（除 root 外）。报道提到有人用 Claude 折腾一台三星电视导致变砖。dumbtv 可屏蔽厂商与广告伙伴的部分地址，但因流量加密无法确知具体上传内容。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>短期看 Tizen 因封闭性「免疫」，但用户对 ACR 与预装的抵触正在形成隐私叙事。三星应主动把 ACR 开关、定向广告关闭项前置到设置一级菜单，并在营销中明确表态，避免成为下一个被「折腾」的目标。</div>
+      <div class="note">来源注明：一手报道（The Verge）经转载</div>
+      <a class="link" href="https://ainewsfeed.tech/articles/users-turn-to-llms-to-strip-ads-and-tracking-from-tvs-35523-en-us-v1" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">TV-24</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>Whale TV：与 400+ 电视品牌合作、年预装近 1500 万台，靠广告与数据变现冲击授权模式</h3>
+      <div class="meta">
+        <span class="m-src">来源：ZAKER（专访 Whale TV 董事长高群耀）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">Whale TV 与飞利浦等全球超过 400 个电视品牌、制造商深度合作，过去数年每年全新预装电视近 1500 万台，全球月活跃设备突破 4750 万台；自创立以来未引入外部 VC 股权融资并保持稳健盈利。商业模式已从向硬件厂收取授权费的「实体公司」，转型为软件免费预装、依靠第一方数据与广告运营变现的「媒体与数据平台」，将大屏流量对接全球 AdTech 程序化竞价，开发开机首页推荐横幅、App Store 原生广告，并与内容方进行流媒体广告收益分成、布局欧洲零售媒体闭环。高群耀判断客厅大屏 AI 将在个性化教育与老龄陪伴两大场景爆发。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>第三方 OS 平台用「免费预装 + 广告分成」抢中小品牌，对 Samsung TV Plus 的海外扩张构成价格挤压——后者的内容聚合必须证明比免费方案更高的 ARPU。</div>
+      <div class="note">来源注明：经转载整理（企业自述口径）</div>
+      <a class="link" href="https://app.myzaker.com/news/article.php?pk=6adaf2a51bc8e0097e000002" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">TV-25</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>三星电子 Q3 营业利润 107.4 万亿韩元创新高，但 DX 持续亏损，年末人事与 10/29 财报是观察窗口</h3>
+      <div class="meta">
+        <span class="m-src">来源：BigGo Finance（引韩媒）/ TipRanks</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">三星电子 2026 各季：Q1 营收 134 万亿韩元 / 营业利润 57 万亿，Q2 172 万亿 / 90 万亿，Q3 195 万亿韩元（约 1475 亿美元）/ 营业利润 107 万亿韩元（约 809 亿美元），同比增长 782.5%，为全球科技公司单季最高，超过英伟达 Q2 的 637 亿美元。但负责成品的 DX 部门长期亏损是待解课题：DX 与 DS 两部门因绩效奖金分歧产生劳资摩擦，今年 5 月以劳资协议避免罢工；5 月李在镕还非例行地更换了电视业务负责人，年末例行人事预计对 DX 部门释放强烈改革信号。TipRanks 显示 Q3 完整财报日期为 10 月 29 日（已确认）。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>10/29 完整财报与年末人事是 VD 业务策略窗口。产品规划需提前准备「盈利优先」版本的型号线（砍 SKU、集中高端、提国产化料号占比），以便在人事落地后快速对齐。</div>
+      <div class="note">来源注明：经转载整理（三星业绩指引为一手）</div>
+      <a class="link" href="https://finance.biggo.com/news/8025c4c2-781d-4d62-8849-d505ee6fac58" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-26</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>三星苏州研发中心 10 月 20 日启动：撤零售、加制造研发的「一退一进」</h3>
+      <div class="meta">
+        <span class="m-src">来源：同花顺财经</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">10 月 20 日，三星电子苏州研发中心启动仪式在苏州工业园区举行，对外名称为「三星中国生产技术研究所」，是三星生产技术研究所设立的首个海外研发机构、也是三星海外首家智能制造研究所，主攻制造自动化、机器人、智能生产系统的研发创新，研发成果不仅用于三星在华工厂，还会反向输出到全球其他生产基地。对照今年 5 月 6 日三星电子中国官网宣布在中国大陆停止销售家用电视、显示器、商用显示、空调、冰箱、洗衣机、音响、投影仪、吸尘器、空气净化器等全品类家电业务（手机与半导体业务正常运营，苏州等地家电工厂保留并转型为全球出口枢纽）。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「产能保留 + 零售退出 + 制造研发加码」意味着中国作为电视出口枢纽的角色强化，这对全球成本结构与关税路径（尤其墨西哥/越南对比）有二阶影响。</div>
+      
+      <a class="link" href="https://news.10jqka.com.cn/20261023/c681021160.shtml" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-27</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Omdia：全球 LED 显示面板 2026-2030 营收 CAGR 11.6%，拉美 / 东欧 / 中东非为增量区</h3>
+      <div class="meta">
+        <span class="m-src">来源：Omdia（引新浪财经）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">Omdia 最新研究预测 2026 至 2030 年全球 LED 显示面板市场营收复合年增长率将达 11.6%，增长来自新兴应用场景拓展、区域制造产能扩张与产品结构向高附加值转型。2026 年第二季度全球出货量同比增长 3.3%，但营收同比下降 0.2%。自 2025 年末以来制造商面临零部件成本大幅上涨，LED 芯片、驱动 IC、PCB、电源等材料供应商相继调价，多家品牌已实施三至四轮涨价、产品累计调价幅度在 3% 至 30% 之间。亚太及大洋洲、拉丁美洲及加勒比、中东及非洲、东欧等新兴市场仍蕴藏可观增长机会。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>商用显示与电视共用上游（LED 芯片、驱动 IC、PCB），其涨价节奏会外溢到电视 BOM；拉美/东欧既是电视增长区也是商用显示增长区，区域产能布局可协同。</div>
+      <div class="note">来源注明：经转载整理（一手为 Omdia）</div>
+      <a class="link" href="https://finance.sina.cn/hkstock/gsxw/2026-10-23/detail-iniweuqs4945565.d.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">TV-28</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>TCL 全球化 3.0：欧洲总部巴黎 + 17 分公司、本土化率超 90%，波兰制造 3 天送达欧盟全境</h3>
+      <div class="meta">
+        <span class="m-src">来源：中国报业网</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">TCL 欧洲总部设在法国巴黎，下设 17 个分公司，员工本土化比例超过 90%，欧洲研发中心与呼叫中心本土员工比例接近 100%；在波兰布局制造基地，依托欧盟境内货物自由流通，产品 3 天即可送达欧盟全境，产品线从电视扩展到电竞显示、音响、空调、冰洗、穿戴、通讯和光伏。2025 年上半年 TCL 全品类在欧洲营收达 43.8 亿欧元、同比增长 14%，TCL 电视在法国、瑞典、西班牙、捷克等国家市占率稳居前三。李东生提出全球化 3.0：在海外建设具备独立经营能力的法人实体，目标是「在海外再造 5 个 TCL」。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>竞品已完成「本地制造 + 本地组织 + 本地决策」的三层落地，三星欧洲需评估自身波兰/匈牙利产能与本地化组织密度的对标度，否则在渠道渗透率上会被持续蚕食。</div>
+      
+      <a class="link" href="https://www.cnpiw.cn/a/fuwuzhongxin/hezuo/20261023/48571.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">TV-29</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>2026Q2 全球电视出货 +3.6% 至 4880 万台：西欧 +9.5%、东欧 +14.5%、拉美 +12.8%，中国 -15.1%</h3>
+      <div class="meta">
+        <span class="m-src">来源：Trustburn 数据（经转载整理）</span>
+        <span class="m-date">2026-09-20（背景资料）</span>
+      </div>
+      <p class="summary">2026 年第二季度全球电视出货同比增长 3.6% 至 4880 万台，主要受世界杯与 Amazon Prime Day 拉动。区域分化明显：中国同比下滑 15.1%（地方刺激政策退出后成为最大拖累），西欧增长 9.5%，北美增长 4.7%（受益世界杯场馆），东欧增长 14.5%，拉美及加勒比增长 12.8%。技术侧：Mini LED 占全球出货 13%，三星以 28.2% 份额从第三位跃升为第一，超过 TCL 一季度的 30.2%；RGB LED 中海信份额从 77.2% 降至 42.9%，三星与索尼显著上升。Omdia 提示存储供应紧张将推动电视价格上行。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>西欧 / 东欧 / 拉美是当前唯一确定的增长区，三星应把 Mini LED 的 28.2% 领先直接转化为这三个区域的货架份额与渠道返利谈判筹码。</div>
+      <div class="note">来源注明：第三方聚合站转载，二手来源</div>
+      <a class="link" href="https://chamberwasyou.github.io/minimu/post/halb-offen-halb-zu-frisuren?live-blog-33631930-2026-09-20-trustburn-analysis-tv-market-growth-masks-sector-trust-realities-amid-supply" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">TV-30</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>东芝 REGZA 绑定 2026 世界杯 / 2028 欧洲杯与东京国际电影节，R700 用「音画双芯」架构</h3>
+      <div class="meta">
+        <span class="m-src">来源：东芝电视官网（一手）</span>
+        <span class="m-date">2026-10（官网更新）</span>
+      </div>
+      <p class="summary">东芝 REGZA 再度成为东京国际电影节（2026 年 10 月 26 日至 11 月 4 日，第 39 届）合作伙伴，为第二年携手；同时是 2026 世界杯、2028 欧洲杯全球官方指定电视，并持续合作卡普空杯电竞锦标赛。技术侧 R700 采用行业独家音画双芯架构：ZRα AI 画质芯片与 BRα AI 音质芯片独立运算、协同调校，配火箭炮 SOUND 音质技术平台（9 单元扬声器、113W 峰值功率、前出音、5.1.2 声场）。REGZA 以 Pure RGB 为核心构建音画技术体系。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>体育大年 + 电影节绑定是海信系（含东芝）在欧洲与日本的品牌打法；三星需为 2028 欧洲杯提前锁定赞助与画质叙事，避免重演「参数领先但心智被占」。</div>
+      <div class="note">来源注明：一手（品牌官网）</div>
+      <a class="link" href="https://www.toshibatv.com.cn/news/detail/6999.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+  </section>
+
+  <section id="web">
+    <h2 class="sec"><span class="dot" style="background:var(--accent2)"></span>🌐 Web 与浏览器内核技术<span class="cnt">10 条</span></h2>
+    <div class="sec-desc">Chromium / Chrome 版本与安全更新、V8、Blink、Electron、W3C / WebPlatform 新 API，以及 AV1 / AV2 / VVC、WebCodecs、WebGPU、DRM 等多媒体技术。</div>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">WEB-01</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>Chrome 156 修复 353 个漏洞含 6 个 Critical，为 Chrome 史上规模最大的补丁之一</h3>
+      <div class="meta">
+        <span class="m-src">来源：Google 官方安全公告（经 CyberSecureFox / HawkEye 周报转载整理）</span>
+        <span class="m-date">2026-10-20</span>
+      </div>
+      <p class="summary">Chrome 156 于 10 月 20 日发布，修复 353 个安全漏洞，其中 6 个被定为 Critical，修复版本 156.0.8078.47（Linux）/ .47 与 .48（Windows、Mac）。作为对比，Chrome 153 修复 230 个。6 个关键 CVE 均为内存破坏或 use-after-free：CVE-2026-113341（Skia 图形库）、CVE-2026-113279（Accessibility）、CVE-2026-113072（CSS）、CVE-2026-113280（Paint）、CVE-2026-113271（Accessibility UAF）、CVE-2026-113303（WebRTC）。受影响最多的组件包括 ANGLE（图形抽象层）、V8、WebRTC、WebGL、Canvas、Navigation、SiteIsolation 与 Extensions。发布时无漏洞被列入 CISA KEV，官方公告也无确认在野利用。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>电视内置浏览器、电子节目指南（EPG/HbbTV）、CE-HTML 与各类嵌入式 WebView 若基于 Chromium，需同步排期；WebRTC（投屏/语音）与 Skia（UI 渲染）是电视端两个最相关的攻击面。</div>
+      <div class="note">来源注明：经转载整理（依据 Google 官方公告）</div>
+      <a class="link" href="https://cybersecurefox.com/en/chrome-156-353-vulnerabilities-6-critical-ai-researchers" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">WEB-02</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>AI 系统进入 Chrome 漏洞致谢名单：Claude 与 OpenAI Codex Security 各自挖出 Critical 级 CVE</h3>
+      <div class="meta">
+        <span class="m-src">来源：CyberSecureFox（引 Google 官方公告）</span>
+        <span class="m-date">2026-10-20</span>
+      </div>
+      <p class="summary">Google 公告显示：Critical 级 CVE-2026-113271（Accessibility UAF）由 Anthropic 的 Xinyang Ge 在 Claude 协助下发现；Critical 级 CVE-2026-113303（WebRTC）归属 OpenAI Codex Security 团队（kylebot）。高危及以下等级中同样出现 AI 系统：V8 的 UAF（CVE-2026-113044）由 OpenAI Codex Security 发现，多个高危漏洞由 Xinyang Ge 在 Claude 协助下发现。这些归属仅由 Google 公告确认，尚无独立公开验证。另有 Medium 级 CVE-2026-113079（SiteIsolation UAF）早在 2021 年 3 月就已报告，挂了五年多才修复。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>AI 挖洞已进入主流浏览器公告，漏洞从发现到公开的平均周期被压缩。电视固件的 OTA 补丁窗口必须相应缩短，不能再按季度节奏排。</div>
+      <div class="note">来源注明：经转载整理</div>
+      <a class="link" href="https://cybersecurefox.com/en/chrome-156-353-vulnerabilities-6-critical-ai-researchers" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">WEB-03</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Chrome 版本线：Stable 156.0.8078.48、Beta 157.0.8103.15、Dev 158.0.8117.2、Canary 158.0.8120.0</h3>
+      <div class="meta">
+        <span class="m-src">来源：TechSpot / chrome.clang.cn / marklove5102 chrome_installer</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">Windows 稳定版 156.0.8078.48（10 月 23 日更新）；Chrome 157 已推进至 Beta 通道（157.0.8103.15，Windows / Mac / Linux），官方称除常规性能与稳定性调整外还有新特性；Dev 通道 158.0.8117.2，Canary 158.0.8120.0。Android 侧 Dev 158.0.8106.0（10 月 20 日）、157.0.8092.0（10 月 10 日）。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>157 进 Beta 意味着约 4 周后转正，2027 年初的电视内置浏览器基线应锁定 157 或更高；若电视 SoC 的 Chromium 版本冻结在 15x 早期，需评估补丁回移成本。</div>
+      <div class="note">来源注明：第三方版本镜像站核对</div>
+      <a class="link" href="https://www.techspot.com/downloads/4767-google-chrome.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">WEB-04</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>CVE-2026-113012：Chrome GPU 输入校验不当，156.0.8078.47 之前可经构造 HTML 页在沙箱内执行代码</h3>
+      <div class="meta">
+        <span class="m-src">来源：Tenable</span>
+        <span class="m-date">2026-10-23（CVE 10-20 公开 / 10-21 补丁）</span>
+      </div>
+      <p class="summary">GPU 组件 improper input validation，影响 156.0.8078.47 之前的 Google Chrome，远程攻击者可经构造 HTML 页面在沙箱内潜在执行任意代码（Chromium 定级 High）。CVSS v3 8.8（AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H），CVSS v2 10.0。Tenable VPR 4.9，无已知可利用性。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>GPU 输入校验类问题在电视端同样存在于图形合成与硬件加速解码路径，建议把 GPU 输入 fuzz 纳入电视 SoC 的例行安全测试项。</div>
+      
+      <a class="link" href="https://www.tenable.com/plugins/cloud-security/477137" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">WEB-05</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Electron 45 发布：Chromium 156.0.8078.48 + V8 15.6 + Node.js 24.22.0，WebGPU 脱离实验阶段</h3>
+      <div class="meta">
+        <span class="m-src">来源：Electron 官方博客（经 bimakale 转载整理）</span>
+        <span class="m-date">2026-10-21</span>
+      </div>
+      <p class="summary">Electron 45 于 10 月 21 日发布，核心组件升级至 Chromium 156.0.8078.48、V8 15.6、Node.js 24.22.0。Chromium 156 带来页面加载时间优化、CSS Grid 与 Flexbox 等现代布局改进，WebGPU 支持移出实验阶段；V8 15.6 的 JIT 新算法在同等代码块下降低 CPU 占用；Node.js 24.22.0 原生支持 ES 模块与 fetch API。迁移风险点：使用原生插件的项目需适配新 Node ABI，Chromium 156 中移除的旧 API 需要代码清理。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>桌面端配套工具（内容运营后台、画质调校工具）若用 Electron，升级 45 可直接获得稳定 WebGPU；同时也要按新 Node ABI 重编原生模块。</div>
+      <div class="note">来源注明：经转载整理（一手为 Electron Blog）</div>
+      <a class="link" href="https://bimakale.com/en/@yazilim/access-the-latest-chromium-and-node-versions-with-electron-45" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">WEB-06</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>Electron CVE-2026-115570（CVSS 7.4）：未屏蔽被攻陷的 eMudhra 中间证书，Node.js 同步发安全版</h3>
+      <div class="meta">
+        <span class="m-src">来源：Hacker Feeds / NodeSource</span>
+        <span class="m-date">2026-10-20 ~ 10-21</span>
+      </div>
+      <p class="summary">Electron 在 42.11.16、43.8.1、44.9.1、45.0.0-beta.6 之前的版本不屏蔽被攻陷的 eMudhra 中间证书（涉及 Chromium networking、Node.js tls/https/fetch），持有相关证书并能截获流量的攻击者可伪装 TLS 服务器（CWE-299，CVSS 7.4）。eMudhra  compromised 事件时间线：10/17 Chrome 推送 CRLSet 拦截、10/18 eMudhra 吊销全部八个中间证书、10/19-10/20 Apple / Microsoft / Mozilla / Go 相继拦截、10/20 Electron 发布 44.9.1 / 43.8.1 / 42.11.16、10/21 Node.js 发布 22.23.4 / 24.22.1 / 26.12.1 更新内置 CA 包。老旧版本（Node.js 20 及更早）仍受影响。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>证书信任链供应链事件，任何内置 Node/Electron 的电视配套工具、内容后台与诊断服务都需同步升级；电视端若内置固定 CA 列表，也要确认是否包含涉事根。</div>
+      
+      <a class="link" href="https://nodesource.com/blog/understanding-emudhra-key-compromise" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">WEB-07</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Electron 46.0.0-alpha.1：新增实验性 Widevine CDM 支持与 Linux 通知操作按钮</h3>
+      <div class="meta">
+        <span class="m-src">来源：Electron Releases / newreleases.io</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">v46.0.0-alpha.1 主要变化：新增实验性 Widevine CDM 支持（含捆绑 CDM 查找）；新增 Linux 通知操作按钮；为 session.registerPreloadScript 增加 matches / excludeMatches / includeGlobs / excludeGlobs / matchOriginAsFallback 过滤选项；contentTracing 录制改用 perfetto 堆分析数据源；新增 Windows 错误报告辅助（electron_wer.dll）以捕获 __fastfail 类崩溃。破坏性变更：移除沙箱化预加载脚本中的 events、timers、url 模块与 Buffer、setImmediate、clearImmediate 全局（需用 polyfill）；移除已弃用的同步 safeStorage API。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>Widevine CDM 进入 Electron 意味着桌面端 DRM 内容调试链路更顺，但电视端仍走原生 DRM 通道，短期无影响；沙箱预加载脚本的模块移除会影响合规审计脚本的写法。</div>
+      <div class="note">来源注明：一手（GitHub Release Notes）转载</div>
+      <a class="link" href="https://newreleases.io/project/github/electron/electron/release/v46.0.0-alpha.1" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">WEB-08</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>AV2 从规范走向部署：Chrome 已演示播放，YouTube 网页端定档 2027 年初，三星是 AOMedia 成员</h3>
+      <div class="meta">
+        <span class="m-src">来源：AOMedia 官方公告（Neowin / CSI Magazine / IT之家 / cnBeta 转载）</span>
+        <span class="m-date">2026-10-22</span>
+      </div>
+      <p class="summary">AOMedia 10 月 22 日宣布 AV2 正从规范阶段迈向浏览器与流媒体平台的测试与部署（AV2 标准 2026 年 6 月发布，约四个半月后）。Google 已展示 Chrome 播放 AV2 视频，YouTube 工程总监 Des Keane 称希望最早 2027 年初在网页端提供 AV2 流（行业报道指首发瞄准 Q1、先用软件解码，因专用 AV2 硬件解码器尚未普及）。AV2 较 AV1 压缩效率提升约 30%，新增多路视频流、实时通信、沉浸式媒体、更高帧率与改进 HDR 支持。Netflix 与 Amazon Prime Video 正在评估但未给时间表；Meta 表示将继续投入 AV2；Intel 通过开源 SVT-AV2 编码器贡献。AOMedia 成员包括 Amazon、Apple、Google、Intel、Meta、Microsoft、Netflix、三星、腾讯等。YouTube 已有超 90% 目录（按观看时长加权）支持 AV1（截至 2026 年 3 月）。业内预计带 AV2 硬解的芯片 2027 年起放量，广泛普及或延至 2028 年。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>2027 年电视 SoC 选型必须把 AV2 硬解码列为门槛项；YouTube 网页端 Q1 目标在前，电视 App 的 AV2 管线需提前对齐。三星既是 AOMedia 成员又有自有流媒体，可把「首发 AV2 硬件解码」做成 2027 高端机型卖点。</div>
+      <div class="note">来源注明：官方公告经多家媒体转载</div>
+      <a class="link" href="https://www.neowin.com/news/google-chrome-youtube-amazon-prime-video-netflix-getting-av2-video-support-soon" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">WEB-09</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>WebCodecs 已可在浏览器内做硬件加速转码，WebGPU 进入可用状态（平台与硬件仍有差异）</h3>
+      <div class="meta">
+        <span class="m-src">来源：DEV Community / Analytics Insight</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">WebCodecs 提供 VideoEncoder / VideoDecoder / AudioEncoder / AudioDecoder / ImageDecoder 等接口，把设备端软硬件编解码能力直接暴露给前端；实例化 VideoEncoder 时可指定 codec、分辨率、码率、帧率与 hardwareAcceleration: &#x27;prefer-hardware&#x27;，从而调用 Intel Quick Sync Video、NVIDIA NVENC 或 AMD VCE/VCN 等专用硬件，配合 mp4-muxer 等纯前端封装库可在浏览器内完成采集—编码—封装—导出 MP4 的完整链路，无需插件与服务端转码。WebGPU 则同时覆盖图形与通用并行计算，支持浏览器内更快 AI 推理；Analytics Insight 将其状态标注为「Available，受浏览器、平台与硬件限制」。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>浏览器端已具备不依赖云端的媒体处理能力。对电视而言，这意味着 Companion App / 手机端剪辑与投屏前的预处理可做成本更低的端侧方案，也可作为电视端 Web App 性能基线的参照。</div>
+      
+      <a class="link" href="https://dev.to/khaithisran/paying-20mo-for-browser-capabilities-unlocking-hardware-accelerated-video-with-webcodecs-17hd" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">WEB-10</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>2026 年 10 月 Web 平台特性成熟度盘点：@scope、锚点定位、field-sizing 已进入「新可用」</h3>
+      <div class="meta">
+        <span class="m-src">来源：Analytics Insight</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">已确立（多数项目可安全使用）：Popover API、Custom Elements 与 Shadow DOM、容器查询、CSS 嵌套 / @layer / :has()。新可用（核心浏览器支持，旧设备可能缺）：@scope（2025-12）、CSS 锚点定位（2026-01）、field-sizing: content（2026-06）、sibling-index() 与 sibling-count()（2026-08）。较新需验证：Invoker commands、可定制 select（Chromium 先行）。实验性：CSS if()（仅 Chrome / Edge）、Grid lanes 原生瀑布流（仅 Safari 26.4+）。文章强调 Baseline 无法反映用户真实设备分布，应以自身 Analytics 数据设定采用门槛。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>电视内置浏览器的 Chromium 版本往往滞后于桌面，采用新特性前必须按电视端实际内核版本做能力检测，不能照搬桌面 Baseline。</div>
+      
+      <a class="link" href="https://www.analyticsinsight.net/tech-news/html6-and-css5-whats-new-for-web-developers" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+  </section>
+
+  <section id="ai">
+    <h2 class="sec"><span class="dot" style="background:#bc8cff"></span>🤖 AI 技术与 AI Agent<span class="cnt">11 条</span></h2>
+    <div class="sec-desc">新模型发布与实测对比、AI Agent 产品形态演进、终端侧 AI / 端侧小模型在设备上的落地案例。</div>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">AI-01</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>月之暗面发布 Kimi K3.1 Pro：3 万亿参数级、100 万上下文，Terminal-Bench 65.7% 超过 GPT-6 Astra</h3>
+      <div class="meta">
+        <span class="m-src">来源：财联社 / 网易 / 观点网 / LLM Reference</span>
+        <span class="m-date">2026-10-24</span>
+      </div>
+      <p class="summary">10 月 24 日月之暗面发布 Kimi K3.1 Pro 与 K3.1 Pro Highspeed（后者输出速度约 2-3 倍）。K3.1 Pro 是 K3.1 系列首款模型，为 2.8 万亿参数 Kimi K3 的后训练版本（2800B 总参 / 104B 激活 MoE），支持 100 万 Token 上下文。官方公布：14 项基准中 6 项第一（含 SWE-Marathon、Agents&#x27; Last Exam、OfficeQA Pro v2、Humanity&#x27;s Last Exam、GDP.pdf、ZeroBench again）；Terminal-Bench 4.0 得 65.7%，超过 GPT-6 Astra 的 58.2%、接近 Claude Opus 5.5 的 66.4%；SWE-Marathon v1.1 得 51.7%、超 Opus 5.5 的 46.3%；Kimi Code Bench 3.0 Long-horizon 得 61.2%（K3 为 55.95%）；3D 建模 BenchCAD 92.7%；金融 OfficeQA Pro v2 64.4；幻觉率从 K3 的 23.4% 降至 8.3%。API 定价 2 / 10 美元每百万 token（输入 / 输出），缓存读取 0.2 美元。完整权重计划 11 月 4 日前开放。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>开源权重模型首次在真实终端任务上站进闭源第一梯队。11 月权重开放后，可评估其量化版本在电视端本地 Agent（长程任务、工具调用）上的可行性，这是端侧能力路线的新选项。</div>
+      
+      <a class="link" href="https://www.163.com/dy/article/L9VIUJF105198CJN.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-02</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>开源前主动做「能力削减」：K3.1 Pro 移除网络攻击相关数据，内部攻防基准从 90.5% 降至 81.0%</h3>
+      <div class="meta">
+        <span class="m-src">来源：toolnavs（转述 Moonshot 官方博客）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">Moonshot AI 在开放权重前刻意压低了部分能力：从 mid-training 与 RL 中移除网络攻击相关数据，其内部 xdev-bench-hard（漏洞发现与利用）测试上最终 K3.1 Pro 得 81.0%，低于未做数据移除的检查点（90.5%），也低于已公开满三个月的闭源前沿模型。官方表述的原则是：开放权重不应推进攻击性网络能力的前沿，同时保留对防御性工作的通用可用性。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「开源即做安全减法」可能成为行业惯例。电视端若引入开源模型做本地任务，需要评估这类能力削减对家庭场景任务成功率的实际影响，不能只看公开基准分。</div>
+      
+      <a class="link" href="https://toolnavs.com/article/2824-kimi-k31-pro-launches-new-coding-agent-benchmark-at-657-on-terminal-bench-beatin" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">AI-03</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>讯飞星火 X2.6：全国产算力 + 端云路由，端侧 4B 模型让 41.9% 任务可在设备本地完成</h3>
+      <div class="meta">
+        <span class="m-src">来源：人民网 / 新华网 / 甲子光年</span>
+        <span class="m-date">2026-10-22 ~ 10-24</span>
+      </div>
+      <p class="summary">10 月 22 日全球 1024 开发者节上，科大讯飞发布基于全国产算力训练的讯飞星火 X2.6：云端为 293B 总参数 / 30B 激活的 MoE 模型，上下文扩展至 1M；端侧为开源的 4B 小模型，装在手机、电脑与学习机中；中间是决定每次任务走端侧还是云端的路由层。官方数据：能在设备上独立完成的任务占比提升至 41.9%；通过长程任务动态并行训练技术，超长上下文训练效率提升约 4 倍；推理侧基于国产集群的自适应存算协同推理技术，推理效率提升 4.5 倍。API 输入 0.9 元 / 百万 token。端侧 X2.6-4B 开放下载后累计获 256 万次下载。配套硬件包括 AI 录音环、AI 眼镜与灵机 N9000 AIPC（160 TOPS NPU，可断网运行 X2.6 轻量本地模型）。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「端云路由 + 端侧小模型」是与电视端侧 AI 最贴近的落地范式。41.9% 本地完成率意味着端侧 NPU 算力需求可被量化定义，可作为 2027 年电视 SoC TOPS 门槛的输入参考。</div>
+      <div class="note">来源注明：厂商自报口径</div>
+      <a class="link" href="https://www.163.com/dy/article/L9VK7BEH0512MLBG.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-04</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>DeepSeek 拟推进千亿级融资并筹备科创板上市，募资目标从约 500 亿上调至约 1000 亿元</h3>
+      <div class="meta">
+        <span class="m-src">来源：新浪财经（经「早安AI」简报转载）</span>
+        <span class="m-date">2026-10-22</span>
+      </div>
+      <p class="summary">自 10 月 22 日起市场传闻 DeepSeek 正推进新一轮千亿级融资，多家媒体交叉求证后确认：本轮募资目标从最初约 500 亿元上调至约 1000 亿元人民币（约 150 亿美元），腾讯与宁德时代为本轮出资最多的机构。资金将用于模型训练、国产算力建设与人才招募，为筹备中的科创板 IPO 铺路。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>若落地，国产模型厂商的算力投入与迭代节奏将进一步加速，端侧小模型生态的供给会更充裕。对电视端而言是「可选模型变多、切换成本变低」的正向信号。</div>
+      <div class="note">来源注明：市场传闻，未经公司确认</div>
+      <a class="link" href="http://mp.weixin.qq.com/s?__biz=MzI1NTUxMzE4NA==&amp;mid=2247485290&amp;idx=1&amp;sn=79f1e7ff00c41a2717161bf87300bbc2" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card red">
+      <div class="card-head">
+        <span class="idx">AI-05</span>
+        <span class="badge red">🔴 重点关注</span>
+      </div>
+      <h3>常驻式个人 Agent 成型：Anthropic Claude Duet 上线，OpenAI Dots、Meta Muse 三国杀</h3>
+      <div class="meta">
+        <span class="m-src">来源：香港新闻网科技快讯（经转载整理）/ Meta 财报</span>
+        <span class="m-date">2026-10-21 ~ 10-23</span>
+      </div>
+      <p class="summary">10 月 21 日 Anthropic 推出智能体 Claude Duet，定位主动型「智能管家」，接通六千多个连接器、在独立云虚拟机后台执行，可自动汇总多平台信息并推送当日要事简报；至此与 OpenAI 的 Dots、Meta 的 Muse 形成「三国杀」格局。Meta 第三季度财报显示，个人智能体 Muse 在美加推出仅六周注册用户已超 1000 万，25% 的下载用户每日高频使用，同时将 2026 全年 AI 相关资本支出预期下限上调至 1350 亿美元；扎克伯格称 Muse 将于 11 月登陆 Meta 智能眼镜。另：高盛 10 月 22 日宣布投入 5 亿美元成立小企业 AI 研究院，联手 OpenAI、Anthropic、谷歌、Meta 为美国 1 万家小企业提供 AI 培训。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>常驻式 Agent 已成为主流形态。电视要做「家庭 Agent」必须解决三件事：常驻权限边界、审批闸门设计、跨设备身份打通——Claude Duet 的连接器规模与云虚拟机架构是最直接的对标参照。</div>
+      <div class="note">来源注明：经转载整理</div>
+      <a class="link" href="https://www.hkcna.hk/cn/content/s6adaddcce4b00c3428c7f56d.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-06</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Agent 工具链走向标准化：MCP / Agent Skills / Open Responses / OpenSandbox 集中捐献给 AAIF</h3>
+      <div class="meta">
+        <span class="m-src">来源：龙虾智能体（引 Google Cloud 官方博客与各厂商公告）</span>
+        <span class="m-date">2026-10</span>
+      </div>
+      <p class="summary">AAIF 一年内项目从三个涨到十个：Anthropic 捐献 Agent Skills、OpenAI 捐献 Open Responses、Hugging Face 捐献 OpenEnv、阿里捐献 OpenSandbox；同期 Google 发布 Agent Compute Engine，自家 Gemini 智能体已在其上运行。其他动向：Google ADK 2.0 以图工作流运行时为核心重构执行模型，并于 10 月 13 日宣布扩展为 Python、Go、TypeScript、Java、Kotlin 五语言同构实现；Google Cloud 10 月 9 日推出 Gemini Agent（企业级通用任务 Agent，预集成工具与工作历史知识，支持含 Claude 的多模型编排，7×24 云端运行，内置治理、身份审计与实时花费控制）；Mastercard 基于 x402 开放协议的 Agent Pay for Machines 于 10 月 20 日开放开发者早接入。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>Agent 工具链正在快速标准化（MCP / Skills / Sandbox）。电视端 Agent 若要接第三方服务，应优先兼容 MCP 等开放协议，而不是自建封闭接口——否则生态接入成本会随标准收敛而飙升。</div>
+      <div class="note">来源注明：第三方聚合，引官方博客</div>
+      <a class="link" href="https://clawpk.net/" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-07</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>Microsoft 把 Windows 改造为本地 Agent 平台：MAI-Code-1.1 Flash 137B 端侧模型 + 执行容器沙箱</h3>
+      <div class="meta">
+        <span class="m-src">来源：HeadsUpAI（引 Satya Nadella）</span>
+        <span class="m-date">2026-10-08</span>
+      </div>
+      <p class="summary">Microsoft 宣布将 Windows 转型为混合智能平台，使 AI Agent 可在本地安全运行：引入 MAI-Code-1.1 Flash（137B 参数、面向端侧执行优化的编码模型）与 Microsoft Execution Containers（沙箱化的 Agent 安全机制）；GitHub Copilot 现在可按任务把工作路由到本地模型；新款 Surface Laptop Ultra 搭载 NVIDIA RTX Spark 芯片。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>「沙箱化执行容器」是端侧 Agent 的通用安全解法，可直接作为电视端本地 Agent 权限模型的参考架构——尤其是当 Agent 需要操作 HDMI-CEC、文件系统或智能家居设备时。</div>
+      
+      <a class="link" href="https://headsupai.io/ai-news-and-updates/this-month" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-08</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>端侧语音再降门槛：QVAC 发布 2.54 亿参数 TranscribePsy，Apache 2.0 开放权重（暂不支持中文）</h3>
+      <div class="meta">
+        <span class="m-src">来源：Foresight News</span>
+        <span class="m-date">2026-10</span>
+      </div>
+      <p class="summary">Tether 旗下 QVAC 于 2026 年 10 月发布 TranscribePsy，一款可在手机与笔记本本地运行的语音识别模型：约 2.54 亿参数、FastConformer-TDT 架构，由较大语音识别模型缩减而来并用原模型作「教师」继续训练，训练覆盖约 56.4 万小时、25 种语言。笔记本版本支持 25 种欧洲语言、手机版本支持 8 种。权重以 Apache 2.0 许可开放（训练代码与数据未包含在发布包中），中文目前不在支持名单。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>2.5 亿参数级语音模型已能在端侧跑通，电视远场语音的本地化转写门槛显著下降。可做离线语音方案评估——既能降云端成本，也能规避隐私合规风险。</div>
+      
+      <a class="link" href="https://foresightnews.pro/article/detail/101089" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">AI-09</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>具身智能进入标准化阶段：中国电子技术标准化研究院发布 EIBench 评测体系，智元发布 Genie Studio 2.0</h3>
+      <div class="meta">
+        <span class="m-src">来源：财联社 / 腾讯新闻 / 新华网</span>
+        <span class="m-date">2026-10-22 ~ 10-23</span>
+      </div>
+      <p class="summary">10 月 23 日，2026 全球开发者先锋大会暨国际具身智能技能大赛在上海开幕，中国电子技术标准化研究院副院长范科峰发布具身智能评测体系「求索 EIBench」及五大评测工具，面向数据、算法、模型、机器人系统评测真实任务表现、跨场景适应能力与安全水平。同日智元发布一站式全流程具身智能作业平台 Genie Studio 2.0，由 Flywheel 具身模型迭代开发、Agent 模块化作业编排、Monitor 多机舰队运维三大模块组成，已在常州数控机床、均普智能 BMS 装配产线落地验证，均普项目精密装配任务成功率 99.9%、支持 7×24 连续生产。宇树科技同时透露正预研物理 AI 机器人自进化 V1.0 大模型。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>具身智能的评测标准化思路（真实任务表现 + 跨场景适应 + 安全水平三维度）可借鉴到电视端 Agent 的评测设计上，避免只用人造基准衡量家庭场景能力。</div>
+      
+      <a class="link" href="https://www.hkcna.hk/cn/content/s6adaddcce4b00c3428c7f56d.html" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card yellow">
+      <div class="card-head">
+        <span class="idx">AI-10</span>
+        <span class="badge yellow">🟡 值得跟踪</span>
+      </div>
+      <h3>前沿模型价格带重划：GPT-6 全量上线并捆绑 Intelligent UI，Haiku 5.5 下探至 $0.10/$0.50</h3>
+      <div class="meta">
+        <span class="m-src">来源：Tech Insider / VaktiMe（引厂商官方定价页）</span>
+        <span class="m-date">2026-10-23</span>
+      </div>
+      <p class="summary">OpenAI：GPT-6 于 10 月 7 日起向付费层、10 月 8 日向 Free 与 Go 用户推送，捆绑可随任务重塑界面的 Intelligent UI；10 月 21 日在 ChatGPT Work 与 Codex 中用 GPT-6 Sol 与 GPT-6 Luna 替换 GPT-5.6 Sol / Luna，付费层跑 Sol、Free 与 Go 跑 Luna，Pro 增加 GPT-6 Astra 推理。Google：Gemini 4 Argon 10 月 13 日 GA，定价 2 / 10 美元每百万 token，12 月 1 日起翻倍。Anthropic：Claude Haiku 5.5 于 10 月 7 日上线，100 万 Token 上下文、128K 输出，定价 0.10 / 0.50 美元每百万 token；Sonnet 5.5 为 2 / 10 美元。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>每百万 token 0.10 美元的档位已可用，电视端云端兜底调用的成本模型应按此重算：把高频简单请求（分类、意图识别、元数据抽取）下沉到廉价档，复杂请求才上前沿模型。</div>
+      <div class="note">来源注明：第三方整理，已对照厂商定价页</div>
+      <a class="link" href="https://tech-insider.org/claude-vs-chatgpt-vs-gemini-vs-grok-usage-share-2026" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+    <article class="card gray">
+      <div class="card-head">
+        <span class="idx">AI-11</span>
+        <span class="badge gray">⚪ 背景参考</span>
+      </div>
+      <h3>10 月开源模型密集发布：Muse Spark Open 816B、Beam 1.0 501B、MiniMax M3.1 Flash、Qwen3.6 27B</h3>
+      <div class="meta">
+        <span class="m-src">来源：cnaihot 模型动态榜 / lmmarketcap</span>
+        <span class="m-date">2026-10（月度汇总）</span>
+      </div>
+      <p class="summary">10 月主要开源/开放权重发布：Meta Muse Spark Open（816B 多模态，10-16）、Reflection Beam 1.0（501B-A23B MoE、百万上下文，10-16）、DeepSeek V4.1 Flash 1017（开放权重、百万上下文，10-17）、MiniMax M3.1 Flash（10-19/20）、阿里 Qwen3.6 27B（10-21）、Mistral Timestral 时间序列基础模型（10-19）、NVIDIA Nemotron 3.5 Super VL 120B-A12B（10-15）、智谱 GLM 4.7。lmmarketcap 统计 45 天内 74 次发布、477 个在跟踪模型。</p>
+      <div class="impact"><span class="impact-tag">影响点评</span>开源供给充足意味着电视端模型选型不必锁定单一厂商，但榜单多为第三方聚合与厂商自报基准，不宜作为选型的唯一依据。</div>
+      <div class="note">来源注明：第三方聚合站，非官方一手</div>
+      <a class="link" href="https://lmmarketcap.com/trends" target="_blank" rel="noopener">查看原文 →</a>
+    </article>
+  </section>
+
+  <footer id="footer">
+    <h4>数据来源与方法说明</h4>
+    <ul>
+      <li>本日报所有条目均附原文链接，未做任何数据或型号的推测性补写；机构原始数据（TrendForce、Omdia、洛图 RUNTO、UBI Research、Counterpoint）若仅见于二手或 SEO 聚合站，已在卡片内以「来源注明」字段标注「经转载整理」。</li>
+      <li>口径提示：TrendForce「面板报价」为成交价口径、「Q4 面板总成本 +4~7%」为成本口径、「稼动率 79.6%」为供给侧口径、「康宁玻璃 +15%」为原材料口径；存储侧「Q4 合约价 +10~20%」（渠道调研）与「现货报价」（DRAMeXchange 现货板）分属不同口径，不可混用于同一 BOM 测算。</li>
+      <li>厂商自报口径（讯飞 X2.6 的端侧完成率 41.9%、Kimi K3.1 Pro 各项基准）已标注，不作为选型唯一依据；第三方聚合榜单（lmmarketcap、cnaihot）仅作供给面参考。</li>
+      <li>单源未经官方确认的信息（TCL 75T7M Pro 运存降配、DeepSeek 融资额）已在卡片内显式标注。</li>
+    </ul>
+    <h4>下期预告</h4>
+    <ul>
+      <li>11 月面板报价与稼动率（能否守住 80%）——本轮涨价成败的分水岭。</li>
+      <li>10/29 三星电子 Q3 完整财报：VD/DA 实际亏损幅度与对「存储涨价向整机传导」的官方表述。</li>
+      <li>北美黑五正式期价格底线（65 吋 OLED 已下探 1500 美元）与三星 Micro RGB 全球降价节奏。</li>
+      <li>Kimi K3.1 Pro 完整权重（11 月 4 日前）发布后的量化与端侧适配评估。</li>
+      <li>AV2 硬件解码芯片 2027 年放量节奏与电视 SoC 选型的门槛设定。</li>
+    </ul>
+    <div style="margin-top:14px;color:#6e7681">
+      生成时间：2026-10-24 06:14 CST　|　期号：第 023 期　|　归档：<a href="https://denisyq.github.io/DailySensingRepo/" style="color:var(--accent)">denisyq.github.io/DailySensingRepo</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
