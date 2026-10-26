@@ -62,6 +62,23 @@
 
 
 
+- 第 025 期（2026-10-26）：**补跑**（原定 06:00 执行零产出，原因分析见「已知问题」）。交付核对结果（核对时间 2026-10-26 12:2x CST）——
+  GitHub Pages 首页 ✅（200）、报告详情页 ✅（200，推送后首次轮询即返回 200，未出现 404 传播延迟）；
+  Contents API 推送为 报告 201 新建 / 索引 200 更新 / 台账 200 更新；163 SMTP 邮件 ✅（SMTP_SSL 465 一次成功 SEND_OK，HTML 附件 40333 字节，收件人 yanqing.lu@samsung.com）。
+  本期为六板块（核心 A–E / 背景 F–H）结构上线后第二期，首次在核心区完整覆盖 A CP 应用 / B Web 引擎 / C 外设输入 / D 多媒体 DRM / E 中国低端机型五条线。
+  本期新增信源：Apple Newsroom（Netflix Clips 适配 iPhone Duo，一手）、Amazon Luna 帮助中心控制器兼容表（一手，10-25 读取）、
+  Chrome 官方博客与 Chromium 发布日历（HTTP 询问、两周节奏、157 Early Stable）、Amazon Luna / LG 英国官网（G6 蓝牙超低延迟控制器）、
+  Samsung Newsroom 菲律宾（Super Big Vision AI / TV Plus 750+ 频道，一手）、韩国中央日报（TVING 9 月安装量，引 Mobile Index/IGAWorks）、
+  TrendForce 10-20 报价、国金证券（Q4 面板成本 +4~7%）、洛图科技、奥维云网（RGB-Mini LED 62.3%）、京东电视战报（经中国经济新闻网转述）、
+  Omdia（RGB-Mini LED 2030 预测，经新浪财经转载整理）、W3C（AI Era 讨论稿 10-21、WebCodecs CR、@scope）、
+  ITU-T J.104x（UWA Summit 10-22 演讲，经流媒体网整理）、Gizbot 实测（Chrome 150 Netflix 4K / PlayReady SL3000）、
+  中国新闻网与北京日报（Kimi K3.1 Pro）、AIBriefs（Claude Opus 5.5 降价、DeepSeek V4.1、Nemotron 3.5，厂商自报基准）。
+  本期方法论要点：Disney+ 案例中「4K 恢复 ≠ HDR 恢复」必须分开表述——VP9 路径可解 4K 但不承载 HDR，两者是不同的能力层级；
+  Netflix 在 Chrome 的 4K 与 HDR 亦是两套门槛（同为 SL3000，HDR 额外依赖 Edge/Windows App 渲染链），不可合并成「支持 4K HDR」；
+  Amazon Luna 兼容表中 Switch Pro 的「2023+ TV 软件」条件说明外设能力随 Tizen 版本分层，对外口径必须按机型年区分；
+  Kimi K3.1 Pro 参数存在「3 万亿（官方/媒体）」与「2.8T total / 104B active（AA 榜）」两种口径，需并列；
+  TCL 运存 4GB→3GB 为社区实测单源，未获厂商确认，仅作降本趋势佐证，不作产品定义输入。
+
 ## 已知问题（2026-10-04 首次执行时记录）
 
 - **邮件通道不可用（第 003 期未发邮件）**：本会话内不存在 `mcp__agent-mail__SendMessage` / `agent_mail_upload_attachment`
