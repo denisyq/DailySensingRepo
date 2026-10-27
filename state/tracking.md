@@ -81,6 +81,35 @@
   Kimi K3.1 Pro 参数存在「3 万亿（官方/媒体）」与「2.8T total / 104B active（AA 榜）」两种口径，需并列；
   TCL 运存 4GB→3GB 为社区实测单源，未获厂商确认，仅作降本趋势佐证，不作产品定义输入。
 
+- 第 027 期（2026-10-28）：云端定时任务，交付核对结果（核对时间 2026-10-28 06:2x CST）——
+  GitHub Pages 首页 ✅（200 / 36853B，共 27 期）、报告详情页 ✅（200 / 80578B，推送后首次轮询即返回 200）；
+  Contents API 推送为 报告 201 新建、索引 200 更新、台账 200 更新；163 SMTP 邮件 ✅（SMTP_SSL 465 一次成功 SEND_OK，
+  HTML 附件 80578 字节，收件人 yanqing.lu@samsung.com）。**本期交付无失败项。**
+  执行环境要点（新增）：沙箱内 `grep`（GNU grep 3.11）对 POSIX 字符类 `[[:space:]]` 报 `Unmatched [`，
+  导致 `tools/publish-github.sh`（按要求原文写入）中的 sha 提取失效、index.html 与 state/tracking.md 被判为新建文件而返回 422；
+  已追加等价 Python 实现 `tools/publish_github.py`（同一 Contents API 语义：GET 取 sha → PUT 带 sha），补推后全部 200/201。
+  **下期如仍用 shell 版脚本，需先验证 sha 提取是否可用；推荐直接用 `tools/publish_github.py`。**
+  本期新增信源：Samsung Developers 官方开发者规格页（Tizen 版本映射与 **DRM 矩阵，一手**，本期最关键收得）、
+  Samsung 官方支持页（One UI Tizen 7 年升级政策，一手）、Dolby OptiView 官方技术博客（分年机型 DRM 限制表，一手）、
+  DoveRunner 支持环境文档（SL150/SL2000/SL3000 与 L1/L3 对照）、Decode TV / adgully（Netflix iPhone Duo 与折叠屏移动端）、
+  Cloud Dosage / NOWnews / Documentary Tube（Netflix 云游戏 TV 落点与手机当手柄，厂商表态，未证实）、
+  IP Fray / EconoTimes（InterDigital 对 TCL 巴西 HEVC 禁令）、网易（Disney+ 切 VP9 与专利战成本，经转载整理）、
+  PR Fire / The Desk / WiseVoter（Samsung TV Plus FAST 扩张）、SVC Online（KT Studio Genie Genie Shorts 9:16 竖屏）、
+  Digital Today / Korea JoongAng Daily（TVING KBO 季后赛独家与 Wavve 合并停滞）、ESPN Press Room / Yahoo Finance（ESPN Unlimited）、
+  Gizbot / WhatIsMyBrowser（Chrome M156 与 CERT-In 安全提示）、Electron Releases（46.0.0-alpha.2 / 43.8.4）、
+  JetStream（Android Chrome WebHID APK teardown，**非官方发布说明**）、Wobblox（Gamepad API vs WebHID）、
+  SGPJBG / 百度百科（星闪三模遥控与华为灵犀指向遥控 2，词条整理）、HWBusters / PBX Science / NeoTeo（AV2 时间表）、
+  京东商品页（Vidda 65V1Q-R 参数，商品页参数未经实测）、ZOL 价格库（Redmi A65 / A55 / 酷开 / 雷鸟）、PConline（康佳 75V50S）、
+  腾讯自选股与什么值得买（出货与成本传导，经转载整理）、腾讯新闻（李在镕视察 RX 机器人事业部）、
+  W3C 官方新闻（SVG 2 更新版 CR）、CSSWG（CSS Grid L1 CRD）、HTML Specs（VC-JOSE-COSE）、
+  Microsoft Learn（Edge 155 发布说明）、Tech Beat / Unite.AI / AI Weekly（Liquid AI LFM3）。
+  本期方法论要点：DRM 规格必须以 Samsung Developers 官方矩阵为唯一引用口径，第三方整理页（forasoft 等）仅作交叉验证；
+  「4K 恢复 ≠ HDR 恢复」在 Disney+ VP9 案例中继续成立——VP9 可承载 4K 但不承载 HDR，两者是不同能力层级；
+  Netflix 云游戏 TV 落点目前仅为媒体转述的厂商表态（beta），无支持机型清单，状态标为「仅媒体报道未证实」，不作产品定义输入；
+  WebHID on Android 为 APK teardown 证据而非官方发布说明，不可表述为「已支持」；
+  Vidda 65V1Q-R 的 Wi-Fi 规格存在商品页（2.4G）与媒体稿（双频 Wi-Fi 6 + 蓝牙 5.4）直接冲突，按规则并列保留、标「口径冲突」，
+  且「144Hz」未说明原生或插帧，按未证实处理；同价位竞品普遍以「竞技模式/动态刷新率」表述，需按插值理解。
+
 ## 已知问题（2026-10-04 首次执行时记录）
 
 - **邮件通道不可用（第 003 期未发邮件）**：本会话内不存在 `mcp__agent-mail__SendMessage` / `agent_mail_upload_attachment`
