@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情报日报 2026-10-28 · 第 027 期 · TV / CP / Web / Media / AI</title>
+<style>
+:root{
+  --bg:#0d1117; --card:#161b22; --card2:#1b222c; --border:#232c38;
+  --text:#e6edf3; --muted:#8b98a5; --accent:#4a9eff; --accent2:#7ee787;
+  --red:#ff6b6b; --yellow:#e3b341; --gray:#6e7681; --purple:#bc8cff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  line-height:1.7;padding:0 0 60px;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+
+/* ---------- header ---------- */
+header{padding:34px 0 22px;border-bottom:1px solid var(--border);}
+.brand{font-size:12px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;}
+h1{font-size:27px;font-weight:650;margin-top:8px;letter-spacing:.3px;}
+.issueline{margin-top:10px;font-size:14px;color:var(--muted);}
+.issueline b{color:var(--text);font-size:16px;}
+.stats{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap;}
+.stat{flex:1;min-width:230px;background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:14px 18px;}
+.stat .n{font-size:26px;font-weight:700;color:var(--accent);}
+.stat .l{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.stat.bg .n{color:var(--purple);}
+.stat .sub{font-size:11.5px;color:var(--gray);margin-top:6px;}
+
+/* ---------- nav ---------- */
+nav{margin-top:24px;background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:14px 18px;}
+.navgrp{margin-bottom:10px;}
+.navgrp:last-child{margin-bottom:0;}
+.navgrp .gt{font-size:12px;color:var(--muted);margin-bottom:7px;letter-spacing:.5px;}
+.navgrp .gt b{color:var(--accent);}
+.navgrp.bg .gt b{color:var(--purple);}
+.navlinks{display:flex;flex-wrap:wrap;gap:7px;}
+.navlinks a{font-size:12.5px;color:var(--text);text-decoration:none;
+  background:var(--card2);border:1px solid var(--border);border-radius:7px;
+  padding:5px 11px;transition:.15s;}
+.navlinks a:hover{border-color:var(--accent);color:var(--accent);}
+.navgrp.bg .navlinks a:hover{border-color:var(--purple);color:var(--purple);}
+
+/* ---------- section ---------- */
+section{margin-top:38px;scroll-margin-top:16px;}
+.sechead{display:flex;align-items:baseline;gap:12px;border-left:4px solid var(--accent);
+  padding-left:12px;margin-bottom:6px;}
+.sechead .k{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:1px;}
+.sechead .t{font-size:20px;font-weight:650;}
+.sechead .c{font-size:12px;color:var(--gray);margin-left:auto;}
+.secnote{font-size:12.5px;color:var(--muted);margin:0 0 16px 16px;}
+section.bg .sechead{border-left-color:var(--purple);}
+section.bg .sechead .k{color:var(--purple);}
+
+/* ---------- card ---------- */
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:16px 18px;margin-bottom:13px;}
+.card.core{border-left:3px solid var(--accent);}
+.card.hot{border-left:3px solid var(--red);}
+.card.bgcard{background:#131920;border-left:3px solid #2d3748;padding:13px 16px;margin-bottom:10px;}
+.ct{font-size:16px;font-weight:640;line-height:1.5;}
+.cmeta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  margin-top:8px;font-size:11.5px;color:var(--muted);}
+.cmeta .src{color:var(--accent2);}
+.cmeta .dot{color:var(--gray);}
+.tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:999px;line-height:1.6;}
+.tag.rel{background:rgba(126,231,135,.13);color:var(--accent2);}
+.tag.test{background:rgba(227,179,65,.14);color:var(--yellow);}
+.tag.rumor{background:rgba(255,107,107,.13);color:var(--red);}
+.tag.imp1{background:rgba(255,107,107,.15);color:var(--red);font-weight:600;}
+.tag.imp2{background:rgba(227,179,65,.13);color:var(--yellow);}
+.tag.imp3{background:rgba(110,118,129,.18);color:var(--gray);}
+.tag.plat{background:rgba(74,158,255,.12);color:var(--accent);}
+.tag.cap{background:rgba(188,140,255,.12);color:var(--purple);}
+.tag.warn{background:rgba(255,107,107,.10);color:#ff9a9a;}
+.cbody{font-size:13.5px;color:#c9d4df;margin-top:10px;}
+.cbody b{color:var(--text);}
+.fields{margin-top:9px;font-size:12px;color:var(--muted);
+  background:var(--card2);border-radius:8px;padding:9px 12px;}
+.fields div{margin:2px 0;}
+.fields span.lb{color:var(--gray);display:inline-block;min-width:88px;}
+.impact{margin-top:10px;font-size:13px;background:rgba(74,158,255,.07);
+  border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:9px 13px;}
+.impact .lb{color:var(--accent);font-weight:600;font-size:11.5px;letter-spacing:.5px;}
+.links{margin-top:10px;font-size:12px;}
+.links a{color:var(--accent);text-decoration:none;word-break:break-all;}
+.links a:hover{text-decoration:underline;}
+.links .nt{color:var(--yellow);font-size:11px;margin-left:6px;}
+.empty{background:var(--card);border:1px dashed var(--border);border-radius:10px;
+  padding:12px 16px;color:var(--muted);font-size:13px;}
+
+/* ---------- table ---------- */
+.tablewrap{overflow-x:auto;margin-top:12px;border:1px solid var(--border);border-radius:12px;}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:12.5px;background:var(--card);}
+th{background:#1a212b;color:var(--muted);font-weight:600;text-align:left;
+  padding:10px 12px;border-bottom:1px solid var(--border);white-space:nowrap;font-size:12px;}
+td{padding:10px 12px;border-bottom:1px solid #1e2530;vertical-align:top;color:#c9d4df;}
+tr:last-child td{border-bottom:none;}
+td.sku{color:var(--text);font-weight:600;white-space:nowrap;}
+td .cf{color:var(--red);font-weight:600;}
+tr.conflict{background:rgba(255,107,107,.05);}
+.tnote{margin-top:10px;font-size:11.5px;color:var(--muted);line-height:1.8;}
+.tnote .cf{color:var(--red);}
+
+/* ---------- footer ---------- */
+footer{margin-top:44px;border-top:1px solid var(--border);padding-top:18px;
+  color:var(--muted);font-size:12px;line-height:1.9;}
+footer b{color:var(--text);}
+footer .next{margin-top:10px;background:var(--card);border:1px solid var(--border);
+  border-radius:10px;padding:12px 16px;}
+footer .next ul{margin:6px 0 0 18px;list-style:disc;}
+footer .next li{margin:3px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">Daily Sensing Briefing · for Samsung TV PM</div>
+  <h1>每日情报日报 · TV / CP / Web / Media / AI</h1>
+  <div class="issueline">日期 <b>2026-10-28（周三）</b> · 期号 <b>第 027 期</b> · 面向三星电视高级产品经理</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="n">25</div>
+      <div class="l">核心追踪条目（A–E）</div>
+      <div class="sub">A 流媒体 CP 11 · B Web 引擎 4 · C 外设输入 3 · D 多媒体与 DRM 5 · E 中国低端机型 2（含机型表 9 款 SKU）</div>
+    </div>
+    <div class="stat bg">
+      <div class="n">10</div>
+      <div class="l">背景参考条目（F–H）</div>
+      <div class="sub">F 电视产业与市场 4 · G Web 标准化 4 · H AI 技术与 Agent 2</div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="navgrp">
+    <div class="gt"><b>核心追踪</b> · 占版面约 70%，追 1–2 日新鲜度</div>
+    <div class="navlinks">
+      <a href="#A">A · CP 应用与流媒体功能</a>
+      <a href="#B">B · TV Web 引擎与运行时</a>
+      <a href="#C">C · 外设与输入</a>
+      <a href="#D">D · 多媒体与 DRM</a>
+      <a href="#E">E · 中国低端 4K 机型参数</a>
+    </div>
+  </div>
+  <div class="navgrp bg">
+    <div class="gt"><b>背景参考</b> · 占版面约 30%，补充判断，不追新鲜度</div>
+    <div class="navlinks">
+      <a href="#F">F · 电视产业与市场</a>
+      <a href="#G">G · Web 标准化</a>
+      <a href="#H">H · AI 技术与 Agent</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== 核心追踪 ===================== -->
+
+<section id="A">
+  <div class="sechead"><span class="k">A</span><span class="t">CP 应用与流媒体功能</span><span class="c">11 条</span></div>
+  <div class="secnote">YouTube / Netflix / Disney+ / ESPN / TVING / Coupang Play / Samsung TV Plus / Tubi / Pluto TV — 首发平台与区域、所需设备能力、认证机型、状态三选一。</div>
+
+  <div class="card hot">
+    <div class="ct">Netflix 重做移动端体验：iPhone Duo 与折叠屏优先适配，为「竖屏／分屏内容」铺路</div>
+    <div class="cmeta">
+      <span class="src">Decode TV / adgully</span><span class="dot">·</span><span>2026-10-27</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：全球 iOS（iPhone Duo／折叠屏机型优先）</span>
+    </div>
+    <div class="cbody">Netflix 推出面向 <b>iPhone Duo</b> 优化的移动端体验，并同步为<b>折叠屏设备</b>重做界面布局（双窗格／展开态分栏）。这不是单纯换皮：折叠态与展开态使用两套信息密度，展开后直接给到「内容 + 详情 + 剧集列表」三栏，等于把电视端的浏览结构搬到了手机。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>高刷新率屏（90/120Hz 以上）+ 多窗口合成能力；折叠屏需处理跨屏连续性与状态保存。对 TV 端的镜像要求是 <b>多分辨率／多宽高比的自适应版式引擎</b>。</div>
+      <div><span class="lb">认证机型</span>暂无 TV 端认证机型信息；移动端为 iOS 生态全局推送。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　Netflix 把「多形态屏幕」当成一等公民，意味着 TV 端很快会反向要求 <b>9:16／多窗格内容</b> 的原生呈现能力。Tizen 的 UI 框架若仍以 16:9 单一网格为中心，将在竖屏微短剧、多视角体育等内容形态上被动。</div>
+    <div class="links">原文：<a href="https://www.decodetv.com/2026/10/27/netflix-debuts-iphone-duo-optimised-mobile-experience" target="_blank">decodetv.com · Netflix debuts iPhone Duo-optimised mobile experience</a>　　补充：<a href="https://www.adgully.com/post/22884/netflix-rolls-out-reimagined-mobile-experience-for-foldable-devices" target="_blank">adgully · Netflix rolls out reimagined mobile experience for foldable devices</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="ct">Netflix 云游戏把 TV 作为长期重心：TV 跑画面、手机当手柄，主打合作／派对游戏</div>
+    <div class="cmeta">
+      <span class="src">Cloud Dosage / NOWnews / Documentary Tube</span><span class="dot">·</span><span>2026-10-27</span>
+      <span class="tag rumor">仅媒体报道未证实</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：TV（beta），手机作控制器</span>
+    </div>
+    <div class="cbody">Netflix 联席 CEO 明确表示云游戏瞄准「后主机时代」，长期落点是 <b>TV</b>：电视负责渲染输出，<b>手机作为控制器</b>接入。产品形态聚焦<b>合作与派对类</b>游戏（低门槛、多人同屏），而非 3A。目前处于 beta 验证阶段，未公布支持机型清单。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>TV 侧需低延迟渲染与 <b>ALLM／游戏模式自动切换</b>；手机↔TV 需稳定本地配对与低抖动输入通道（蓝牙或局域网）；TV 端 Web 运行时需支持 <b>Gamepad API</b>（标准映射 + 振动）。</div>
+      <div><span class="lb">认证机型</span>未公布。若按「手机当手柄」路径，理论上可覆盖绝大多数智能电视，但低延迟体验仍受 SoC 与 Wi-Fi 方案限制。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这是<b>三星最该抢的入口</b>：Netflix 云游戏绕开了主机，直接把 TV 变成游戏终端，且不需要 TV 有强 GPU。三星应主动争取 Tizen 首发认证与 Gaming Hub 深度整合；同时这也是「Tizen 是否支持 Gamepad API／WebHID」从技术议题升级为商务议题的分水岭。</div>
+    <div class="links">原文：<a href="https://clouddosage.com/netflix-co-ceo-cloud-gaming-post-console-world/" target="_blank">clouddosage.com · Netflix Co-CEO Eyes Cloud Gaming in a Post-Console World</a>　　<a href="https://www.nownews.com/news/6880287" target="_blank">NOWnews · Netflix 沒有放棄做遊戲</a>　　<a href="https://www.documentarytube.com/blog/netflixs-cloud-plans-include-co-op-and-party-games-heres-how-they-work" target="_blank">Documentary Tube · Co-op, Party Games, TVs and Phones Explained</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Disney+ 因 HEVC 专利禁令改走 VP9：4K 恢复，但 HDR 仍未归位</div>
+    <div class="cmeta">
+      <span class="src">网易号（转载整理）</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：欧洲 11 国（UPC 禁令）／巴西（华为 PI）</span>
+    </div>
+    <div class="cbody">InterDigital 在欧洲统一专利法院（UPC）获得的 HEVC 禁令持续发酵，Disney+ 在部分欧洲市场<b>关闭 4K／HDR</b> 后改用 <b>VP9</b> 重新提供 4K —— 但 <b>HDR 未随之恢复</b>。巴西方向，华为对 Disney 的 HEVC 禁令仍在上诉中。多篇报道指出，这类禁令的成本最终由消费者承担（画质降级、订阅价值缩水）。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>VP9 <b>Profile 2</b>（4K／10bit）硬件解码 + HDR10／HLG 信令透传。低端四核 A55／A35 SoC 常只保证 VP9 1080p 硬解，4K VP9 走软解将直接掉帧。</div>
+      <div><span class="lb">认证机型</span>涉及欧洲与拉美在售全部机型的 CP 侧白名单更新，非 TV 厂商认证动作。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　画质降级是<b>可被用户直接归因到电视</b>的体验事件。三星需立即核对欧洲／拉美在售机型的 <b>VP9 P2 硬解能力矩阵</b>，尤其是 2GB 内存以下入门机；同时把「HEVC 许可敞口」列入法务风险台账——禁令已从 CP 蔓延到终端厂（见 A5）。</div>
+    <div class="links">原文：<a href="https://www.163.com/dy/article/LA85U31O0511BK66.html" target="_blank">网易 · 多项禁令正在让消费者为专利战买单</a><span class="nt">经转载整理</span>　　<a href="https://www.163.com/dy/article/LA89A5T0051994QM.html" target="_blank">网易 · 华为专利维权让迪士尼巴西 4K 停更</a><span class="nt">经转载整理</span></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">InterDigital 在巴西对 TCL 取得 HEVC 禁令：专利战从内容方蔓延到电视终端厂</div>
+    <div class="cmeta">
+      <span class="src">IP Fray / EconoTimes</span><span class="dot">·</span><span>2026-10-27</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：巴西</span>
+    </div>
+    <div class="cbody">InterDigital 在巴西针对 <b>TCL</b> 取得 HEVC 相关初步禁令（PI），法院禁止 TCL 在两起专利争议中实施 HEVC。此前 InterDigital 已在 UPC 对 Disney 取得禁令，华为在巴西对 Disney 的禁令亦在推进。HEVC 专利战已从「内容平台是否敢用」升级为「终端厂能否出货」。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>与机型硬件无关，属许可与法务层面；但会影响出货机型预装的 HEVC 解码能力是否可激活。</div>
+      <div><span class="lb">认证机型</span>涉事为 TCL 巴西机型。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　三星应立刻自查 <b>HEVC 专利许可链在拉美／欧洲的覆盖完整性</b>，并评估「若被禁，能否以 AV1／VP9 快速切换且不触发画质投诉」的应急预案。这是典型的<b>非技术因素决定产品可用性</b>的风险。</div>
+    <div class="links">原文：<a href="https://ipfray.com/breaking-interdigital-wins-pi-against-tcl-in-brazil" target="_blank">IP Fray · BREAKING: InterDigital wins PI against TCL in Brazil</a>　　<a href="https://econotimes.com/Brazil-Court-Bars-TCL-From-Implementing-HEVC-in-Two-Patent-Dispute-1764298" target="_blank">EconoTimes · Brazil Court Bars TCL From Implementing HEVC</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">YouTube TV 价格站上 $82.99，4 路 multiview 与 4K Plus 成为标配卖点</div>
+    <div class="cmeta">
+      <span class="src">Lilach Bullock / Film Daily</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：美国</span>
+    </div>
+    <div class="cbody">YouTube TV 定价已升至 <b>$82.99/月</b>，频道数与 4K Plus（4K + 离线下载 + 无限家庭共享）继续作为付费升级项，<b>4 路 multiview</b> 成为体育观赛主推形态。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span><b>4 路 1080p 同时解码 + 合成</b>是硬门槛；4K 档需 AV1 或 VP9 P2 硬解。内存低于 2GB 的机型在多路场景极易触发 OOM 或强制降流。</div>
+      <div><span class="lb">认证机型</span>YouTube TV 对 TV 端有自有认证，multiview 通常仅在中高端认证机型开放。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　multiview 正在把「<b>2GB RAM</b>」从营销参数变成功能门槛。三星入门 4K 机型若只有 1.5GB，将在最热门的体育场景直接缺失卖点，需重新评估入门档内存下限。</div>
+    <div class="links">原文：<a href="https://www.lilachbullock.com/youtube-tv-vs-fubo" target="_blank">Lilach Bullock · YouTube TV vs Fubo: Price, Sports and Fees</a>　　<a href="https://filmdaily.co/news/youtube-tv-channels-full-channel-list-and-whats-included" target="_blank">Film Daily · YouTube TV channels full list</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">ESPN Unlimited $31.99：multiview + WWE PLE 独占 + 运营商捆绑三路并进</div>
+    <div class="cmeta">
+      <span class="src">ESPN Press Room / Yahoo Finance</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：美国</span>
+    </div>
+    <div class="cbody">ESPN Unlimited 独立订阅 <b>$31.99/月</b>，把 <b>WWE 付费赛事（PLE）</b>纳入独占；同时通过 <b>Mediacom</b> 等运营商把「Variety TV」用户直接升级到 ESPN Unlimited，走向「DTC + 运营商分销」双轨。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>multiview 多路同解；高码率体育流对网络抖动敏感，需 TV 端 ABR 缓冲策略配合。</div>
+      <div><span class="lb">认证机型</span>ESPN App 自有 TV 认证；运营商捆绑会显著扩大 TV 端激活量。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　体育 CP 的<b>分发渠道正在运营商化</b>，TV 端激活不再完全由用户主动安装决定。三星可考虑在北美与运营商机型（运营商定制 SKU）预置 ESPN 入口，把渠道红利转化为机型卖点。</div>
+    <div class="links">原文：<a href="https://espnpressroom.com/press-release/wwe-money-in-the-bank-streams-saturday-october-10-exclusively-on-the-espn-app-with-espn-unlimited-plan/" target="_blank">ESPN Press Room · WWE Money in the Bank exclusively on ESPN App with ESPN Unlimited</a>　　<a href="https://finance.yahoo.com/media-advertising/articles/mediacom-customers-variety-tv-now-133000443.html" target="_blank">Yahoo Finance · Mediacom Customers Now Have Access to ESPN Unlimited</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">TVING 独家直播 2026 KBO 全部季后赛（含 Super Match 专属机位）；Wavve 合并仍停滞</div>
+    <div class="cmeta">
+      <span class="src">Digital Today / Korea JoongAng Daily</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：韩国</span>
+    </div>
+    <div class="cbody">TVING 取得 <b>2026 KBO 全部季后赛</b>独家直播权，并提供 Super Match 专属机位等增强视角。另一方面，<b>TVING 与 Wavve 的合并仍处停滞</b>，竞争对手（Coupang Play 等）在内容侧持续推进。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>低延迟直播（LL-HLS／LL-DASH）+ 多机位切换下的快速码率切换；多视角需额外解码通道。</div>
+      <div><span class="lb">认证机型</span>TVING 在韩国 TV 端有自有认证；三星韩版机型通常为首发覆盖对象。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　韩国是 Tizen 的<b>主场验证场</b>：TVING 体育独占意味着韩版机型的首页体育位、低延迟播放栈、多机位 UI 都应优先打磨，做成可复制到其他市场的标准能力包，而非韩国特例。</div>
+    <div class="links">原文：<a href="https://www.digitaltoday.co.kr/en/view/113958/tving-to-exclusively-live-stream-all-2026-kbo-postseason-games" target="_blank">Digital Today · TVING to exclusively live stream all 2026 KBO postseason games</a>　　<a href="https://www.koreajoongangdaily.com/bilingual-news/tvingwavve-merger-remains-stalled-as-rivals-move-ahead-kor/12929052" target="_blank">Korea JoongAng Daily · TVING-Wavve merger remains stalled</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Samsung TV Plus 密集扩 FAST：5-Minute Crafts（英/爱）、Mattel 三频道、K-Wave 韩流专区</div>
+    <div class="cmeta">
+      <span class="src">PR Fire / The Desk / WiseVoter</span><span class="dot">·</span><span>2026-10-27～28</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：英国／爱尔兰（5-Minute Crafts）、美国（Mattel、K-Wave）</span>
+    </div>
+    <div class="cbody"><b>5-Minute Crafts</b> 上线英国与爱尔兰 Samsung TV Plus；<b>Mattel</b> 与三星合作推出 3 个 FAST 频道（年内晚些时候上线）；「K-Wave Wednesdays」韩流内容专区于 10-28 在 Movie Hub 上线，持续扩充韩语内容目录。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>FAST 为线性频道，需常驻 EPG 数据加载与快速起播；对低端机的 EPG 内存占用与冷启动时间有直接影响。</div>
+      <div><span class="lb">认证机型</span>Samsung TV Plus 为三星自有服务，覆盖 Tizen 全系在售机型。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　FAST 是三星<b>唯一完全自控的内容资产</b>，也是应对 CP 涨价与专利战的缓冲垫。建议把「FAST 频道冷启动时间」和「EPG 在低端机上的内存占用」纳入机型验收指标——这是自有服务体验最容易被入门机拖垮的地方。</div>
+    <div class="links">原文：<a href="https://www.prfire.co.uk/news-releases/5-minute-crafts-launches-on-samsung-tv-plus-in-the-uk-and-ireland" target="_blank">PR Fire · 5-Minute Crafts Launches on Samsung TV Plus in the UK and Ireland</a>　　<a href="https://thedesk.net/news/samsung-tv-plus-mattel-fast-launch/" target="_blank">The Desk · Mattel partners with Samsung for 3 FAST channels</a>　　<a href="https://wisevoter.com/world/us/2026/10/27/samsung-tv-plus-expand-korean-content" target="_blank">WiseVoter · Samsung TV Plus to Expand Korean Content Catalog</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">KT Studio Genie 推出「Genie Shorts」：原生 9:16 竖屏微短剧 FAST 频道，由 Amagi 供技术，同步上 Samsung TV Plus / LG Channels / Plex</div>
+    <div class="cmeta">
+      <span class="src">SVC Online</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：韩国，同步分发至多平台</span>
+    </div>
+    <div class="cbody">KT Studio Genie 上线 <b>Genie Shorts</b> —— 原生 <b>9:16 竖屏</b>微短剧 FAST 频道，后端由 Amagi 提供频道编排与分发。该频道<b>同时登陆 Samsung TV Plus、LG Channels、Plex</b>，即同一竖片源要在三种 TV 平台上各自渲染。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>横屏电视渲染 9:16 内容需处理<b>缩放合成 + 两侧填充 UI</b>，在低端 SoC 上是额外的 GPU 合成开销；若伴随实时模糊／背景延展效果，开销进一步放大。</div>
+      <div><span class="lb">认证机型</span>三家平台各自认证；竖屏渲染在各平台的表现不一致。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　竖屏内容上电视正在从「个案」变成「批量供给」。三星需要一份明确的 <b>9:16 渲染规范</b>（填充策略、缩放算法、低端机降级路径），否则同一频道在不同档位机型上的观感会出现明显分层。<span class="tag cap">待补：低端机竖屏渲染开销实测数据</span></div>
+    <div class="links">原文：<a href="https://www.svconline.com/the-wire/kt-studio-genie-launches-genie-shorts-a-native-916-vertical-micro-drama-fast-channel-powered-by-amagi" target="_blank">SVC Online · KT Studio Genie Launches Genie Shorts (9:16 vertical FAST, powered by Amagi)</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">FAST 内容供给转向「创作者原生」：Tubi 联合 TikTok 创作者推 10 部原创剧，Pluto TV 延长主题排播</div>
+    <div class="cmeta">
+      <span class="src">Movie News / TheWrap</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span><span class="tag plat">首发：美国</span>
+    </div>
+    <div class="cbody"><b>Tubi</b> 与 TikTok 创作者合作推出 10 部原创剧集；<b>Pluto TV</b> 把「Double Feature Fridays」主题排播延长至 11 月。FAST 的竞争焦点从「谁片库大」转向「谁能持续产出新鲜内容」。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>无新增硬件要求；但对推荐位、冷启动曝光与频道发现效率提出更高要求。</div>
+      <div><span class="lb">认证机型</span>各平台自有 TV 认证。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　创作者原生内容天然是<b>竖屏／短时长／高频更新</b>，与 Samsung TV Plus 现有以片库为主的编排逻辑不同。若要跟进，需要在 EPG 与推荐算法上支持「高频短内容」的更新节奏。</div>
+    <div class="links">原文：<a href="https://movienews.cc/news/tubi-partners-with-tiktok-creators-to-launch-ten-original-series" target="_blank">Movie News · Tubi partners with TikTok creators</a>　　<a href="https://www.thewrap.com/media-platforms/streaming/pluto-tv-double-feature-fridays-november-movies/" target="_blank">TheWrap · Pluto TV Extends Double Feature Fridays</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Netflix 观看时长下滑，但分析仍预期继续涨价</div>
+    <div class="cmeta">
+      <span class="src">The Tab</span><span class="dot">·</span><span>2026-10-27</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：全球（观察性报道）</span>
+    </div>
+    <div class="cbody">报道指出用户 Netflix 观看时长处于低位，但专家仍预测订阅价格将继续上行。与之呼应的是 Netflix 正把增长叙事转向游戏、直播与广告形态。</div>
+    <div class="fields">
+      <div><span class="lb">设备能力要求</span>无直接硬件要求。</div>
+      <div><span class="lb">认证机型</span>不涉及。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　「时长降 + 价格升」的组合会放大 CP 对 <b>TV 端首屏转化率</b> 的诉求——CP 会更强势地要求入口位、冷启动露出与播放完成率数据。三星应提前准备 TV 端流量位的数据化计费／分成方案。</div>
+    <div class="links">原文：<a href="https://thetab.com/filmshrine/2026/10/27/netflix-viewing-hours-down-prices-rising-prediction-what-this-means-for-subscribers" target="_blank">The Tab · We're watching less Netflix than ever, but expert predicts it's still going to cost more</a></div>
+  </div>
+</section>
+
+<section id="B">
+  <div class="sechead"><span class="k">B</span><span class="t">TV Web 引擎与运行时</span><span class="c">4 条</span></div>
+  <div class="secnote">Tizen 版本 ↔ Chromium 映射 / TV Extension / 渲染与合成 / 竞品引擎 / Electron / WebAssembly。</div>
+
+  <div class="card hot">
+    <div class="ct">官方口径再确认：2026 机型 = Tizen 10.0，OS 升级承诺「自发布年起最多 7 年」，但 Chromium 目标里程碑仍未公开</div>
+    <div class="cmeta">
+      <span class="src">Samsung Developers（官方规格）/ Samsung 官方支持页</span><span class="dot">·</span><span>2026-10 查证</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：全球（开发者文档）</span>
+    </div>
+    <div class="cbody">三星开发者规格页给出的机型年 ↔ Tizen 版本映射为：<b>2026 = Tizen 10.0、2025 = 9.0、2024 = 8.0、2023 = 7.0、2022 = 6.5、2021 = 6.0、2020 = 5.5</b>。官方同时承诺 2023 年起机型提供<b>自发布年起最多 7 年</b>的免费 One UI Tizen 升级（受机型、区域与硬件限制）。<b>本次查证仍未找到 Tizen 11.0 对应的 Chromium 目标里程碑</b>——这是连续第 2 期列为最高优先级未闭合项。</div>
+    <div class="fields">
+      <div><span class="lb">引擎版本</span>Tizen 10.0 对应的 Web 引擎仍按既有映射锁定在 <b>Chromium M130</b> 档位；桌面 Stable 已到 <b>M156</b>，差距约 26 个版本。</div>
+      <div><span class="lb">升级政策</span>7 年升级承诺覆盖 OS 功能、UI、应用、AI 与安全，但官方明确「部分功能因硬件限制可能不可用」——意味着 <b>老机型即使升级 OS 也可能拿不到新引擎能力</b>。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　7 年承诺把「引擎代差」从售后问题变成<b>产品定义问题</b>：2023 机型要到 2030 年，若引擎版本不随 OS 升级抬升，这批机器在第 3–4 年就会被 CP 的新特性抛下。建议把「OS 升级是否携带 Chromium 大版本跃迁」写成明确的对外口径，并纳入 2027 平台路线图决策材料。<span class="tag cap">仍未闭合：Tizen 11.0 目标里程碑</span></div>
+    <div class="links">原文：<a href="https://developer.samsung.com/tv/develop/specifications/general-features/" target="_blank">Samsung Developers · General Specifications（Tizen 版本映射与 DRM 规格）</a>　　<a href="https://www.samsung.com/ca/tvs/smart-tv/smart-hub-and-apps/" target="_blank">Samsung 官方 · One UI Tizen 7 年升级政策</a>　　<a href="https://www.neoteo.com/en/eligible-samsung-tvs-can-get-up-to-7-years-of-tizen-updates" target="_blank">NeoTeo · 7 年 Tizen 升级口径</a><span class="nt">经转载整理</span></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Chrome M156 进入稳定通道，CERT-In 就 &lt;156.0.8078.47/.48 发布安全提示</div>
+    <div class="cmeta">
+      <span class="src">Gizbot / WhatIsMyBrowser</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：Windows / macOS / Linux / Chromebook</span>
+    </div>
+    <div class="cbody">Chrome <b>M156</b> 已稳定发布（156.0.8078.47/.48/.49），印度 CERT-In 就低于该版本的 Chrome 发布严重漏洞提示。Chromium 自 M153 起执行两周一个里程碑的节奏，<b>M157 计划 11-03</b>。</div>
+    <div class="fields">
+      <div><span class="lb">引擎版本</span>M156 稳定 / M157 计划中；Tizen 10.0 仍处 M130 档。</div>
+      <div><span class="lb">受影响机型档位</span><b>全部 Tizen 在售机型</b>——安全修复无法自动继承，需 Samsung 侧 backport 或在 TV Extension 层规避。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　桌面每两周一个里程碑，而 Tizen 以年为单位推进，<b>安全补丁缺口会随时间线性扩大</b>。这不只是技术问题：企业级客户与合规审查会开始追问 TV 端 Web 运行时的漏洞修复 SLA，需要提前准备答复口径。</div>
+    <div class="links">原文：<a href="https://www.gizbot.com/news/google-chrome-users-on-windows-beware-cert-in-flags-critical-security-flaws-129459.html" target="_blank">Gizbot · CERT-In Flags Critical Chrome Security Flaws</a>　　<a href="https://www.whatismybrowser.com/guides/the-latest-version/chrome" target="_blank">WhatIsMyBrowser · Latest Chrome version</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Electron 46.0.0-alpha.2（Chromium 158）在研，43.x 线仍在维护</div>
+    <div class="cmeta">
+      <span class="src">Electron Releases</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag test">灰度测试中</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：桌面（Windows / macOS / Linux）</span>
+    </div>
+    <div class="cbody">Electron <b>46.0.0-alpha.2</b> 已发布，内嵌 Chromium <b>158</b>；同时 43.8.4 等旧线仍在维护更新。Electron 生态的整体节奏已跑到 158。</div>
+    <div class="fields">
+      <div><span class="lb">引擎版本</span>Electron 46 α = Chromium 158；Tizen 10.0 = M130 档，<b>相差约 28 个版本</b>。</div>
+      <div><span class="lb">对 TV 的意义</span>CP 侧的工具链、调试器与部分播放器壳层基于 Electron，其代码默认按现代 Chromium 编写，落到 TV Web 运行时需降级编译目标。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　跨端代码复用成本正在上升。建议在 CP 接入文档中明确列出 <b>Tizen Web 运行时的能力基线（M130 档）</b> 与禁用特性清单，避免 CP 用桌面引擎假设开发、上线后才发现能力缺失。</div>
+    <div class="links">原文：<a href="https://releases.electronjs.org/release/v46.0.0-alpha.2" target="_blank">Electron Releases · v46.0.0-alpha.2</a>　　<a href="https://releases.electronjs.org/release/v43.8.4" target="_blank">Electron Releases · v43.8.4</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">2026 CSS Baseline 特性已在主流引擎落地：容器查询、视图过渡、锚点定位、相对颜色等</div>
+    <div class="cmeta">
+      <span class="src">DEV Community / 掘金 / Baseline 专栏</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：桌面主流引擎</span>
+    </div>
+    <div class="cbody">2026 年一批 CSS 能力已被列为「可无 polyfill 直接上线」：容器查询、样式查询、视图过渡（View Transitions）、锚点定位、<code>field-sizing</code>、<code>light-dark()</code>、相对颜色、<code>oklch()</code>、<code>color-mix()</code>、<code>content-visibility</code> 等。</div>
+    <div class="fields">
+      <div><span class="lb">引擎版本</span>多数特性在 M130 档已可用，即 <b>Tizen 10.0 理论上可支持</b>。</div>
+      <div><span class="lb">低端渲染预算</span>视图过渡、大面积 <code>backdrop-filter</code> 与复杂合成在<b>低端 SoC 的 GPU 合成预算</b>下代价显著，实际不可用。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　「引擎支持」不等于「机型可用」。建议为 Tizen Web 应用制定一份 <b>按机型档位分级的 CSS 特性白名单</b>（入门机禁用视图过渡与大面积模糊），避免出现高端机演示流畅、入门机卡顿的口碑落差。</div>
+    <div class="links">原文：<a href="https://dev.to/devunionx/the-10-best-new-css-features-in-2026-already-supported-in-all-major-browsers-177p" target="_blank">DEV · The 10 Best New CSS Features in 2026</a>　　<a href="https://juejin.cn/post/7701257148910616627" target="_blank">掘金 · 2026 CSS 接管了这些 JS 的活</a>　　<a href="https://www.habibiahmada.dev/blog/baseline-2026-web-platform-features-ship-without-polyfill" target="_blank">Baseline 2026 · 可无 polyfill 上线的特性</a></div>
+  </div>
+</section>
+
+<section id="C">
+  <div class="sechead"><span class="k">C</span><span class="t">外设与输入</span><span class="c">3 条</span></div>
+  <div class="secnote">WebHID / Gamepad API / 手柄识别与高级特性 / 遥控器与指向交互 / Tizen.TV.Accessory 边界。</div>
+
+  <div class="card core">
+    <div class="ct">Android Chrome 的 WebHID 迹象：APK teardown 出现权限字符串，计划版本 v157，尚未随稳定版发货</div>
+    <div class="cmeta">
+      <span class="src">JetStream Blog（APK teardown）</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag test">灰度测试中</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：Android（Google TV / Android TV 生态）</span>
+    </div>
+    <div class="cbody">对 Android Chrome 安装包的拆解显示已出现 WebHID 相关权限字符串，指向 <b>v157</b> 计划支持。<b>注意：这是 teardown 证据，而非官方发布说明</b>，尚不能确认已发货或最终形态。</div>
+    <div class="fields">
+      <div><span class="lb">规格状态</span>WebHID 桌面 Chromium 已支持；Android 侧仍在推进中，权限／用户手势模型待确认。</div>
+      <div><span class="lb">对 TV 的意义</span>Google TV / Android TV 若先拿到 WebHID，云游戏手柄的<b>高级特性（自适应扳机、陀螺仪原始数据）</b>将在竞品平台先行落地。</div>
+      <div><span class="lb">Tizen 侧</span>Tizen 10.0（M130 档）是否支持 WebHID <b>仍需实测确认</b>。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　若 Netflix 云游戏（A2）在 TV 端铺开，<b>WebHID 将成为手柄体验的分水岭</b>。三星应尽快出具「Tizen Web 运行时对 WebHID / Gamepad API 的支持矩阵」，这是一项可以用一周内部测试闭合、却能直接决定商务谈判筹码的工作。<span class="tag cap">待实测</span></div>
+    <div class="links">原文：<a href="https://jetstream.blog/en/android-chrome-webhid-app-teardown/" target="_blank">JetStream · Android Chrome App Teardown: WebHID Support on the Horizon</a><span class="nt">teardown 证据，非官方发布说明</span></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Gamepad API vs WebHID：标准映射与振动可满足基础，自适应扳机／陀螺仪必须走 WebHID</div>
+    <div class="cmeta">
+      <span class="src">Wobblox</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：桌面 Chromium</span>
+    </div>
+    <div class="cbody">对比结论清晰：<b>Gamepad API</b> 提供标准按键映射与双马达振动（rumble），延迟低、兼容性好；<b>WebHID</b> 才能拿到厂商私有通道——DualSense 的自适应扳机与陀螺仪原始数据需通过 vendor ID <code>0x054c</code> / <code>0x0ce6</code> 的 HID 报告访问。</div>
+    <div class="fields">
+      <div><span class="lb">能力边界</span>标准映射 + 振动 → Gamepad API 足够；力反馈扳机、姿态输入、触摸板 → 必须 WebHID。</div>
+      <div><span class="lb">权限模型</span>WebHID 需用户手势触发的授权选择，TV 遥控器场景下交互路径需要专门设计。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　云游戏时代的手柄体验差异，<b>90% 由 WebHID 有无决定</b>。若 Tizen 只支持 Gamepad API，三星 TV 上的云游戏将长期停留在「能玩但没有手感」的层次，无法与主机形成体验对比。</div>
+    <div class="links">原文：<a href="https://wobblox.com/blog/webhid-and-gamepad-api-in-modern-browsers-low-latency-contro.html" target="_blank">Wobblox · Gamepad API vs WebHID: Low-Latency Browser Controller Setup</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">遥控器交互升级：星闪（Nearlink）三模遥控落地，UWB 指向遥控把光标做到 240Hz / 8ms</div>
+    <div class="cmeta">
+      <span class="src">SGPJBG 产业观察 / 百度百科（词条整理）</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：中国（广电三模遥控器、华为灵犀指向遥控 2）</span>
+    </div>
+    <div class="cbody">国内侧，<b>三模遥控器</b>（红外 + 蓝牙 + 星闪）已在广电体系落地；<b>华为灵犀指向遥控 2</b> 采用 UWB + 星闪组合，实现 <b>240Hz 光标采样、8ms 级延迟</b>的空中指向交互。指向遥控正在从「高端选配」变成国产旗舰的标配叙事。</div>
+    <div class="fields">
+      <div><span class="lb">能力边界</span>指向遥控需在系统层开放高精度指针输入通道；Tizen 侧对应 <b>Tizen.TV.Accessory / TizenFX</b> 的配件接入边界。</div>
+      <div><span class="lb">认证</span>星闪与 UWB 属新增无线协议，是否进入三星平台配件认证体系需评估。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　「遥控器能不能当鼠标用」正在成为新的体验分水岭，且是<b>国产阵营可感知的领先项</b>。三星需明确 Tizen 的 HID 通道是否放行 UWB/星闪类高精度设备，否则 2027 旗舰在交互叙事上会缺一块。<span class="tag cap">待确认：Tizen 配件认证边界</span></div>
+    <div class="links">原文：<a href="https://www.sgpjbg.com/labels/xingshanzhihuijiatingyuxiaofeidianzi/1/7465010.html" target="_blank">SGPJBG · 2026 星闪智慧家庭与消费电子（遥控器／机顶盒）</a>　　<a href="https://baike.baidu.com/item/%E5%8D%8E%E4%B8%BA%E7%81%B5%E7%8A%80%E6%8C%87%E5%90%91%E9%81%A5%E6%8E%A7/63942530" target="_blank">百度百科 · 华为灵犀指向遥控</a><span class="nt">词条整理，非一手实测</span></div>
+  </div>
+</section>
+
+<section id="D">
+  <div class="sechead"><span class="k">D</span><span class="t">多媒体与 DRM</span><span class="c">5 条</span></div>
+  <div class="secnote">封装与协议 / 编解码 / DRM 等级与认证阈值 / 内容保护工程。阈值项必须点名受影响的机型档位。</div>
+
+  <div class="card hot">
+    <div class="ct">【一手口径·首次闭合】三星官方 DRM 规格表：Tizen 10.0 = Widevine Modular L1 v18.5 + PlayReady v4.5 (SL3000) / v2.5 (SL2000)</div>
+    <div class="cmeta">
+      <span class="src">Samsung Developers（官方开发者规格，一手）</span><span class="dot">·</span><span>2026-10 查证</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：全球（官方文档）</span>
+    </div>
+    <div class="cbody">三星开发者规格页给出逐版本 DRM 矩阵，<b>这是此前连续多期只能靠第三方推测、本次终于拿到的一手口径</b>：<br>
+      · <b>Tizen 10.0（2026）</b>：Widevine Modular (L1) <b>v18.5</b>；PlayReady <b>v2.5 (SL2000) / v4.5 (SL3000)</b><br>
+      · <b>Tizen 9.0（2025）</b>：Widevine v18.1；PlayReady v2.5 / v4.5<br>
+      · <b>Tizen 8.0（2024）</b>：Widevine v17.1；PlayReady v2.5 / v4.5<br>
+      · <b>Tizen 7.0（2023）</b>：Widevine v17.1；PlayReady v2.5 / v4.4<br>
+      · <b>Tizen 6.5（2022）/ 6.0（2021）</b>：PlayReady v4.2<br>
+      · <b>Tizen 5.0（2019）/ 4.0（2018）</b>：PlayReady v3.3<br>
+      同时明确：<b>Widevine Classic 自 Tizen 4.0 起因 Google 弃用而不再支持</b>；<b>Verimatrix Web Client 自 2023 机型起不再支持</b>。</div>
+    <div class="fields">
+      <div><span class="lb">认证阈值</span>SL3000 = 硬件级（TEE），是 4K/UHD 播放的前提；SL2000 = 软件级，通常只能覆盖 SD/HD。<b>Widevine Modular</b> 在官方表中直接标注为 <b>L1</b>，即三星 TV 走的是硬件路径。</div>
+      <div><span class="lb">受影响机型档位</span><b>入门 4K 机型（1GB／1.5GB／2GB RAM 档）</b>是风险集中区——能否拿到 SL3000/L1 取决于 SoC 的 TEE 与安全启动配置，而非 Tizen 版本本身。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这张表可以直接用于两件事：①对外与 CP 谈判时给出<b>权威的能力承诺</b>，不必再引用第三方推测；②对内作为 <b>入门 4K SKU 的准入清单</b>——任何拿不到 SL3000/L1 的芯片方案，即便标称 4K 也只能在内容侧降档到 HD，等于「假 4K」。</div>
+    <div class="links">原文：<a href="https://developer.samsung.com/tv/develop/specifications/general-features/" target="_blank">Samsung Developers · General Specifications（DRM 矩阵，官方一手）</a>　　镜像：<a href="https://developer.samsung.com/SmartTV/develop/specifications/general-specifications.html?device=signage" target="_blank">Samsung Developers · General Specifications（signage 视图）</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="ct">逐机型 DRM 限制表：CMAF/cbcs 自 Tizen 5.5（2020）才支持，2020 年前机型无法播放 cbcs 加密流</div>
+    <div class="cmeta">
+      <span class="src">Dolby OptiView（官方技术博客）/ DoveRunner 支持环境文档</span><span class="dot">·</span><span>2026-10 查证</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：全球（技术文档）</span>
+    </div>
+    <div class="cbody">Dolby OptiView 给出的分年机型限制表（可与官方 DRM 矩阵交叉验证）：<br>
+      · <b>2015–2017 机型</b>：PlayReady 2.5 <b>SL2000（软件，仅 CENC/CTR）</b>，Widevine Classic 或 Modular 2.08 —— 无硬件级 DRM<br>
+      · <b>2018–2019 机型</b>：PlayReady 3.3 <b>SL3000（硬件）</b> 起，Widevine Modular 3.2 / 14.1<br>
+      · <b>2020 机型（Tizen 5.5）</b>：PlayReady 4.2 SL3000，<b>首次含 CBCS 支持</b><br>
+      · 2020 机型另有一批 HLS/MPEG-DASH 限制：无低延迟、不支持 CMAF 与 HEVC、无 IMSC1 字幕</div>
+    <div class="fields">
+      <div><span class="lb">认证阈值</span>CBCS（CMAF 通用加密模式）自 <b>Tizen 5.5</b> 起支持；FairPlay 原生即 cbcs，现代 Widevine/PlayReady 4.0+ 亦转向 cbcs。</div>
+      <div><span class="lb">受影响机型档位</span><b>2019 年及更早机型</b>：无法播放 CMAF-cbcs 内容，随着 CP 全面切 CMAF，这批机器将逐步失去主流内容播放能力。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　CP 转向 CMAF+cbcs 是单向不可逆的行业趋势，<b>2019 年前机型的功能性淘汰点已经可以精确标注</b>。这对「7 年升级承诺」是一个尖锐的矛盾：OS 能升，但内容侧会先失效。建议在做老机型维护策略时以「内容可用性」而非「OS 版本」为界。</div>
+    <div class="links">原文：<a href="https://optiview.dolby.com/resources/blog/playback/key-considerations-when-reaching-samsung-tizen/" target="_blank">Dolby OptiView · Key Considerations When Reaching Samsung Tizen（分年机型限制表）</a>　　<a href="http://docs.appsealing.com/content-security/multi-drm/getting-started/supported-env/" target="_blank">DoveRunner · Supported Environments（SL150/SL2000/SL3000 与 L1/L3 对照）</a></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">桌面 Chrome 开始支持 Netflix 4K（PlayReady）：4K 不再是电视独占能力</div>
+    <div class="cmeta">
+      <span class="src">Mycelium Sys</span><span class="dot">·</span><span>2026-08-05（背景核实）</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：桌面 Chrome（Windows）</span>
+    </div>
+    <div class="cbody">Chrome 已开始在符合条件（硬件 DRM、PlayReady 支持）的机器上提供 Netflix <b>4K</b> 播放，但并非所有设备都能开启。浏览器端首次在 4K 这个层级上与 TV 形成正面竞争。</div>
+    <div class="fields">
+      <div><span class="lb">认证阈值</span>需硬件级 DRM（Widevine L1 / PlayReady SL3000）与对应解码能力，机器未达标则自动降档。</div>
+      <div><span class="lb">受影响机型档位</span>不直接涉及 TV，但对 <b>TV「4K 卖点」的稀缺性</b>构成稀释。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　当浏览器也能放 4K，TV 的差异化必须<b>从分辨率上移到 HDR、音效、大屏交互与开机即得</b>。入门 4K 机型若只能提供「与笔记本相同的 4K」，其溢价逻辑将失效。</div>
+    <div class="links">原文：<a href="https://myceliumsys.com/2026/08/05/google-chrome-now-supports-netflix-in-4k-just-not-on-all-machines" target="_blank">Mycelium Sys · Chrome Netflix 4K: Browsers Now Compete on PlayReady Support</a></div>
+  </div>
+
+  <div class="card hot">
+    <div class="ct">AV2 时间表明确：YouTube 计划 2027 年初在 Web 启用，首波依赖 CPU 软解，硬件解码预计 2027–2028</div>
+    <div class="cmeta">
+      <span class="src">HWBusters / PBX Science / NeoTeo</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rumor">仅媒体报道未证实</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：Web（YouTube），计划 2027 年初</span>
+    </div>
+    <div class="cbody">AV2 规范已于 2026 年 6 月定稿，压缩率较 AV1 提升约 <b>30%</b>。YouTube 计划在 <b>2027 年初</b>把 AV2 推向 Web 流媒体，且<b>第一波主要依赖 CPU 软解</b>；目前<b>没有任何消费级 GPU 或电视芯片具备 AV2 硬件解码</b>，硬件解码普遍预计要到 <b>2027–2028</b>。</div>
+    <div class="fields">
+      <div><span class="lb">认证阈值</span>软解 AV2 4K 对 CPU 要求极高。<b>四核 A55 / A35 级别的入门 TV SoC 几乎不可能胜任</b>；中高端 A73（如 MT9655 档）亦需实测。</div>
+      <div><span class="lb">受影响机型档位</span><b>1GB／1.5GB／2GB RAM 的入门 4K 机型全部受影响</b>；这批机器在 2027 年仍将大量在售，却无法承接 AV2 流。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这是一个<b>可以用时间轴精确规划的选芯截止点</b>：2027 年上市的机型若在 2027 年初 YouTube 切 AV2 时没有硬件解码，就会在最主流的应用上出现「能播但降档／卡顿」。建议把 <b>AV2 硬件解码列入 2027 SoC 选型的硬指标</b>，并把「不支持 AV2 的机型」在规格表中明确标注预期表现。</div>
+    <div class="links">原文：<a href="https://hwbusters.com/news/youtube-av2-streams-are-headed-to-the-web-in-early-2027-and-the-first-wave-will-lean-on-your-cpu" target="_blank">HWBusters · YouTube AV2 Streams Headed to the Web in Early 2027（首波依赖 CPU）</a>　　<a href="https://pbxscience.com/?p=24421" target="_blank">PBX Science · AV2 Moves Toward Streaming Deployment</a>　　<a href="https://www.neoteo.com/en/youtube-plans-av2-web-streaming-for-early-2027" target="_blank">NeoTeo · YouTube AV2 rollout: web streaming in early 2027</a><span class="nt">经转载整理</span></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">内容保护工程基线：多 DRM 并存、CMAF + cbcs/cenc、多密钥与取证水印</div>
+    <div class="cmeta">
+      <span class="src">Gumlet / TripleMinds / ForaSoft</span><span class="dot">·</span><span>2026-10</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span><span class="tag plat">行业现状</span>
+    </div>
+    <div class="cbody">当前 OTT 内容保护的标准配置为：<b>Widevine（L1 硬件 / L3 软件）+ PlayReady（SL2000 软件 / SL3000 硬件）+ FairPlay（Secure Enclave）</b> 多 DRM 并存；封装走 <b>CMAF</b>，加密模式从 cenc 向 <b>cbcs</b> 迁移；密钥管理用 <b>SPEKE / CPIX</b>，音视频分轨用<b>多密钥</b>；链路侧要求 <b>HDCP 2.2/2.3</b> 端到端，高端内容加<b>取证水印</b>。</div>
+    <div class="fields">
+      <div><span class="lb">认证阈值</span>4K/UHD 与 HDR 内容基本绑定硬件级 DRM（L1 / SL3000）+ HDCP 2.2+；软件级仅覆盖 SD/HD。</div>
+      <div><span class="lb">受影响机型档位</span>入门档若 TEE 与安全启动配置不完整，将拿不到 HDCP 2.2 端到端认证，进而被排除在高端内容合作之外。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　可作为与 CP 技术对接时的<b>检查清单</b>使用。重点是：入门机型的成本压缩若牺牲了 TEE/HDCP 相关配置，损失的不只是参数，而是<b>整个高端内容合作资格</b>，这类隐性代价在 BOM 评审中最容易被忽略。</div>
+    <div class="links">原文：<a href="https://www.gumlet.com/learn/video-drm-for-ott/" target="_blank">Gumlet · Video DRM for OTT Apps: Studio &amp; Distributor Requirements</a>　　<a href="https://tripleminds.co/blogs/comparison/widevine-vs-fairplay-vs-playready-drm" target="_blank">TripleMinds · Widevine vs FairPlay vs PlayReady</a>　　<a href="https://www.forasoft.com/blog/article/security-considerations-live-streaming-protecting-content" target="_blank">ForaSoft · Secure Live Streaming in 2026</a></div>
+  </div>
+</section>
+
+<section id="E">
+  <div class="sechead"><span class="k">E</span><span class="t">中国低端 4K / UHD 机型参数</span><span class="c">2 条 + 机型表 9 款 SKU</span></div>
+  <div class="secnote">聚焦 1GB / 1.5GB / 2GB RAM 的 4K SKU。同 SKU 多源冲突时并列两个数值并标注「口径冲突」，不取其一。商品页参数均标注「未经实测」。</div>
+
+  <div class="card hot">
+    <div class="ct">「1.5GB RAM 的 65″ 4K 144Hz」已成现实价位：Vidda 65V1Q-R 的参数与两个口径冲突</div>
+    <div class="cmeta">
+      <span class="src">京东商品页（Vidda 官方旗舰店 / 海信家用智能家电旗舰店）· 搜狐 · 媒体横评</span><span class="dot">·</span><span>2026-10 查证</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp1">🔴 重点关注</span><span class="tag plat">首发：中国</span>
+    </div>
+    <div class="cbody"><b>Vidda R65（65V1Q-R）</b>把 65″ 4K 144Hz 打到 <b>¥1798.6–1999</b> 区间（国补后更低）。核心参数：四核 A55、<b>1.5GB RAM + 32GB</b>、直下式 LED、200–300nit、BT.709 100%、HDMI 2.1 ×2。<br>
+      <b>口径冲突 · 其一（网络）</b>：京东商品页核心参数写「WIFI 频段 2.4G」，而媒体评测稿称支持「双频 WiFi 6 + 蓝牙 5.4」——两者直接矛盾。<br>
+      <b>口径冲突 · 其二（刷新率性质）</b>：商品页与媒体稿均标 144Hz，但未说明是原生还是插帧；同价位竞品普遍以「竞技模式 / 动态刷新率」表述，需按插值处理。</div>
+    <div class="fields">
+      <div><span class="lb">SoC 档位</span>四核 A55（入门档，非 MT9655 / A73 级）</div>
+      <div><span class="lb">DRM 风险</span>SoC TEE 是否达到 <b>PlayReady SL3000 / Widevine L1</b> 未公开；若仅软件级（SL2000/L3），则该机 4K 在主流 CP 上只能降档到 HD —— <b>与 D1 的一手阈值直接相关，需实测确认</b>。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这台机器定义了「<b>入门 4K 的真实天花板</b>」：1.5GB RAM + A55 + 无分区背光，配合上期确认的 multiview 内存门槛（A6）与本期确认的 SL3000 阈值（D1），可见<b>低价 4K 的瓶颈已不在面板而在内存与 DRM 等级</b>。三星入门档若跟进同价位，必须同时解决这两个隐性项，否则会出现「参数好看、内容放不出来」。</div>
+    <div class="links">原文：<a href="https://union-click.jd.com/jdc?e=&p=JF8BASwJK1olXgMEVVpeDkgUA18IGlsWWwcEVl9fD08WBF9MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksWA2wOGl0XXAQFUF9aFxJSXzI4WwdgAnQCKCY-fhtydDlYZglvC35kJFJROE8RAGkMGloUXjYCVV9cCUIfCmcKK18TMwdsVFdYZh5DUTwMHVMRWAZRAQxfC00nA244WjUVXAICUl1aAHsWM28OE1kVXw4CVFhbDEknA2cMK4y889CO8orkopylgV84K1glbTYCZF1tViUWBD9cH1sSDmheEx1USB8fAwEMGl4QXgMEV25fCUoVAV84KxhFWFRSBl0VcxxOdz1BaRJBGwd7IAwUeh5NQi9wHjUXCFEHJhkDUAwURi16bhtKPUMyVG5bCk0nAl8" target="_blank">京东 · Vidda 65V1Q-R 商品页</a><span class="nt">商品页参数，未经实测</span>　　<a href="https://m.sohu.com/a/1092632682_122471764" target="_blank">搜狐 · 65 寸电视选购指南（称双频 WiFi 6 + 蓝牙 5.4，与商品页冲突）</a><span class="nt">经转载整理</span></div>
+  </div>
+
+  <div class="card core">
+    <div class="ct">Redmi A65「L65RB-RAE」口径冲突持续未收敛：内存 2+32 与 2+16 并存，144Hz 却配 HDMI 2.0</div>
+    <div class="cmeta">
+      <span class="src">中关村在线（zol）价格库</span><span class="dot">·</span><span>2026-10 查证</span>
+      <span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span><span class="tag plat">首发：中国</span>
+    </div>
+    <div class="cbody">上期标记的 Redmi A65（<b>L65RB-RAE</b>）口径冲突<b>本期仍未收敛</b>：不同渠道对运行内存给出 <b>2GB+32GB</b> 与 <b>2GB+16GB</b> 两种标注；同时该机标称 144Hz，但接口侧为 <b>HDMI 2.0</b>，<b>144Hz 无法由外部信号源驱动</b>，只能服务内置系统或插帧。</div>
+    <div class="fields">
+      <div><span class="lb">冲突项</span>① RAM/ROM：2+32 vs 2+16（并列保留，不取其一）；② 刷新率：标称 144Hz vs HDMI 2.0 带宽上限（4K@60Hz）。</div>
+      <div><span class="lb">SoC 档位</span>入门档，型号未在商品页公开。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这是「<b>参数营销与实际能力脱节</b>」的典型样本：144Hz 在 HDMI 2.0 下对游戏主机毫无意义。三星若在同价位做对标，反而可以把「HDMI 2.1 全带带宽 + 真实高刷」做成<b>可验证的差异化卖点</b>，而不是在纸面参数上跟牌。</div>
+    <div class="links">原文：<a href="https://tv.zol.com.cn/1259/12597000.html" target="_blank">ZOL · 红米 A65 65 英寸 4K 智能电视 1698 元</a><span class="nt">商品页／价格库参数，未经实测</span>　　<a href="https://tv.zol.com.cn/1263/12639927.html" target="_blank">ZOL · Redmi A55 英寸 144Hz 护眼 4K 电视</a><span class="nt">商品页参数，未经实测</span></div>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>SKU / 型号</th><th>尺寸-分辨率</th><th>内存+存储</th><th>SoC / CPU</th><th>刷新率</th>
+          <th>亮度-色域</th><th>接口 / 网络</th><th>价格</th><th>来源</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="conflict">
+          <td class="sku">Vidda R65<br>65V1Q-R</td>
+          <td>65″ / 3840×2160</td>
+          <td>1.5GB + 32GB</td>
+          <td>四核 A55</td>
+          <td>144Hz（标称，未说明原生／插帧）</td>
+          <td>200–300 nit<br>BT.709 100%</td>
+          <td>HDMI 2.1 ×2 / USB 2.0 ×2<br><span class="cf">⚠ 口径冲突：商品页标 Wi-Fi 2.4G，媒体稿称双频 Wi-Fi 6 + 蓝牙 5.4</span></td>
+          <td>¥1798.6–1999<br>（国补后更低）</td>
+          <td>京东商品页 + 搜狐<span class="cf">（冲突）</span></td>
+        </tr>
+        <tr class="conflict">
+          <td class="sku">Redmi A65<br>L65RB-RAE</td>
+          <td>65″ / 4K</td>
+          <td><span class="cf">⚠ 口径冲突：2GB+32GB vs 2GB+16GB</span></td>
+          <td>入门档（未公开）</td>
+          <td>144Hz（标称）<br><span class="cf">⚠ 但接口为 HDMI 2.0，外部信号源仅 4K@60Hz</span></td>
+          <td>未标注</td>
+          <td>HDMI 2.0</td>
+          <td>¥1698</td>
+          <td>ZOL 价格库</td>
+        </tr>
+        <tr>
+          <td class="sku">Redmi A55</td>
+          <td>55″ / 4K</td>
+          <td>入门档（未标注）</td>
+          <td>未公开</td>
+          <td>144Hz（标称）</td>
+          <td>护光屏（未给数值）</td>
+          <td>未标注</td>
+          <td>低价位段</td>
+          <td>ZOL</td>
+        </tr>
+        <tr>
+          <td class="sku">酷开 柔光 K6<br>65″</td>
+          <td>65″ / 4K</td>
+          <td><b>2GB + 32GB</b></td>
+          <td>未公开</td>
+          <td>未标注</td>
+          <td>柔光防眩（AG）</td>
+          <td>未标注</td>
+          <td>降价 ¥2423</td>
+          <td>ZOL 价格库</td>
+        </tr>
+        <tr>
+          <td class="sku">酷开 柔光 K6+<br>75″</td>
+          <td>75″ / 4K</td>
+          <td><b>2GB + 64GB</b></td>
+          <td>十六晶方芯</td>
+          <td>180Hz</td>
+          <td>Mini LED 110 分区<br>130% BT.709（≈96% DCI-P3）<br>ΔE≤0.87</td>
+          <td>Mini LED 背光</td>
+          <td>¥3399（618 国补价）</td>
+          <td>媒体横评<span class="cf">（经转载整理）</span></td>
+        </tr>
+        <tr>
+          <td class="sku">康佳 75V50S</td>
+          <td>75″ / 4K</td>
+          <td><b>2GB + 32GB</b></td>
+          <td>四核 A35（最低档）</td>
+          <td>120Hz</td>
+          <td>未标注</td>
+          <td>未标注</td>
+          <td>入门价位</td>
+          <td>PConline 配置页</td>
+        </tr>
+        <tr>
+          <td class="sku">雷鸟 鹏6 26 款<br>S68A</td>
+          <td>未标注（26 款系列）</td>
+          <td>未标注</td>
+          <td>未公开</td>
+          <td>未标注</td>
+          <td>未标注</td>
+          <td>未标注</td>
+          <td>直降 ¥2000</td>
+          <td>ZOL 价格库</td>
+        </tr>
+        <tr>
+          <td class="sku">REDMI X 2026<br>（X55/65/75）</td>
+          <td>55/65/75″ / 4K</td>
+          <td><b>4GB + 64GB</b>（对照档）</td>
+          <td>MT9655 级（四核 A73）</td>
+          <td>高刷（未给数值）</td>
+          <td>Mini LED</td>
+          <td>未标注</td>
+          <td>¥2499 起</td>
+          <td>媒体发布稿 + ZOL</td>
+        </tr>
+        <tr>
+          <td class="sku">海信 E7S Pro</td>
+          <td>4K</td>
+          <td>4GB + 128GB（对照档）</td>
+          <td>信芯 AI 画质芯片</td>
+          <td>180Hz</td>
+          <td>RGB-Mini LED<br>峰值至 6000 nit</td>
+          <td>未标注</td>
+          <td>中国限定</td>
+          <td>Gizmochina / Gagadget</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tnote">
+    · 表中所有参数均来自电商商品页、价格库或媒体稿，<b>标注「商品页参数，未经实测」或「经转载整理」，未做实测验证</b>。<br>
+    · <span class="cf">口径冲突</span> 项按规则<b>并列保留两个数值，不取其一</b>，待后续以实物或官方规格书收敛。<br>
+    · 「刷新率」列需特别区分 <b>原生高刷</b> 与 <b>竞技模式／动态刷新率（插帧）</b>；本表多数 SKU 未说明，按未证实处理。<br>
+    · 对照档（REDMI X 2026、海信 E7S Pro）非低端，列入用于标出 <b>MT9655 / 4GB+64GB / Mini LED 的下压速度</b>——该配置正在向 2000–3000 元段渗透。
+  </div>
+</section>
+
+<!-- ===================== 背景参考 ===================== -->
+
+<section id="F" class="bg">
+  <div class="sechead"><span class="k">F</span><span class="t">电视产业与市场</span><span class="c">4 条</span></div>
+  <div class="secnote">补充判断用，不追新鲜度。</div>
+
+  <div class="card bgcard">
+    <div class="ct">全球电视出货季减 1.1%，品牌竞争加剧与技术升级并行</div>
+    <div class="cmeta"><span class="src">腾讯自选股（转载整理）</span><span class="dot">·</span><span>2026</span><span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span></div>
+    <div class="cbody">2026 年全球电视市场出货量<b>季减 1.1%</b>，呈现「量减、价升、技术升级并行」的结构。此前 TrendForce 亦下调全年出货预期至约 1.948 亿台区间。</div>
+    <div class="impact"><span class="lb">影响</span>　量减价升意味着<b>ASP 与结构比出货量更重要</b>。入门档若只剩价格战，利润将快速蒸发；资源应往「可感知差异化」（高刷真实性、HDMI 2.1、HDR）而非纸面参数倾斜。</div>
+    <div class="links">原文：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026082114122794e1f417" target="_blank">腾讯自选股 · 2026 年全球电视市场出货量季减 1.1%</a><span class="nt">经转载整理</span>　　相关：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN20260129170246a6bafbf6" target="_blank">腾讯自选股 · 电视产业 2026 年面临多重成本上涨挑战</a><span class="nt">经转载整理</span></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">成本传导到零售端：双 11 前电视一夜涨 1300 元，面板与内存同时涨价</div>
+    <div class="cmeta"><span class="src">什么值得买（smzdm）</span><span class="dot">·</span><span>2026-10</span><span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span></div>
+    <div class="cbody">双 11 前夕部分电视机型一夜上涨约 <b>1300 元</b>，主因是<b>面板与内存同步涨价</b>。文章判断今年「抄底」窗口已不同以往。另有分析指出电视「越卖越少却越卖越贵」，背后是面板成本结构与高端化转型。</div>
+    <div class="impact"><span class="lb">影响</span>　存储与面板成本上行会直接压缩入门档的 BOM 空间，<b>迫使厂商在内存、接口、背光上做取舍</b>——这正是本期 E 区看到的 1.5GB / 2GB 机型回潮的成因。三星入门档需在「守住 2GB 内存 + HDMI 2.1」与「守价格」之间做明确取舍。</div>
+    <div class="links">原文：<a href="https://post.smzdm.com/p/axko2w92" target="_blank">什么值得买 · 双 11 前电视一夜涨 1300：面板和内存一起动手了</a>　　<a href="https://post.smzdm.com/p/apqm3260" target="_blank">什么值得买 · 电视越卖越少却越卖越贵？拆解面板成本与高端化转型逻辑</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">李在镕首次视察三星 RX 机器人事业部，关注 CES 2027 参展技术研发进展</div>
+    <div class="cmeta"><span class="src">腾讯新闻</span><span class="dot">·</span><span>2026-10-27</span><span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span></div>
+    <div class="cbody">李在镕首次视察三星 <b>RX 机器人事业部</b>，重点了解计划于 <b>CES 2027</b> 参展技术的研发进展，人形机器人被认为是可能的亮相方向。</div>
+    <div class="impact"><span class="lb">影响</span>　集团叙事正向机器人倾斜。TV 需要在「<b>家庭 AI Hub</b>」这个定位上与机器人业务形成协同叙事（电视作为家庭状态的可视化与控制台），否则在 CES 2027 的资源分配中会被边缘化。</div>
+    <div class="links">原文：<a href="https://news.qq.com/rain/a/20261027A09MYL00" target="_blank">腾讯新闻 · 李在镕首次视察三星 RX 机器人事业部，关注 CES 2027 参展技术</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">京东方董事长陈炎顺：锚定先进制造方向，做强做优中国显示产业</div>
+    <div class="cmeta"><span class="src">今日头条</span><span class="dot">·</span><span>2026-10</span><span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span></div>
+    <div class="cbody">京东方董事长陈炎顺谈先进制造与中国显示产业方向，强调向高附加值环节升级。</div>
+    <div class="impact"><span class="lb">影响</span>　面板厂战略向高附加值倾斜，意味着<b>入门尺寸面板的供给弹性与议价空间都会下降</b>，进一步压缩低价 4K 的成本腾挪余地。中长期需重新评估入门档的面板供应策略。</div>
+    <div class="links">原文：<a href="https://www.toutiao.com/article/7701318488287167037" target="_blank">今日头条 · 京东方陈炎顺：锚定先进制造方向 做强做优中国显示产业</a></div>
+  </div>
+</section>
+
+<section id="G" class="bg">
+  <div class="sechead"><span class="k">G</span><span class="t">Web 标准化</span><span class="c">4 条</span></div>
+  <div class="secnote">W3C / WHATWG / TC39 状态变更、新 API 与互操作进展。</div>
+
+  <div class="card bgcard">
+    <div class="ct">W3C 发布 SVG 2 更新版候选推荐（CR），不早于 2026-12-01 进入正式推荐</div>
+    <div class="cmeta"><span class="src">W3C 官方新闻</span><span class="dot">·</span><span>2026-10-06</span><span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span></div>
+    <div class="cbody">W3C 发布 <b>SVG 2</b> 更新版候选推荐（Updated Candidate Recommendation），并明确<b>不早于 2026-12-01</b> 推进至正式推荐（Recommendation）。被列为 at-risk 的特性包括多重 title/desc、嵌套链接、<code>vector-effect</code> 等。</div>
+    <div class="impact"><span class="lb">影响</span>　SVG 常用于 TV UI 的图标与轻量动效。at-risk 特性若最终被移除，依赖它们的 UI 组件需要返工；建议在 UI 组件库中对这些特性做<b>降级替代方案</b>，不要锁定。</div>
+    <div class="links">原文：<a href="https://www.w3.org/news/2026/updated-candidate-recommendation-scalable-vector-graphics-svg-2/" target="_blank">W3C News · Updated Candidate Recommendation: SVG 2</a>　　规范：<a href="https://www.w3.org/TR/SVG/" target="_blank">W3C · Scalable Vector Graphics (SVG) 2</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">CSS Grid Layout Level 1 进入候选推荐草案（CRD）阶段</div>
+    <div class="cmeta"><span class="src">CSSWG 官方草案</span><span class="dot">·</span><span>2026-10</span><span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span></div>
+    <div class="cbody">CSS Grid Layout Module Level 1 已推进至 CRD。Grid 作为 TV 端版式布局的核心能力，其规范稳定性对跨机型一致性有直接价值。</div>
+    <div class="impact"><span class="lb">影响</span>　规范趋稳意味着可以<b>放心把 TV UI 版式建立在 Grid 上</b>，减少为兼容而做的布局 hack，对低端机的布局计算开销也有正面作用。</div>
+    <div class="links">原文：<a href="https://drafts.csswg.org/css-grid-1/" target="_blank">CSSWG · CSS Grid Layout Module Level 1</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">VC-JOSE-COSE 成为 W3C 推荐标准：可验证凭证的 JOSE/COSE 安全封装</div>
+    <div class="cmeta"><span class="src">HTML Specs</span><span class="dot">·</span><span>2026-10-13</span><span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span></div>
+    <div class="cbody">使用 JOSE 与 COSE 保护可验证凭证（Verifiable Credentials）的规范已进入 W3C 推荐标准状态。</div>
+    <div class="impact"><span class="lb">影响</span>　与 TV 的直接关联较弱，但若未来 TV 承担<b>家庭身份／设备凭证中枢</b>角色（如儿童模式年龄验证、内容分级凭证），该规范会成为底层依赖，值得留档。</div>
+    <div class="links">原文：<a href="https://htmlspecs.com/vc-jose-cose" target="_blank">HTML Specs · VC-JOSE-COSE</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">Interop 2026 与 Edge 155 Web 平台发布说明</div>
+    <div class="cmeta"><span class="src">DEV Community / Microsoft Learn</span><span class="dot">·</span><span>2026-10-08</span><span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span></div>
+    <div class="cbody">Interop 2026 聚焦把「hack 变标准」的落地；Edge 155 发布说明包含若干媒体与渲染相关变更。</div>
+    <div class="impact"><span class="lb">影响</span>　Interop 的年度焦点可作为 <b>Tizen Web 能力缺口的自查清单</b>——CP 会以 Interop 覆盖的特性为默认假设开发，未覆盖项将产生适配成本。</div>
+    <div class="links">原文：<a href="https://dev.to/khriztianmoreno/interop-2026-from-hack-to-standard-technical-and-critical-guide-15g0" target="_blank">DEV · Interop 2026: From Hack to Standard</a>　　<a href="https://learn.microsoft.com/en-ca/microsoft-edge/web-platform/release-notes/155" target="_blank">Microsoft Learn · Edge 155 web platform release notes</a></div>
+  </div>
+</section>
+
+<section id="H" class="bg">
+  <div class="sechead"><span class="k">H</span><span class="t">AI 技术与 Agent</span><span class="c">2 条</span></div>
+  <div class="secnote">模型发布、端侧小模型在电视上的可行性、端侧视觉推理。</div>
+
+  <div class="card bgcard">
+    <div class="ct">Liquid AI 发布 LFM3 系列：6 个 2B 级开源多模态模型，256K 上下文，4-bit 约 1GB，首日适配目标含三星 Galaxy S26 Ultra</div>
+    <div class="cmeta"><span class="src">Tech Beat / Unite.AI / AI Weekly</span><span class="dot">·</span><span>2026-10-27</span><span class="tag rel">已正式发布</span><span class="tag imp2">🟡 值得跟踪</span></div>
+    <div class="cbody">Liquid AI 推出 <b>LFM3</b> 家族：基于同一 1.7B 主干衍生 <b>6 个开放权重 2B 级模型</b>，支持 <b>256K 上下文</b>，4-bit 量化下约 <b>1GB</b>；视觉语言版 LFM3-VL-2B 在 62 项视觉基准上平均 71.4。首日适配目标包括 <b>三星 Galaxy S26 Ultra</b>、Qualcomm Hexagon 等端侧平台。</div>
+    <div class="fields">
+      <div><span class="lb">端侧可行性</span>1GB（4-bit）是<b>手机级</b>的可用门槛；TV 侧 2GB RAM 机型需与系统、播放器共享内存，实际只能承载更小规格或按需加载。</div>
+      <div><span class="lb">对 TV 的意义</span>256K 上下文 + 视觉理解，正好对应「Vision AI Companion」的看图解说类场景。</div>
+    </div>
+    <div class="impact"><span class="lb">影响</span>　这是<b>端侧 AI 上电视的现实标尺</b>：2B/1GB 量级已可跑视觉理解，但 TV 的内存分档（1.5GB／2GB／4GB）决定了必须做<b>机型分层的 AI 能力矩阵</b>——入门机走云侧，中高端走端侧，且要在规格表中写清，避免「AI 电视」宣传与入门机实际体验脱节。</div>
+    <div class="links">原文：<a href="https://techbeat.co/story/liquid-ai-launches-lfm3-open-weight-multimodal-models-for-edge-ai" target="_blank">Tech Beat · Liquid AI Launches LFM3 Open-Weight Multimodal Models for Edge AI</a>　　<a href="https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/" target="_blank">Unite.AI · LFM3 Family of Six Open-Weight 2B-Class Models</a>　　<a href="https://aiweekly.co/alerts/liquid-ai-opens-six-model-lfm3-family-at-256k-context" target="_blank">AI Weekly · LFM3 family at 256K context</a></div>
+  </div>
+
+  <div class="card bgcard">
+    <div class="ct">Nanbeige4.3-33B 开源稠密模型：17/20 基准超过 Qwen3.8-27B</div>
+    <div class="cmeta"><span class="src">AI.jp.net（转载整理）</span><span class="dot">·</span><span>2026-10</span><span class="tag rel">已正式发布</span><span class="tag imp3">⚪ 背景参考</span></div>
+    <div class="cbody">Nanbeige 发布 <b>4.3-33B</b> 开源稠密模型，在 20 项基准中的 17 项超过 Qwen3.8-27B，代码与推理能力是主要提升点。</div>
+    <div class="impact"><span class="lb">影响</span>　云侧模型性价比持续改善，使「<b>云侧大模型 + 端侧小模型</b>」的混合方案在 TV 上更经济。对入门机而言，把 AI 能力放在云侧仍是最现实的路径，但需评估长连接与响应延迟对体验的影响。</div>
+    <div class="links">原文：<a href="https://www.ai.jp.net/article/nanbeige-unveils-33b-open-source-ai-model-outperforming-qwen3-8-27b-in-coding-be-9d481f?lang=yue" target="_blank">AI.jp.net · Nanbeige Unveils 33B Open Source AI Model</a><span class="nt">经转载整理</span></div>
+  </div>
+</section>
+
+<footer>
+  <div><b>生成时间</b>　2026-10-28 06:20（CST，云沙箱环境）　·　<b>期号</b>　第 027 期</div>
+  <div><b>来源说明</b>　本期共 36 次定向检索，核心区（A–E）30 次、背景区（F–H）6 次。所有条目均附可追溯原文链接；机构原始数据若仅见于二手或 SEO 聚合站点，已在来源字段标注「<b>经转载整理</b>」，不作一手呈现。电商商品页与价格库参数均标注「<b>商品页参数，未经实测</b>」。同 SKU 多源参数冲突时并列保留全部数值并标注「<b>口径冲突</b>」，不取其一。条目状态严格区分「已正式发布 / 灰度测试中 / 仅媒体报道未证实」。</div>
+  <div><b>本期未闭合项</b>　① <b>Tizen 11.0 的 Chromium 目标里程碑仍未公开</b>（连续第 2 期最高优先级缺口，官方仅给出机型年 ↔ Tizen 版本映射）；② Vidda 65V1Q-R 等入门 4K 的 <b>SL3000 / Widevine L1 实测可行性</b>未验证；③ Redmi L65RB-RAE 的内存与刷新率口径冲突未收敛；④ 低端机 <b>9:16 竖屏渲染开销</b> 无实测数据；⑤ Tizen Web 运行时对 <b>WebHID / Gamepad API</b> 的支持矩阵未实测。</div>
+  <div class="next">
+    <b>下期（第 028 期）跟踪清单</b>
+    <ul>
+      <li><b>最优先</b>：Tizen 11.0 的 Chromium 目标里程碑——尝试三星开发者大会 / TV Extension Release Note 一手来源；若仍无，改求证「OS 升级是否携带 Chromium 大版本跃迁」的官方口径。</li>
+      <li>入门 4K 机型（1.5GB 档）的 <b>PlayReady SL3000 / Widevine L1 实测</b>，以 Vidda 65V1Q-R 为样本。</li>
+      <li>Tizen Web 运行时 <b>WebHID / Gamepad API 支持矩阵</b>——配合 Netflix 云游戏（A2）谈判，一周内可闭合。</li>
+      <li>AV2 硬件解码在 2027 SoC 路线图上的落地时点；YouTube AV2 首波软解的机型影响面。</li>
+      <li>Redmi L65RB-RAE 口径冲突收敛；低端机高刷「原生 vs 插帧」的标注口径统一。</li>
+      <li>低端机 <b>9:16 竖屏渲染开销</b> 实测（配合 Genie Shorts 类竖屏 FAST 频道扩散）。</li>
+      <li>HEVC 专利战在拉美／欧洲的下一步（华为 vs Disney 上诉、InterDigital vs TCL）。</li>
+      <li>端侧 AI 指标化对标：以 LFM3（2B/1GB/256K）为标尺，建立按内存分档的 TV AI 能力矩阵。</li>
+    </ul>
+  </div>
+  <div style="margin-top:14px;color:var(--gray);">归档地址：<a href="https://denisyq.github.io/DailySensingRepo/" style="color:var(--accent);text-decoration:none;" target="_blank">denisyq.github.io/DailySensingRepo</a>　·　本页为单文件 HTML，无外部依赖，可离线双击打开。</div>
+</footer>
+
+</div>
+</body>
+</html>
