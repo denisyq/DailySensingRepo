@@ -61,8 +61,9 @@
 | 第 027 期 | 2026-10-28 | ✅ | ✅ | 云端定时任务；35 条选题（核心 A11/B4/C3/D5/E2 = 25，背景 F4/G4/H2 = 10，🔴重点 8 条，E 区机型表 9 款 SKU）；三条主线：①**三星官方 DRM 规格一手口径首次闭合**——Samsung Developers 规格页确认 Tizen 10.0(2026) = Widevine Modular L1 v18.5 + PlayReady v2.5(SL2000)/v4.5(SL3000)，Tizen 9.0 = Widevine v18.1、8.0 = v17.1，Widevine Classic 自 Tizen 4.0 起弃用、Verimatrix Web Client 自 2023 机型起不再支持；Dolby OptiView 分年限制表交叉印证 CMAF/**cbcs 自 Tizen 5.5（2020）才支持**、2018 机型首见 SL3000 硬件级，意味着 2019 年前机型将随 CP 全面切 CMAF 而功能性失效，而 1.5GB/2GB 入门 4K 机型能否拿到 SL3000/L1 成为「真 4K vs 假 4K」的分界（替换掉此前 forasoft 等第三方整理页口径）。②**HEVC 专利战从内容方蔓延到终端厂**——Disney+ 改走 VP9 后 4K 恢复但 HDR 仍未归位，InterDigital 在巴西对 TCL 取得 HEVC 初步禁令，华为 vs Disney 巴西案在上诉；Netflix 重做 iPhone Duo/折叠屏移动端，并把**云游戏长期落点放到 TV（TV 渲染 + 手机当手柄）**，主打合作/派对类。Samsung TV Plus 密集扩 FAST（5-Minute Crafts 英爱、Mattel 三频道、K-Wave Wednesdays）。③**AV2 时间表明确**——YouTube 计划 2027 年初在 Web 启用 AV2 且首波依赖 CPU 软解，硬件解码预计 2027–2028，四核 A55/A35 入门 SoC 无法胜任 → 2027 SoC 选型硬指标；低端侧 Vidda 65V1Q-R 以 1.5GB+32GB 四核 A55 把 65" 4K 144Hz 打到 ¥1798（存在商品页 Wi-Fi 2.4G vs 媒体稿 Wi-Fi 6 双频的口径冲突），Redmi L65RB-RAE 的 2+32 vs 2+16 与「144Hz 配 HDMI 2.0」冲突仍未收敛。**未闭合**：Tizen 11.0 的 Chromium 目标里程碑连续第 2 期未获公开（官方仅给机型年↔Tizen 版本映射，2026=10.0/2025=9.0/2024=8.0/2023=7.0，并承诺 2023 年起机型自发布年起最多 7 年免费升级但「部分功能因硬件限制可能不可用」）。|
 | 第 028 期 | 2026-10-29 | ✅ | ✅ | 云端定时任务；39 条选题（核心 A13/B5/C3/D6/E4 = 31，背景 F3/G3/H2 = 8，🔴重点 12 条，E 区机型表 10 款 SKU）；三条主线：①**Web 引擎代差被 LG 实质反超**——LG 官方规格页确认 webOS TV 26 = Chromium 132（25=120 / 24=108 / 23=94 / 22=87），三星 Tizen 10.0 = Chromium M130（9.0=M120 / 8.0=M108 / 7.0=M94 / 6.5=M85），年度跨幅由 +14/+12 放缓至 +10，绝对值首次落后 LG 2 个版本；同期 Chrome 156.0.8078.73/.74 一次修复 52 个漏洞，含 CVSS 9.6 的 CVE-2026-118310（Views 不当输入验证，可在沙箱外执行任意代码），高严重项横跨 Skia/V8/Turbolev/ANGLE/WebRTC/Media/Compositing，M130 与桌面稳定版差约 26 版，安全补丁回迁 SLA 的对外口径变得不可回避；Electron 45.0.0 = Chromium 156.0.8078.48 / Node 24.22.0，46 nightly 已到 158，代差约 28 版。②**AV2 硬件解码空白落地为机型硬约束**——AOMedia 确认截至 2026 年中无任何在售电视/机顶盒/手机搭载 AV2 硬解器，软解算力约为 AV1 的 5 倍；YouTube 计划 2027 Q1 在 Web 端以软解首发，Netflix/Prime Video/Meta 未给时间表；芯片 IP 侧 Chips&Media 2026-05 完成 AV2 硬解 IP 并发布 RTL（正洽谈北美大客户）、Allegro DVT AL-D5200 支持 AV2/VVC/AV1，行业预计 2027–2028 进主流设备、移动端或至 2030；专利侧 Access Advance 与 Sisvel 双池抢位，与 HEVC「成熟后才组池」路径不同 → 「免许可」主张存在不确定性。③**入门 4K 内存固化在 2GB，与 CP 能力升级正面冲突**——本期 10 款 SKU 中 6 款为 2GB（55F275C 2+32 / 酷开柔光 K6 65" 2+32 / 85K3 2+64 / 43A5 Pro 2+16 / L55RB-RAE 2GB / 50Q6Q 2+16），而 Netflix 云游戏 TV 公测（三星在首批名单、Apple TV 缺席）、YouTube TV Sports Plan 保留 multiview、Disney+ 单 App 承载 Hulu+ESPN 三库（Disney+ 含广告 $12.49 / Hulu Live $99.99 / ESPN Unlimited $29.99）三条趋势同时加压；刷新率口径冲突普遍：L55RB-RAE 标题「288Hz 3+64GB」与京东参数「2GB」矛盾、55F275C 标题 144Hz 而实测参数页为 60Hz VA（DCI-P3 80% / 5000:1）、55F56A 标题 144Hz 参数区 120Hz、85K3「至高 180Hz」需外接 HDMI 信号源（默认 120Hz）。另：Samsung TV Plus 美国区韩流扩军（K-Wave Wednesdays 10/28 起 10 部片、Iron Squad S3 于 11/4、Lezhin Snack 13 部微短剧 12 月上线，美国点播/韩国专属频道），竖屏 9:16 FAST 获 Cynopsis 与 KT Genie Shorts 双实证；WebHID 仅桌面 Chromium 约 27–30% 覆盖（Gamepad API 约 97%），Android Chrome v154 出现 HID 权限字符串、拆解方称目标 v157（未官宣）。背景：三星 Q3 2026 营收约 195 万亿韩元（+126.6%）、营业利润 107.4 万亿韩元（+782.5%），10-29 10:00 发布分部业绩，DX 预计连续两季亏损（Q2 约 -8000 亿、Q3 预计超 -1 万亿）；Q3 全球 Mini LED 电视 520 万台（+46%），TCL 140 万 / 海信 110 万 / 三星 90 万（+31%）；Liquid AI LFM3（2026-10-27）给出端侧新标尺：2B 级、4-bit 约 1GB、128K 上下文 KV cache 1.6GB、62 项视觉基准均值 71.4。**未闭合**：Tizen 11.0 的 Chromium 目标里程碑连续第 3 期未获公开数字（官方仍只给机型年↔Tizen 版本映射）。 |
 | 第 029 期 | 2026-10-30 | ✅ | ✅ | 云端定时任务；35 条选题（核心 A9/B5/C3/D5/E4+1 表 = 27，背景 F3/G2/H3 = 8，🔴重点 7 条，E 区机型表 8 款 SKU）；三条主线：①**广电总局令第 17、18 号改写中国区 TV 端 UX 合规底线**——《有线广播电视运营服务管理规定》《交互式网络电视运营服务管理暂行规定》2026-10-27 发布、**2026-11-27 施行**（距本期 28 天），硬性要求坚持「直播优先」实现开机看全屏直播、设置频道回看入口、**不得播放开机广告**，**智能电视机应支持优先呈现直播频道功能并提供便捷设置入口**、由用户自选开机进直播或进交互主页，交互主页的页面/导航栏/状态栏/推荐位须符合主管部门要求，**首页须设免费专区**并重点推荐优质免费内容、精简收费栏目数量、明示节目收费信息、规范应用专区运营与订购支付管理，**不断优化终端性能缩短开机时长**、**简化遥控操作实现遥控器一键切换直播信源**，鼓励语音/手机遥控与 AI；服务侧另规定城镇故障 24h、重大故障 48h、农村或交通不便地区 72h 修复，投诉 10 个工作日内答复，违规可责令改正/警告/通报批评/罚款。②**桌面侧节奏再次加速，Tizen 代差扩至约 27 版且安全侧压力上行**——Chrome **157 于 10-28 进 Early Stable（157.0.8103.26/.27，Windows，Mac 随后）**、**Chrome Beta 158（158.0.8127.4）for iOS** 同期发布（Chrome Releases 官方博客，一手）；ChromeOS 稳定版 M-156（16836.30.0，浏览器 156.0.8078.77）含 **Critical CVE-2026-118331（FileAPI 不当输入验证）**及 Animation/Compositing/UI/ReadingList/Payments/Paint/WebAudio 等 High 项，桌面 156.0.8078.73/.74 一次修 **52 个漏洞（4 Critical、46 High，多处涉及沙箱逃逸）**、Firefox 159 同批修 167 项（108 high、近百项 UAF）；Tizen 官方仍只承诺「Chromium 一年升级两次」（samsungtizenos.com 博客），叠加已闭合的 Tizen 10.0 = M130、webOS 26 = 132，**Tizen 11.0 的 Chromium 目标里程碑连续第 4 期未获公开数字**（英国官网机型对照页仍只给 VRR/Native 双口径刷新率与 Vision AI 功能，无任何版本号）。③**VVC 获得 OS 级入口，AV2 供应链排期落到具体季度**——**Android 17（API 37）的 MediaCodec 正式暴露 video/vvc**（需设备具备硬件 VVC 解码器，须经 MediaCodecList 查询），同期移除 resizeableActivity 的 opt-out 强制大屏多窗口适配、新增 Cross-Device Handoff 与 UWB DL-TDOA；AV2 侧 YouTube 复核口径为 **2027 年初 Web 端（桌面浏览器）软解首发**（当前 GPU 与电视芯片无 AV2 硬解，VideoLAN 估软解算力约 AV1 的 5 倍），**移动 App 与智能电视 App 无时间表**，晶晨 AV2 芯片 2026Q4 批量供货 / 索尼项目 2027Q1 量产维持。另：Netflix 10-26 宣布 2027 年推出「短片」主题分类并按类型/情绪/兴趣细分，同期裁员约 6%（近 1000 岗）、Dan Lin 与 Bela Bajaria 离职、股东信承认时长增长担忧，Omdia 称 2025Q4 ReelShort 日均 35.7 分钟高于 Netflix 的 24.8 分钟；YouTube 官方博客（10-28）给出**智能电视日观看超 10 亿小时**并把 **Shows 打包与 Multiview 四路**列为客厅范式；YouTube TV 主计划 $82.99 / Sports Plan $64.99 且 multiview 支持四路；Samsung TV Plus 11 月感恩节片单含 A24 与韩影合集。E 区机型表 8 款 SKU 中 **6 款存在显式口径冲突**，其中小米 S Mini LED 2026（L85MC-S）三处冲突——分区 1296（国内）vs 640（菲律宾官方）、峰值亮度 2000nits vs 1200nits、内存 4+64GB vs 3+32GB；另有 5 款出现页面内价格不自洽（三星 Q7F 75" 6204 vs 6704、东芝 65Z600QF PRO 5646 vs 5881、创维 65A4H 3175.29 vs 3275 等），故同步提出「宣称值/官方规格书值/实测值 + 原生 Hz/VRR 上限/倍频 Hz」三层采集模板。背景：三星 Q3 2026 官方业绩 **VD/DA 营收 13.9 万亿韩元、营业亏损 0.2 万亿韩元**（VD 因重大赛事结束需求下降叠加成本上升），Q4 以渠道+高端对冲成本，**2027 电视需求预计持平或略降但 QD-OLED 与 75 英寸以上份额提升、聚焦差异化 AI 体验并加强服务与平台业务**；财报会首次把**内存供应持续受限**写入 VD 归因、集团判断**存储紧缺延续至 2028 年**，MX/网络营收 37.7 万亿韩元亏 0.6 万亿韩元；Google 发布 **Gemini 4 Carbon**（AA 智能指数 v5.0 **59 分**登顶，超 Claude Opus 5.5 的 58 与 GPT-6 Astra 的 57，SEC-bench Pro 88.2% / ExploitGym 54.8% / CWE-bench 71.0%，Terminal-Bench 4.0 成功作弊率降至 0.0%，定价 $2/$10 促销后转 $4/$20，**暂不向公众开放**）。**未闭合**：Tizen 11.0 的 Chromium 目标里程碑连续第 4 期未获公开数字。**交付核对（核对时间 2026-10-30 06:4x CST）**——GitHub Pages 首页 ✅（200 / 41733B，共 29 期）、报告详情页 ✅（200 / 71269B，推送后第 26 秒轮询首次返回 200）；Contents API 推送为 报告 201 新建 / 台账 200 更新 / 索引 200 更新；163 SMTP 邮件 ✅（SMTP_SSL 465 一次成功 SEND_OK，HTML 附件 71269 字节）。 |
+| 第 030 期 | 2026-11-01 | ✅ | ⏳ | 云端定时任务；28 条选题（核心 A6/B4/C2/D4/E3 = 19，背景 F2/G2/H5 = 9，🔴重点 6 条，E 区机型表 4 款 SKU）；三条主线：①**ESPN 4K HDR 在美国启动滚动上线，但三星既不在首发名单、能力门槛也全部未公布**——ESPN 与 ESPN2 自 2026-09-08 起在美国以 4K HDR 分发，覆盖 ESPN 自制的 Monday Night Football、NBA、NHL 全量内容，以及部分大学橄榄球、美网与 **Super Bowl LXI**；官方称这是「从零重建内容分发管线」，新架构与 Evertz（Mediator / Overture / Magnum）及 VUE 共建、为 IP 化 endpoint-agnostic 设计；**首发平台为 iOS 与 tvOS App**（Apple TV 4K），「更多联网电视平台秋季跟进」但**未给出逐设备时间表**，美国区 Disney+ 的 ESPN Unlimited 订阅者亦可获得；**官方未公布**支持的 HDR 格式、最低网速、流码率、DRM 等级与可播放的具体 Apple TV 世代，仅以 App 内「4K HDR」角标作为能力标识（What's On Disney Plus / 9to5Mac 2026-10-01 / TechBloat 逐条核查 / TechRadar 经 NewsBreak 转载整理）。②**Tizen 引擎节奏首次拿到明确官方口径，但代差与安全压力同时被量化**——Tizen 官方博客「Always Stay Up to Date」明确「**Tizen updates the Chromium web engine twice a year**」（引擎一年更新两次）、OS 升级支持最长 7 年（2026 年发布产品起）、SES 自动下发功能、自 Tizen 9.0 起 TV Web 浏览器支持 Passkey 与生物认证；商业显示线另有 UWE 独立升级通道（2024 = Tizen 8.0 / Cr108；2023 = Tizen 7.0 / Cr94 可升 108；2022 = Tizen 6.5 / Cr85 可升 108；2019 = Tizen 5.0 / Cr63；2016 = Tizen 2.4 / WebKit ~27）；对照 Chrome 156（156.0.8078.73/.74）一次修复 **52 个漏洞含 4 个 Critical**（FileSystem 沙箱逃逸 CVE-2026-118306、FileAPI、Skia、Layout UAF）、Firefox 159 修 167 项、Chrome Dev for Desktop 2026-10-30 发布 CRITICAL 公告，以及**2026 年内 Chromium 累计已修 62 个 CVE**（全部 Critical/High，13 个沙箱逃逸、21 个渲染器攻陷、Anthropic 未发布模型发现 5 条利用链），**Tizen 10.0 = M130 落后约 26 个里程碑**；**未闭合**：Tizen 11.0 的 Chromium 目标里程碑**连续第 5 期未获公开数字**。③**中国低端段的「口径分层」已系统化，厂商官网自己用小字区分原生与竞技模式**——洛图科技：2026 Q3 中国电视品牌整机出货 **696.0 万台（-4.3%）**，连续第 6 个季度下滑，前三季累计 2190.7 万台（-8.3%），全年预测 **3036.0 万台（-7.7%），为 2010 年以来 17 年最低**；TOP8 合计约 664 万台（-2.1%）、份额 95.4%（+2.1pp），**三星已于 2026-05 退出中国市场**，剩余外资（索尼/飞利浦/夏普）合计不足 15 万台；面板侧 2026 呈「Q1 涨 Q2 稳 Q3 跌转稳」，9 月现止跌信号，CINNO 称 Q4 面板厂因玻璃基板成本有涨价计划但受品牌谨慎下单压制。机型侧四组硬冲突（均为商品页/参数库口径，未经实测）：**L65RB-RAE**（Redmi A65 2025）小米官网规格页自证「刷新率 144Hz *需开启 144Hz 竞技模式*」，而京东参数区标「HDMI2.1 接口数：**无**」；**L55RC-AP**（REDMI A Pro 55 2026）在京东三家店铺 HDMI2.1 数量分别为 2 / 1 / 2、音响 24W / 20W / 16W、价格 ¥1699.15 / ¥1444.15 / ¥1784.15，而小米香港官网标「更新率 **60Hz**、120Hz 競技模式需另行開啟、Cortex **A35 四核**、RAM **2GB** + 32GB」，与大陆官网/京东的「五核 A55 + 3GB + 64GB」直接冲突；**43VR1S-PRO**（Vidda R Pro 43）在京东 / 苏宁 / 政府采购技术参数三种口径下，RAM+ROM（1.5+64 vs 2+32）、SoC（四核 A35 vs 四核 A55）、HDMI2.1（「无」vs 2）、刷新率（标题 144Hz vs 政采「原生 60Hz」）、色域标准（BT.709 97% vs DCI-P3 90%+）全部冲突；**65F56A**（TCL 雷鸟雀 5）刷新率出现 **144Hz / 120Hz / 60Hz 三种口径**（京东与中关村在线推广文案 144Hz、太平洋科技参数页 60Hz、此前渠道参数区 120Hz），RAM 口径亦有「32G 大内存」与「1.5GB」两种表述。 |
 
-**下一期期号：第 030 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
+**下一期期号：第 031 期**（若本表已更新到更晚日期，请以表内最大期号 +1 为准）
 
 
 
@@ -132,11 +133,41 @@
   因此拿不到 agent 执行日志，上述结论为产物侧反推。
   **待做**：新增独立「看门狗」任务（建议每日 07:00），仅检查 reports/daily-briefing-{当日}.html 是否存在，缺失即推送告警——不依赖主任务存活。
 
-## 下期跟踪清单（第 029 期续）
+## 下期跟踪清单（第 030 期续）
 
-> 由第 028 期线索生成，供第 030 期优先核验。**核验前不得作为规划输入。**
+> 由 第 030 期 线索生成，供 第 031 期 优先核验。**核验前不得作为规划输入。**
 
-### 0.1 本期新增待验证（第 029 期）
+### 0.1 本期新增待验证（第 030 期）
+
+- **【本期最高优先级，CP 认证类】ESPN / Disney 的 Tizen 侧 4K HDR 排期与能力门槛清单**：需通过合作伙伴渠道正式索取——
+  ①支持的 HDR 格式（HDR10 / HDR10+ / HLG / Dolby Vision 取舍）；②流码率与最低带宽；③DRM 等级组合（Widevine L1 + PlayReady SL3000 是否强制）与 HDCP 要求；
+  ④可播放的机型清单与「4K HDR 角标」的授予条件（角标是唯一对外可见的能力标识，拿不到即为 UI 上被显式降级）；⑤时间节点 **Super Bowl LXI**。
+  当前状态：iOS / tvOS 首发，CTV「秋季跟进」无逐设备时间表，三星不在已公布名单中——**在拿到书面门槛前，2027 旗舰不得以「支持 ESPN 4K HDR」对外承诺**。
+- **【安全口径类】Tizen 对 Chrome 156 四个 Critical 的回迁状态**：重点核查 **CVE-2026-118306（FileSystem 沙箱逃逸）**与 FileAPI / Skia / Layout 三项 UAF
+  是否已在 Tizen Web Engine 安全公告中同步修复。这决定「安全补丁回迁 SLA」能否形成可对外承诺的口径
+  （建议口径：Critical 级 X 天内回迁、High 级 Y 天内）。对照数据：2026 年内 Chromium 已累计修 62 个 CVE，其中 13 个沙箱逃逸、21 个渲染器攻陷。
+- **【平台类】Tizen 11.0 的 Chromium 目标里程碑（连续第 5 期未获公开数字）**：官方当前只给「引擎一年更新两次」与 OS 7 年升级，
+  **未承诺每次更新的里程碑跨度**，也未说明 7 年周期内实际可拿到几次。谈判锚点：LG webOS 26 = Chromium 132。
+  求证路径：①向平台侧正式提出需求单；②查 TV Extension Release Note 的版本节奏；③评估消费线能否复用商业显示 UWE 的独立引擎升级通道。
+- **【CP 认证类】Netflix 云游戏在 Tizen 的准入实测**：官方提供自查入口「管理访问权限和设备 → 显示兼容游戏的设备」开关，需逐机型实测并记录。
+  同时确认：Netflix 帮助中心明确「**Physical gamepads and other controllers aren't supported at this time**」——
+  TV 与电脑端仅支持手机 / 平板扫码配对（iOS/iPadOS 17+ 需 Netflix Game Controller App），电脑浏览器端为键鼠或手机/平板。
+  据此重新评估 2027 手柄策略：短期不投手柄认证，长期若要支持 Xbox / DualSense 需走自建映射层 + 白名单。
+- **【机型口径类】四个 SKU 的冲突项以官方规格书复核**（渠道页数据不得作为规格书使用）：
+  ①**L65RB-RAE**——「HDMI2.1 接口数：无」与「HDMI 信号源下支持 144Hz 输入」是否自洽；RAM 2+32 与此前 2+16 口径的取数日期；
+  ②**L55RC-AP**——京东三店铺 HDMI2.1 数量 2/1/2 与音响功率 24/20/16W 的差异，及大陆官网（五核 A55 + 3GB + 64GB）与香港官网（A35 四核 + 2GB + 32GB）的**区域版本差异 vs 同一型号不同配置**判别；
+  ③**43VR1S-PRO**——分辨率（4K vs 全高清）、RAM+ROM、SoC、HDMI2.1、刷新率（标题 144Hz vs 政采原生 60Hz）五项；
+  ④**65F56A**——刷新率 144Hz / 120Hz / 60Hz 三口径与 RAM（32G 大内存 vs 1.5GB）。
+- **【媒体/编解码类】AV2 落地机型影响面**：确认 ①2027 软解窗口下 YouTube AV2 对 CPU 与内存的代价，**2GB 及以下机型风险最高**；
+  ②2028 SoC 是否把 **AV2 硬解 ≥4K60** 列入硬指标（当前无任何电视支持 AV2 硬解；IP 侧芯原 VC9800D、Chips&Media、Allegro DVT Pulsar D400、VideoLAN dav2d 已就绪但无量产终端）；
+  ③AV2 专利池（Access Advance vs Sisvel）成本变量。对照：YouTube 目录按观看时长已有 >90% 使用 AV1（2026-03-19），AV1 应从「加分项」改为入门 4K 的**一票否决项**。
+- **【AI 架构类】端侧 AI 协处理器（瑞芯微 RK1828 类）解耦路线对 2027 机型架构的影响**：RK1828 不集成于主 SoC、作为独立协处理器，
+  原生支持 7B 参数模型、端侧实时 2D 转 3D、VLM 多模态画面识别、低时延离线多轮语音；**存量机型可通过加装协处理器升级**，不必换主芯片。
+  需评估：①2027 机型是否保留「外挂 AI 算力」可选配置位；②「端侧可跑参数量」是否取代 TOPS 成为 SoC 选型指标（高通 Q-8750 = 77 TOPS / 11B 参数、Q-7790 = 24 TOPS 且明确面向 AI 电视）。
+- **【标准类】Compute Pressure API 在 Tizen M130 上的可用性与精度**：W3C CRD 2026-10-26，Chromium 已实现但 **WebKit 明确反对**、Mozilla 待定。
+  若可用，可作为低端机型「自适应渲染预算」（降级动画、减少图层、限制后台解码）的标准抓手；但跨平台一致性存疑，只能作为 Chromium 系增强能力。
+
+### 0.2 上期结转待验证（第 029 期）
 
 - **【本期最高优先级，合规类】广电总局令第 17/18 号的中国区改造清单**：《有线广播电视运营服务管理规定》《交互式网络电视运营服务管理暂行规定》
   2026-10-27 发布、2026-11-27 施行。需逐条确认：①开机到全屏直播的启动链路与「用户可自选进入直播/交互主页」的设置入口；
@@ -157,7 +188,7 @@
 - **【本期新增】VVC 的电视侧动因复核**：Android 17 (API 37) 的 MediaCodec 暴露 video/vvc 且强制大屏多窗口适配，
   需确认 2027 SoC 是否要把 AV2 与 VVC 的 IP 授权与硬件面积打包议价（当前 VVC 仅巴西 TV 3.0 等强制场景有明确动因）。
 
-### 0. 上期结转待验证（第 028 期）
+### 0.3 前期待验证（第 028 期）
 
 - **【连续第 3 期最高优先级，本期已升级为外部对照锚点】Tizen 11.0 的 Chromium 目标里程碑**：本期取得 LG 官方一手规格
   （webOS TV 26 = Chromium 132 / 25 = 120 / 24 = 108 / 23 = 94 / 22 = 87），确认三星在绝对值上已落后 2 个版本且年度跨幅放缓至 +10。
@@ -279,6 +310,8 @@
 - fpdisplay 液晶网（洛图科技月度面板价格预测）
 - 深交所公告 / 新浪财经 / 腾讯新闻（TPV、康冠等代工厂与面板厂动态）
 - HKEXnews（TCL 电子等港股中期报告一手披露）
+
+  第 030 期新增：**Netflix 帮助中心 help.netflix.com（官方一手，TV/电脑游戏控制器与兼容设备自查入口）**、**Disney+ 官方站点 disneyplus.com（官方一手，三库合一与家长控制）**、What's On Disney Plus / 9to5Mac / TechBloat（ESPN 4K HDR，TechBloat 含逐条「官方未说明」核查）、TechRadar（经 NewsBreak 转载整理）、**Samsung Tizen OS 官方博客 samsungtizenos.com（引擎一年两次 / OS 7 年 / Passkey，一手）**、Samsung 2026 AI TV 新闻稿与 Samsung 官方 Smart TV 页（7 年升级与功能限制条款）、Samsung SSSP / Tizen↔Web 引擎对照 FAQ（docs.smartsign.se，第三方整理的 UWE 对照表）、**小米官网 mi.com 规格页与 mi.com/hk 香港规格页（一手，含「144Hz 需开启竞技模式」「60Hz 原生」小字）**、小米商城、京东商品参数区（三店铺口径）、苏宁易购商品页与苏宁国际参数页、第三方政府采购技术参数页（政采口径，非零售口径）、中关村在线 tv.zol.com.cn、太平洋科技 g.pconline.com.cn（参数库，与渠道页口径冲突）、洛图科技 RUNTO（Q3 中国出货，经媒体转载整理）、CINNO（面板价格，经转载整理）、Omdia（全球 Q3，经亚洲日报/朝鲜日报/视听圈转载整理）、半导纵横 icviews.cn（RK1828 与上半年中国出货）、智通财经（方正证券研报，经转载整理）、火山方舟模型上线公告、LLM Gateway 2026 时间线、《广播与电视技术》2026 年第 3 期《电视终端智能体的技术体系与应用研究》（广电总局广科院，经公众号转载整理）、Beko Electronics 研究门户（Edge AI in Smart TVs）、太平洋知科技（高通 CES 2026 Q-8750/Q-7790，经转载整理）、FlatPanelsHD（AV2 / AV1 渗透率）、腾讯新闻（YouTube 全屏静音故障，IT时代网，经转载整理）、Android Authority（2026-10-30，经 GoKawiil 转载整理）。
 
 ## 信源规范
 
