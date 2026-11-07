@@ -119,7 +119,21 @@
   Vidda 65V1Q-R 的 Wi-Fi 规格存在商品页（2.4G）与媒体稿（双频 Wi-Fi 6 + 蓝牙 5.4）直接冲突，按规则并列保留、标「口径冲突」，
   且「144Hz」未说明原生或插帧，按未证实处理；同价位竞品普遍以「竞技模式/动态刷新率」表述，需按插值理解。
 
-## 已知问题（2026-10-04 首次执行时记录）
+| 第 037 期 | 2026-11-08 | ✅ | ✅ | 云端定时任务；31 条选题（核心 A6/B4/C2/D2/E1 表 8 SKU = 22，背景 F4/G2/H3 = 9，🔴重点 4 条，检索 37 次其中 A–E 29 / F–H 8）；三条主线：①**Disney+ 韩国广告档定档 11-10/11-17 上线 + 12-10 全线涨价官宣**——广告档 ₩7,000 低于 Netflix 韩区 ₩9,500，标准档 ₩9,900→₩11,500、高级档 ₩12,900→₩16,500，「广告档拉新 + 全档涨价」双轨样本，韩区 CP 广告 SDK 口径与订阅迁移需跟踪。②**Netflix 12 月直播矩阵落定**——12-11 富里 vs 约书亚（Wilder vs Opetaia 副赛 11-04 官宣、门票 1 小时售罄）+ 同日 FIFA 2027 女足 Final Draw、12-25 NFL 圣诞双场（Bills-Broncos / Packers-Bears）、12-23 Cliff Booth；直播压测与 TV 端直播入口位提前排期。③**面板「涨价函 vs 成交价」口径冲突 + 三星 Q3 亏损倒逼高端/平台双线**——TrendForce 11 月全尺寸持平（65" $173 / 55" $123 / 43" $63 / 32" $35）、Q4 品牌采购 -5% QoQ，LG 预测 Q1'27 涨价压力增大；三星 VD/DA 亏 2,000 亿韩元（Q2 的 20 倍）、DX 连续两季亏 8,000 亿，官方口径转向 RGBO/75"+ 高端 + Tizen/TV Plus 平台现金流。核心面补充：Edge 157（11-05）确认 gamepadrawinputchanged OT / WebMCP / setHTML 同批、Electron 46 stable（Cr160）、Xbox「手机当手柄」兼容名单细化（Samsung 2020+/webOS 24+/VIDAA 9.6+，Game Pass 云时长 Essential 5h/Premium 10h/Ultimate 15h）+ Nano Cloud Connect 美国 Insider 预览、星闪 SLP 指向遥控商用 + GB/T 48336（2027-04-01）、Widevine L1+PlayReady SL3000+HDCP 4K 三重门口径、AV1 硬解跨档位普及（A19/RK3588S2/RTD1325）、Apple TV 4K gen4（$299/A19/AV1，11-13 开售）。背景面：双11 半程电商 ¥10,263 亿（星图）、洛图 H1 中国电视 1,198 万台 -12.7%/均价 ¥4,169 +5.8%、国补 15%/封顶 ¥1,500/12-31 截止；WebTransportError 对齐规范（Interop 2026 焦点）、Baseline 2026 盘点；GPT-6 Cyber 扫 Linux 内核漏洞（2308 标记/1724 复现/近千修复）、Gemini 4 Argon/Carbon、Kimi K3.1 Pro、Mistral Large 4；海信 JUOS 超级小聚（一家人画像）/长虹云帆 30+ 智能体/TCL 伏羲超级大智能体、Nvidia Cosmos 3 开源、EU AI Act 高风险期限推迟至 2027-12。E 区 8 SKU（Redmi A Pro 75" 288Hz 国补后 ¥2,276、Vidda 85VR1S-PRO 330Hz ¥4,199、Vidda 100VR1S-PRO ¥5,077、Vidda 65VX3S Mini LED ¥3,037、TCL 98R69B Ultra 2+64GB ¥10,326、雷鸟 75R69B 2+64GB ¥3,794、酷开 100P5F Pro 4+128GB ¥4,495、创维 65A4H ¥2,644，均商品页快照未经实测；288/330Hz 未注明原生/插帧按未证实处理） **交付核对（核对时间 2026-11-08 06:xx CST）**——Contents API 推送 3 文件：报告 201 新建 / 索引 200 / 台账 200（tracking.md 141KB 超 shell argv 128KB 上限，按第 031/032 期既定处置走 urllib 直推通道）；GitHub Pages 首页 ✅（200）、报告详情页 ✅（200）；163 SMTP 邮件 ✅（SMTP_SSL 465，SEND_OK，收件人 yanqing.lu@samsung.com，主题「每日情报日报 2026-11-08 · TV / CP / Web / Media / AI」）。**已知交付风险**：无。 |
+
+## 下期跟踪清单（第 037 期续）
+
+- **Disney+ 韩国广告档上线首周**：11-10 首日 / 11-17 全量的 TV 端广告频次与编排口径、12-10 韩区涨价（₩11,500/₩16,500）落地后订阅迁移信号。
+- **Netflix 12-11 富里 vs 约书亚**：TV 端直播入口位变化、多码率直播压测安排（与 FIFA 女足抽签同日）、12-25 NFL 双场编排。
+- **Fox×Roku 交割后整合第一周**：The Roku Channel × Tubi 广告位合并、FAST 入口排序传导（第 036 期续）。
+- **双11 收官**：总额与 E 区价格是否再探底（55" 破 ¥1,499 / 100" 破 ¥5,000 已现）、国补 12 月额度消耗与需求透支。
+- **Chrome 158 Beta / WebHID（Android 17）**：blink-dev 后续 Intent、Edge 157 已确认的 gamepadrawinputchanged OT 注册量。
+- **Tizen 11.0 Chromium 里程碑**：连续第 13 期观察点，维持内部求证优先。
+- **WebTransportError 对齐（Interop 2026）**：Chrome 158 落地节点，TV 弱网直播/云游戏通道基座评估。
+- **电视 Agent 三线**（海信 JUOS / 长虹云帆 / TCL 伏羲）：家庭多人身份识别与跨 App 聚合的功能披露节奏。
+- **Xbox Nano Cloud Connect**：美国预览延迟实测数据、Wi-Fi 直连输入通道对手柄认证的影响。
+
+## 下期跟踪清单（第 036 期续）
 
 - 第 032 期（2026-11-03）交付核验：GitHub Pages ✅（首页 1s、报告详情页 102s 均返回 200），邮件 ✅（163 SMTP SSL 465，首次即成功）。**已知问题复现**：state/tracking.md 达 122,508 字节，tools/publish-github.sh 再次因 Linux argv 上限（128KB）报 Argument list too long 并使 PUT 返回 400，已改用 urllib 直推通道完成写入；后续 tracking.md 超过约 96KB 时应直接走该通道，不要再依赖 shell 脚本传参。
 
