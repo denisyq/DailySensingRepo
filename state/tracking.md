@@ -131,6 +131,47 @@
 
 | 第 043 期 | 2026-11-14 | ✅ | ✅ | 云端定时任务；34 条选题（核心 A10/B4/C2/D2/E4 含 7 SKU 汇总表 = 22，背景 F6/G2/H3 + 1 端侧补充 = 12，🔴重点 4 条，检索 26 次：A–E 19 / F–H 7）；三条主线：①**Netflix 战略级产品转向考量 + Peacock 移动端史上最大改版**——Netflix 考量 Always-on 类型频道、第三方订阅捆绑、短视频与更多直播（CNNBC 经转载，官方未证实）；Peacock 移动端竖屏片段流（Clips）+ 对话式 AI 搜索 + 系列专区，微短剧体系化布局（The Verge 等多源）；《芝麻街》24/7 FAST 频道确认登陆 Samsung TV Plus（含 LG Channels/Xumo/Vizio WatchFree+）；WWE 直播多地区常态运营 + 12-11 约书亚 vs 富里重量级之战 Netflix 全球直播（战前 4 周压测窗口延续）；Disney+ 官宣 3D 与 Viewing Environments 登陆 Meta Quest/Meta VR Glasses（延续 041/042 期 Quest 3D 跟踪）；Google TV 平台级 bug：YouTube TV 频道指南在 Chromecast 内置 TV 上消失（近 3–4 天集中爆发，与 041 期 Google TV Live tab 消失同族，集成层故障未证实）；Coupang Play《Just Makeup》S2 定档 11-27、足球赛事转播常态；TVING 品牌区进驻 HBO Max（17 个亚洲市场）后走向未决，Paramount Skydance 收购 WBD 后亚洲内容线收缩；优酷 TV 版更新 12.6.1.3，「付费彩蛋」乱象遭官媒批评，中国 CP 变现合规风险上升；YouTube/YouTube TV 无当日功能级新发布，黑五促销背景更新。②**Apple TV 4K 四代开售（$299，11-13）：A19 + AV1 硬解升级 + Siri AI**——AV1 已占 YouTube 播放 75%+（背景补充），Dailymotion 开发者文档更新确认其 DRM 方案当前不兼容 AV1（仅 H.264），codec×DRM 组合限制实例；面板侧：京东方/华星/惠科 Q3 涨价函未落地，Counterpoint 9 月全球 TV 出货仅 +1%，品牌抵制涨价、面板厂以 MDF 变相补贴，CINNO 确认 11 月全尺寸持平（高世代稼动率约 80%、低世代不足 70%），Omdia 65" Open Cell 现金成本 2025 $112→2026 $116.8→2027 预计 $124.55、Q4 PCB/T-Con/玻璃基板涨价部分超 10%，TrendForce Q4 LCD 成本涨幅至少 4–8%，友达 7.5 代厂售台积电（占全球 TV 面板 2–3%、2027H1 退出）→2027 供需趋紧、价格中枢上行共识。③**Chrome 157 修复在野零日 CVE-2026-125350（XML UAF）入 CISA KEV（2026 年第 8 个零日）**——Electron 45.3.2 内核升至 Cr156.0.8078.100、44.11.3 例行回迁上游修复；LG webOS 26 平台细节补全（Voice ID/Sports Portal/Gemini+Copilot 双 AI/LG Shield，更新承诺至 2030 年底）；Tizen 商用线 7.0/社区项目仍受限于老内核（Tizen 11.0 Chromium milestone 连续第 8 期观察未获公开数字）；Xbox 云游戏两项输入预览：手机当 TV 手柄（浏览器控件，TV 端 Settings > Account > Preview Features）+ Nano 手柄 Wi-Fi 直连云端服务器（US 限定，绕开 TV 蓝牙/HID 输入栈），对 TV 云游戏 SDK 会话配对协议与输入链路控制权提出新议题；W3C Gamepad 规范新版 Working Draft（11-13），编辑团队首次出现 Sony；Dailymotion 文档更新为 DRM×codec 组合限制另例。E 区 7 SKU 快照（均商品页参数，未经实测）：Vidda 43VR1S-PRO 1.5GB+64GB/144Hz/200–300 尼特/DCI-P3 76.32%（京东页「LED 显示」vs「背光方式:OLED自发光」口径冲突）；小米 REDMI A Pro 43 ¥999/3+64GB/60Hz（2026 款）；REDMI A Pro 75 288Hz 宣称/国补后 ¥2464；雷鸟 50雀5 50F295C-JN 1.5GB+32GB/144Hz 与 50雀4 50F195C 全高清/1GB+8GB 同价位并存；鹏7 Plus 26 款 55S78A Plus 国补后 ¥1547（超高刷宣称）；华为智慧屏 SE43 2+16GB/DCI-P3 92%；结转 SKU（L55RB-RAE/L55RC-AP/65F56A）继续核验；国补收官窗口：全年 2500 亿元资金已全部下达，湖北等地 12-31 到期。背景面：TCL 双11 京东全周期夺冠、奥维睿沃前三季全球出货 2230 万台 +7.2%（TOP3 唯一增长）；LG 2027 OLED B7 系列 KCC 认证曝光（48/55/65/77/83 五尺寸）、首台 115 寸 Mini LED 欧洲出货 €5,999（「半价海信」打法）、RTINGS 16 台旧 WOLED 中 14 台 edge rot（OLED 寿命叙事风险，需准备 QD-OLED 对标话术）；黑五价格战提前：LG C6 55" $999 五折、三星 S90H 65" $1,399.99 创纪录低价（48% off）、TCL QM8L 65" 约 $1,000、M80H 65" $500——2026 OLED 五折清库存确立北美「OLED $1000 心理线」；HBO Max×Paramount+ 宣布 2027 年初捆绑包（超级捆绑加速，TV 端账号聚合/账单展示 UI 需评估）；三星 HDR10+ Advanced（AI tone mapping 逐场景切换）；AI 侧 Gemini 4 Hydrogen/Carbon GA。 **交付核对（核对时间 2026-11-14 06:20 CST）**——Contents API 推送：报告 201 新建 / 索引 200 / 台账经 shell 脚本 PUT 返回 502 一次、改 urllib 直推通道重试后 200 成功（185KB 大文件沿用 036 期已知问题经验，脚本 @file 传参仍遇网关 502，直推通道更稳）；GitHub Pages 首页 ✅ 与报告详情页 ✅（首次轮询即 200）；163 SMTP 邮件 ✅（SMTP_SSL 465 一次成功 SEND_OK，收件人 yanqing.lu@samsung.com，主题「每日情报日报 2026-11-14 · TV / CP / Web / Media / AI」）。**已知交付风险**：无。 |
 | 第 044 期 | 2026-11-15 | ✅ | ✅ | 云端定时任务；26 条选题（核心 A7/B4/C3/D1/E1 含 SKU 汇总表 = 16，背景 F5/G2/H3 = 10，🔴 重点 9 条，检索 27 次：A–E 20 / F–H 7）；三条主线：①**Chrome 第 8 个在野利用 0-day CVE-2026-125350（XML 组件 UAF），11-9 紧急修复入 CISA KEV（11-10）**——修复版本 Chrome 157.0.8103.50/.51（2026 年第 8 个 0-day，其中 4 个在 V8）；Chrome 158 early stable 已推送、11-17 正式移除客户端 XSLT（TV 端 WebApp 兼容回访窗口收紧），Chrome 159 Beta 功能清单公布；Electron 45.3.2（Chromium 156 / Node 24.22.2）+ Discord 宣布弃 Electron 转 Rust/GPUI 自研客户端（对 TV 端 Electron 系 App 长期路线的信号）；Tizen 11.0 Chromium milestone 连续第 9 期未获公开数字。②**黑五早鸟 OLED 价格战 + 面板涨价分歧（口径冲突并列）**——三星 S84H 65 吋 $900（-52%）、S90H 65 吋 $1,400 创新低，北美「OLED $1,000 心理线」进一步下探；TrendForce 11 月报价全面持平（65" UHD $173 / 55" $123 / 43" $63 / 32" $35）vs Omdia 判定 12 月涨价临门，口径冲突并列待 12 月报价裁决；奥维睿沃前三季全球 TV 出货 1.473 亿台 +1.3%、Q3 单季 -3.2%，TCL +7.2% 逼近三星；三星电子 Q3 DX 部门营业亏损 8000 亿韩元、电视/家电亏损扩大至 2000 亿韩元，LG TV 转盈；传三星 2027 年高端电视改用 Ultra / Plus / Basic 三级命名（单源未经官方确认）。③**客厅云游戏与语音 AI 商业化提速**——2020 款三星电视 11-03 起失去 Xbox app 支持、Game Pass 转入「云游戏时长配额」制（Essential 5h / Premium 10h / Ultimate 15h，$3.99/10h 加购），存量机型服务迁移与配额 UI 需评估；Apple tvOS 27.2.1 向二代/三代 Apple TV 4K 下放 Siri AI、27.3 Beta 向第三方开放 Siri AI 并发布 7 吋智能屏 HomeView；Netflix 评估 always-on 线性频道/第三方订阅捆绑/短视频板块（经转载待证实），12-11 Fury vs Joshua 直播进入战前三周；HBO Max×Paramount+ 捆绑包官宣 2027 年初（英国放行收购、美国 3 月开庭）；Stingray FAST 收入 +85%、获三星未售广告库存代销权；Google TV 平台 bug 族续报（YouTube TV Live Guide 消失，修复推送中）；韩国 CP：KBO 三星狮 12 年首冠、TVING 稳居畅销榜第 2。E 区 6 SKU 快照（均商品页参数，未经实测）：小米 REDMI A Pro 65/75（288Hz 宣称口径疑义）、L75MA-RAE、L32RA-RAE、雷鸟鹏7 Plus 75S78A Plus（360Hz 宣称口径疑义）、Vidda 发现X Mini/X/X 2027 定价曝光；国补 12-31 收官冲刺。背景：W3C DID Resolution v1 / Core-AAM 1.2 / WASM Web API 2 进 CRD、CSS Color HDR L1 更新；ES2026 正式批准、Temporal/using 定档 ES2027；AI 一周格局 Claude Fable 5.2 / Gemini 4 Carbon 全量 + Hydrogen 低价档 / Muse Ember / NVIDIA 人事地震 / Qwen4-Max-Preview 静默上架（11-17 或正式发布）/ DeepSeek 全应用栈 API。**交付核对（核对时间 2026-11-15 06:25 CST）**——Contents API 推送：报告 201 新建 / 索引 200 / 台账 200（脚本一次通过，未再现 043 期 502）；GitHub Pages 首页 ✅ 与报告详情页 ✅（第 2 次轮询双双 200，首次 502 为构建传播延迟）；163 SMTP 邮件 ✅（SMTP_SSL 465 一次成功 SEND_OK，收件人 yanqing.lu@samsung.com，主题「每日情报日报 2026-11-15 · TV / CP / Web / Media / AI」）。**已知交付风险**：无。 |
+| 第 045 期 | 2026-11-16 | ✅ | ⏳ | 云端定时任务；34 条选题（核心 A7/B5/C4/D4/E3 含 SKU 汇总表 = 23，背景 F5/G3/H3 = 11，🔴 重点 8 条，检索 29 次：A–E 23 / F–H 6）；三条主线：①**Chrome 11-11 三通道同步更新合计 217 项修复（157 稳定版 83 项含 5 Critical / 156 ES 72 项 / ChromeOS LTS-150 62 项）**——Tizen Web Engine 回迁核对窗口（11-09 与 11-11 两批），Electron 45.3.0 = Cr156.0.8078.96，WebKitGTK 手柄延迟 50ms→10-12ms；Tizen 11.0 Chromium milestone 连续第 13 期未获公开数字。②**Netflix 直播 + 派对游戏双线加码**——12-11 Fury vs Joshua 全球直播全会员免费无 PPV（WBA 超级头衔）、11-25 NFL、Games on TV 11-17 上线 Scrabble Shake-Up / Scattergories Party（手机即手柄路线固化）；YouTube CTV 播放器 UI 改版 + Shorts 系列进入联网电视。③**黑五 OLED 价格战开打 + 中国双雄财报**——LG B6E 55 吋 $699.99 史上最低（简化遥控换成本）、三星 S85H 55 吋 ~$999；TCL 电子前三季净利 +54.5%、Mini LED 国际出货 +94.5%，与索尼合资公司明年 3 月底成立；中国 Q3 出货 696 万台 -4.3%、双11 周期 10 月 -12.2%、100 吋面板 $410 国补后整机 ¥5000 档；TrendForce 11 月面板报价全尺寸持平。E 区 4 SKU 快照（商品页参数，未经实测）：小米 L65RC-AP（288Hz 宣称 + 43/65 吋页面混标，口径冲突延续）、Redmi A32 L32RA-RAE（1GB+8GB，HD 非 4K）、Redmi A65 Pro L65RB-AP（144Hz 3+64GB）、TCL 65V8M Pro（360Hz 宣称，到手约 ¥2107）；国补 12-31 收官。背景：AV1 占 Netflix 30% 播放时长、认证大屏设备 2023 起近 100% 带 AV1；晶晨 T962D4 入门 4K SoC（A55+AV1 硬解+HDMI2.1×3+QMS）；Apple Siri Remote UWB 精确查找（$59 单卖）；Interop 2026 媒体伪类 :buffering/:volume-locked；WebMCP Chrome 149–156 Origin Trial；Gemini 4 Carbon GA（$2.12/任务）；美团 LongCat-2.5（1.6T、全国产算力）；端侧 AI 电视四案例。交付核对见「交付核对」字段（发布后回填）。 |
+
+## 下期跟踪清单（第 045 期续）
+
+> 由 第 045 期 线索生成，供 第 046 期 优先核验。**核验前不得作为规划输入。**
+
+### 0.1 本期新增待验证（第 045 期）
+
+- **【平台 / 安全类，最高优先级】Chrome 11-09 与 11-11 两批修复在 Tizen Web Engine 的回迁状态**：
+  11-11 三通道共 217 项（157.0.8103.78/.79 含 5 个 Critical UAF：ServiceWorker/CSS/Layout/Skia/Accessibility；156 ES 156.0.8078.100；ChromeOS LTS-150）。
+  待核查：①两批 CVE 在 Tizen 安全公告的同步率与回迁 SLA 天数；②UAF 类集中在渲染/合成路径（TV WebApp 高频暴露面）的风险定级口径；
+  ③Chrome 157 首推（11-03）的 HTML-in-Canvas 是否纳入 Tizen WebApp 能力白名单评估（GPU 合成攻击面 vs 弹幕/字幕自绘收益）。
+- **【CP / 产品定义类】Netflix「手机即手柄」在 Tizen 机型上的兼容矩阵**：
+  Games on TV 11-17 新增 Scrabble/Scattergories（US/UK/CA/AU/欧洲部分国家、指定机型）。待办：①逐机型实测扫码配对与 WebView 通信稳定性；
+ ②确认 Netflix 对 TV 端的最低设备要求是否与「派对游戏」解锁条件挂钩；③12-11 拳赛直播的 TV 端入口位、预加载与并发峰值口径（12 月直播三连）。
+- **【外设 / BOM 类】Apple Siri Remote UWB 精确查找对 2027 三星遥控路线的影响**：
+  精确查找需 UWB（iPhone 17/Air/Duo 配套）、遥控单卖 $59；LG B6E 以简化遥控（无指向/无语音）换入门价格。
+  待评估：①三星 2027 高端遥控是否引入 UWB/BLE Find My（SolarCell 遥控 + SmartThings Find 网络接入的协议改造成本）；
+  ②入门档（若 2027 Basic 段落地）是否复用「减配遥控」控成本打法。
+- **【市场 / 规划类】黑五 OLED $700 心理线与 2027 入门 OLED 定价带**：
+  LG B6E 55 吋 $699.99（Verge 称史上最低 55 吋 OLED）、三星 S85H 55 吋 ~$999、TCL SQD 系黑五促销。
+  待办：①黑五主档（11-27~30）价格修复路径与各品牌最低价守线；②三星 2027 入门 OLED 与中端 Neo QLED 价格带重叠校准；
+  ③「OLED ≈ 中端 Mini LED」价格心理线对 2027 产品组合的影响。
+- **【市场 / 竞争类】TCL×索尼合资公司（TCL 51%，明年 3 月底成立）对高端阵营的影响**：
+  索尼电视/音响业务并入后，2027 高端 OLED/画质品牌阵营出现新变量。待跟踪：合资公司首发产品线、索尼高端机型在三星对标市场的价格与功能动作。
+- **【机型口径类】2 组新增冲突 + 多组结转冲突，统一改走官方规格书**：
+  新增：①**L65RC-AP**——43/65 吋页面混标延续 + 天猫 288Hz vs 京东指南页 3+64GB 内存口径；②**TCL 65V8M Pro**——360Hz 宣称无原生/倍频口径。
+  结转：L55RB-RAE / L55RC-AP / 43VR1S-PRO / 65F56A / 雷鸟鹏7 Plus 360Hz 宣称。
+  统一采集模板：**宣称值 / 官方规格书值 / 实测值** + **原生 Hz / VRR 上限 / 倍频 Hz** 三层。
+- **【成本 / 政策类】国补收官（12-31 截止）与 2027Q1 回落幅度**：
+  100 吋面板 ~$410、整机国补后 ¥5000 档已触及三星入门大屏定价带下沿；双 11 前三周线上零售量 -11%+（奥维云网）。
+  待量化：Q4 补贴前置销量对 2027Q1 的透支比例、渠道库存与价格带回落幅度。
+
+### 0.2 结转待验证（第 044 期及更早）
+
+- **Tizen 11.0 Chromium 目标里程碑**：连续第 13 期未获公开数字。谈判锚点：LG webOS 26 = Chromium 132、Tizen 10.0 = M130；求证路径不变（平台需求单 / TV Extension Release Note / 商业显示 UWE 引擎通道）。
+- **三星 2027 三级命名（Ultra / Plus / Basic）与 QD 停产传闻**：仍为韩媒单源未证实，禁止作为规划输入。
+- **三星显示 OLED 面板供应价上调 10–20 美元**（ChannelGate 单源）：若成立，2027 OLED 成本带上修。
+- **广电总局令 17/18 号（11-27 施行）中国机型改造**：开机全屏直播、无开机广告、首页免费专区的 OTA 排期确认。
+- **Disney+ 韩国广告套餐（7,000 韩元/月）首月数据**；Fox-Roku 交割后 The Roku Channel × Tubi 整合。
+- **WebMCP（Chrome 149–156 Origin Trial）**：观察 TV 端可行性（结构化工具暴露 vs 视觉 Agent），暂不投入。
 
 ## 下期跟踪清单（第 044 期续）
 
