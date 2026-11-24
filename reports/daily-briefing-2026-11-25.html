@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情报日报 · 第 051 期 · 2026-11-25</title>
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#161b22; --card:#161b22; --border:#30363d;
+    --text:#c9d1d9; --muted:#8b949e; --accent:#58a6ff; --red:#f85149; --yellow:#d29922; --gray:#6e7681;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;line-height:1.65;}
+  a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px;}
+  header{border-bottom:1px solid var(--border);padding-bottom:18px;margin-bottom:18px;}
+  h1{font-size:26px;margin:6px 0 4px;}
+  .issue-line{color:var(--muted);font-size:14px;}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;}
+  .stat-box{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:13px;}
+  .stat-box b{font-size:18px;color:var(--accent);margin-right:6px;}
+  nav{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:26px;font-size:13px;}
+  nav .nav-group{margin:4px 0;}
+  nav .nav-label{color:var(--muted);margin-right:8px;}
+  nav a{margin-right:14px;white-space:nowrap;display:inline-block;}
+  .zone-title{font-size:20px;margin:34px 0 6px;padding-left:10px;border-left:4px solid var(--accent);}
+  .zone-title.bg{border-left-color:var(--gray);color:#a8b3bd;}
+  .zone-sub{color:var(--muted);font-size:13px;margin:0 0 14px 14px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px;}
+  .core .card{padding:22px 24px;}
+  .card h3{margin:0 0 6px;font-size:17px;}
+  .core .card h3{font-size:19px;}
+  .meta{color:var(--muted);font-size:12.5px;margin-bottom:8px;}
+  .summary{font-size:14px;margin:0 0 10px;}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+  .tag{display:inline-block;font-size:12px;padding:2px 9px;border-radius:20px;border:1px solid var(--border);color:var(--muted);}
+  .tag.hot{color:var(--red);border-color:var(--red);}
+  .tag.warn{color:var(--yellow);border-color:var(--yellow);}
+  .tag.ok{color:#3fb950;border-color:#3fb950;}
+  .tag.test{color:var(--yellow);border-color:var(--yellow);}
+  .tag.rumor{color:var(--gray);border-color:var(--gray);}
+  .impact{background:#1c2128;border-left:3px solid var(--accent);padding:8px 12px;font-size:13.5px;border-radius:0 6px 6px 0;margin-bottom:8px;}
+  .impact b{color:var(--accent);}
+  .src{font-size:12.5px;color:var(--muted);}
+  .src a{font-size:12.5px;}
+  .empty{color:var(--muted);font-size:13px;font-style:italic;background:var(--bg2);border:1px dashed var(--border);border-radius:8px;padding:8px 14px;margin-bottom:16px;}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin:10px 0;}
+  th,td{border:1px solid var(--border);padding:7px 9px;text-align:left;vertical-align:top;}
+  th{background:#1c2128;color:var(--text);white-space:nowrap;}
+  td{color:var(--text);}
+  .conflict{color:var(--red);font-size:11.5px;}
+  footer{border-top:1px solid var(--border);margin-top:40px;padding-top:16px;color:var(--muted);font-size:12.5px;}
+  .compact .card{padding:14px 18px;margin-bottom:12px;}
+  .compact .card h3{font-size:15.5px;}
+  .compact .summary{font-size:13px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="issue-line">AI 情报助手 · 每日 Sensing 情报日报 · TV / CP / Web / Media / AI</div>
+  <h1>每日情报日报 · 第 051 期</h1>
+  <div class="issue-line">日期：2026-11-25（周三）· 收件人：三星电视高级产品经理</div>
+  <div class="stats">
+    <div class="stat-box"><b>19</b>核心追踪 A–E 选题</div>
+    <div class="stat-box"><b>10</b>背景参考 F–H 选题</div>
+    <div class="stat-box"><b>🔴 6</b>重点关注</div>
+    <div class="stat-box"><b>26</b>本期检索次数（A–E 19 / F–H 7）</div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-group"><span class="nav-label">核心追踪：</span>
+    <a href="#sec-a">A · CP 应用与流媒体（7）</a>
+    <a href="#sec-b">B · Web 引擎与运行时（5）</a>
+    <a href="#sec-c">C · 外设与输入（3）</a>
+    <a href="#sec-d">D · 多媒体与 DRM（3）</a>
+    <a href="#sec-e">E · 中国低端 4K 机型（2+表）</a>
+  </div>
+  <div class="nav-group"><span class="nav-label">背景参考：</span>
+    <a href="#sec-f">F · 电视产业与市场（4）</a>
+    <a href="#sec-g">G · Web 标准化（2）</a>
+    <a href="#sec-h">H · AI 技术与 Agent（4）</a>
+  </div>
+</nav>
+
+<div class="zone-title">核心追踪（A–E）</div>
+<p class="zone-sub">本期核心追踪占比约 70%，A 板块（CP 应用与流媒体）为最高优先级。</p>
+
+<div class="core" id="sec-a">
+<h2 style="font-size:18px;color:var(--accent);">A · CP 应用与流媒体 Feature</h2>
+
+  <div class="card">
+    <h3>🔴 Disney+ &amp; Hulu 黑五打包 $4.99/月锁一年，ESPN 内容进 Disney+，Super Bowl LXI 直播权确认</h3>
+    <div class="meta">首发平台：Disney+ / Hulu（美国）｜来源：Mashable、Billboard｜日期：2026-11-21~24</div>
+    <p class="summary">黑五档期迪士尼将含广告 Duo 套餐（Disney+ + Hulu）降至 $4.99/月并锁定 12 个月（原价 $12.99，-62%），免广告档 $14.99；套餐内含 ESPN College GameDay 与部分大学橄榄球直播，且 Disney+ 已确认拿到 2027 年 2 月 Super Bowl LXI 官方直播流。购买渠道约束：仅限美国新用户/回流用户，11 月 30 日截止。</p>
+    <div class="tags"><span class="tag hot">🔴 重点关注</span><span class="tag ok">已正式发布</span><span class="tag">美国区</span><span class="tag">4K UHD / Dolby Atmos（兼容片源）</span></div>
+    <div class="impact"><b>影响：</b>黑五价把美国流媒体入门价格打到心理线以下，CP 争夺「第二台设备客厅份额」加剧；Super Bowl 直播流进入 Disney+ 意味着直播类高并发场景对 TV 端 App 的稳定性与起播速度要求进一步上移，建议关注认证机型清单中直播能力项（低延迟清单、SSAI 支持）。</div>
+    <div class="src">原文：<a href="https://mashable.com/entertainment/best-disney-plus-hulu-black-friday-streaming-deal">Mashable</a> ｜ <a href="https://www.billboard.com/culture/product-recommendations/disney-plus-hulu-bundle-2026-black-friday-streaming-deals-1236388743">Billboard</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Netflix TV 端开始测试 AI Discover 标签页（按意图聚合内容）</h3>
+    <div class="meta">首发平台：Netflix TV 客户端（部分市场灰度）｜来源：AI Weekly Roundup 转述 The Verge / TechCrunch｜日期：2026-10-30~11-05 当周起，持续灰度</div>
+    <p class="summary">Netflix 在电视端开始测试 AI Discover 标签页：以「family movie night」这类自然语言意图为中心聚合片单，而非依赖传统个性化推荐模型；官方明确这是实验性功能，未全面发布。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag test">灰度测试中</span><span class="tag">TV 客户端</span><span class="tag">AI 搜索/发现</span></div>
+    <div class="impact"><b>影响：</b>AI 搜索入口对低端机型的 NLU 端侧算力无硬性要求（推断在云端），但会对输入法、语音遥控链路与首屏渲染性能提出体验要求；建议在 Tizen WebApp 侧验证大列表 + 流式接口的滚动性能（2GB 内存档）。</div>
+    <div class="src">原文：<a href="https://aigregator.news/weekly/2026-W45.html">AI Weekly Roundup（转述 The Verge / TechCrunch，经转载整理）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Netflix 大屏游戏推进：手机扫码即手柄，聚会游戏阵容灰度扩张</h3>
+    <div class="meta">首发平台：Netflix TV App（多国灰度，select devices）｜来源：Verified Market Research 转述 Bloomberg Screentime 采访｜日期：2026-11 转述</div>
+    <p class="summary">Netflix 把 Games on TV 定位为「社交游戏」：电视选游戏、手机扫 QR 码当手柄，无需主机；首批《Boggle Party》《Pictionary: Game Night》《Tetris Time Warp》《Lego Party》，会员免费；业务负责人称正加大云基础设施投入以保障低延迟。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag test">灰度测试中</span><span class="tag">TV + 手机第二屏</span><span class="tag">云端游戏串流</span></div>
+    <div class="impact"><b>影响：</b>「TV+手机手柄」路线不依赖 Gamepad/蓝牙外设认证，但要求 TV 端 App 的 WebRTC/长连接与低延迟渲染能力；对三星而言这是第二屏生态的样板间，建议评估 QR 配对流程在 Tizen 遥控器交互下的可用性。</div>
+    <div class="src">原文：<a href="https://www.verifiedmarketresearch.com/blog/streaming-giant-levels-up-netflix-brings-video-games-to-the-big-screen/">Verified Market Research（转述 Bloomberg 采访，经转载整理）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Netflix 直播矩阵常态化：WWE Raw 全球多区直播 + NFL 感恩节战（11/26）</h3>
+    <div class="meta">首发平台：Netflix（全球多区）｜来源：Khel Now、EntitledSports｜日期：2026-11-23~24</div>
+    <p class="summary">WWE Raw 每周全球直播已成常态（美/加/英/印/澳/巴西/新加坡等 10+ 区域同步，区域本地化播出时间表成熟），11/28 Survivor Series WarGames 为下一场 PLE；NFL 圣诞大战之外，11/26 感恩节 Packers vs Rams 亦由 Netflix 独家流媒体播出。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">全球多区</span><span class="tag">直播</span></div>
+    <div class="impact"><b>影响：</b>Netflix 直播已从「事件型」进入「排播型」，直播时段的 CDN 承压与 TV 端进房速度是 CP 对平台的隐性门槛；建议核对认证机型清单中直播/低延迟项是否需要按区域刷新。</div>
+    <div class="src">原文：<a href="https://khelnow.com/wwe/wwe-raw-where-to-watch-november-23-202611">Khel Now</a> ｜ <a href="https://entitledsports.com/services/netflix/schedule/">EntitledSports</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Netflix 战略评估：常开线性频道、第三方订阅捆绑、3–20 分钟短内容</h3>
+    <div class="meta">首发平台：Netflix（美国，评估阶段）｜来源：CNNBC（转载整理）｜日期：2026-11 报道</div>
+    <p class="summary">报道披露 Netflix 正评估四项产品扩张：按题材 7×24 常开频道（类似 FAST 入口）、在自有界面售卖第三方流媒体订阅（Apple/Amazon 频道模式，Peacock 传为潜在伙伴）、更多直播与 3–20 分钟短内容（8 月 3 日起已在英语市场引入数字出版商内容）；法国 TF1 直播频道整合已是落地样板。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag rumor">评估/未证实</span><span class="tag">美国</span><span class="tag">FAST / 频道商店</span></div>
+    <div class="impact"><b>影响：</b>若 Netflix 开放第三方订阅售卖或常开频道，TV 端将需要承载「频道 EPG + 频道商店」形态，接近现有 FAST 平台能力；三星 TV Plus 的 FAST 份额优势可能被 Netflix 入口分流，需提前评估合作/防御方案。</div>
+    <div class="src">原文：<a href="https://cnnbc.com/netflix-weighs-always-on-channels-bundles-and-short-form-video">CNNBC（经转载整理）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>YouTube TV 黑五促销收官：$15/月×5 个月，multiview 与 ESPN Unlimited 为主打卖点</h3>
+    <div class="meta">首发平台：YouTube TV（美国）｜来源：Business Insider｜日期：2026-11-24</div>
+    <p class="summary">YouTube TV Main 档（$83/月）黑五促销 $15/月×5 个月 11/26 截止；官方宣传页继续以 multiview 多画面、ESPN Unlimited 直播流整合、无限云 DVR 为核心卖点；另有 Sports + News 垂类低价包持续运营。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">美国</span><span class="tag">multiview</span></div>
+    <div class="impact"><b>影响：</b>multiview 已成为美国 live TV 平台标配卖点，对 TV 硬件的多路解码（≥2 路 1080p 并行）与内存带宽有直接要求；2GB RAM 档机型能否支撑 4 画面 multiview 值得在 2027 产品定义中评估。</div>
+    <div class="src">原文：<a href="https://embed.businessinsider.com/guides/deals/youtube-tv-deal-2026-v6">Business Insider</a></div>
+  </div>
+
+  <div class="card">
+    <h3>韩国 CP 动态：TVING 短剧厂牌矩阵化，TVING/Wavve 合并本期无新进展</h3>
+    <div class="meta">首发平台：TVING（韩国）｜来源：Appark 行业榜（转载）、App Store 韩国榜｜日期：2026-11-24</div>
+    <p class="summary">韩国市场短剧内容持续霸榜：TVING 已将短剧作为正式内容品类（TVING Short Original 厂牌、每集 1–2 分钟），巴西 Globoplay 也开辟 Novelinhas 板块——短剧进入主流流媒体内容体系而非独立 App；韩国 App Store 娱乐免费榜前五被短剧应用占据（DramaBox/NetShort/DramaWave）。TVING-Wavve 合并、Coupang Play 本期未见新公开进展。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布（短剧品类）</span><span class="tag">韩国</span><span class="tag">竖屏/短内容</span></div>
+    <div class="impact"><b>影响：</b>短剧上 TV 端（竖屏转横屏 UI、连播与付费墙）是韩国 CP 的潜在新需求，Tizen WebApp 需评估竖屏内容的旋转/裁切容器方案；韩国 CP 合并进展若重启将影响韩国区 App 认证排期。</div>
+    <div class="src">原文：<a href="https://g.yeyulingfeng.com/a/458425.html">Appark 行业榜（经转载整理）</a> ｜ <a href="https://appgoat.ai/tools/top-charts/app-store/kr/entertainment">App Store 韩国娱乐榜</a></div>
+  </div>
+</div>
+
+<div class="core" id="sec-b">
+<h2 style="font-size:18px;color:var(--accent);">B · TV 端 Web 引擎与运行时</h2>
+
+  <div class="card">
+    <h3>🔴 Chrome 158.0.8127.88 紧急修复 Variations 沙箱逃逸（CVE-2026-134401，CVSS 9.6）</h3>
+    <div class="meta">来源：Chrome Releases（11/23）转述、Enigma Global、SmartScope｜日期：2026-11-23</div>
+    <p class="summary">Google 于 11/23（距 11/17 Chrome 158 常规版仅 6 天）发布单 CVE 紧急版：158.0.8127.88/.89（Win/Mac）、158.0.8127.88（Linux）、.92（Android）、Extended Stable 156.0.8078.114。CVE-2026-134401 为 Variations 组件输入校验缺陷（CWE-20），恶意 HTML 页面可沙箱外执行代码，无需用户交互，暂无在野利用报告。Edge/Brave/Opera 等 Chromium 系全部受影响。</p>
+    <div class="tags"><span class="tag hot">🔴 重点关注</span><span class="tag ok">已正式发布</span><span class="tag">Chromium 全系</span><span class="tag">安全基线</span></div>
+    <div class="impact"><b>影响：</b>TV WebApp 场景虽不直接暴露任意外站，但内置浏览器/应用商店 WebApp 链路等效于「访问任意页面」；建议确认 Tizen Web Engine 当前基线是否包含 11 月 Chromium 安全合入，并将 158.0.8127.88+ 纳入 2027 机型安全门槛；同时此 CVE 适用于 Electron 桌面端 CP 工具链，需提醒下游。</div>
+    <div class="src">原文：<a href="https://smartscope.blog/en/blog/chrome-update-versions-prior-158-0-8127-88-2026">SmartScope</a> ｜ <a href="https://azeemhassni.com/blog/wire-chrome-emergency-sandbox-escape-patch">Azeem Hassni</a> ｜ <a href="https://www.enigma-global.com/preview/news/50125">Enigma Global</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Chrome 157 CVE-2026-125350（XML UAF，在野利用）CISA KEV 修复截止日 11/24 到期</h3>
+    <div class="meta">来源：CRC Cloud Security Briefing、Chrome Releases（11/9）｜日期：2026-11-24 截止</div>
+    <p class="summary">Chrome 157.0.8103.50/.51（11/9）修复 9 项漏洞，其中 CVE-2026-125350（XML use-after-free，High）已被在野利用，CISA 11/10 将其列入 KEV 目录，美国联邦机构修复截止 11/24；Edge 对应修复版 157.0.4341.46。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">Chromium 系</span><span class="tag">KEV</span></div>
+    <div class="impact"><b>影响：</b>两个 11 月 Chromium 安全事件（157 KEV + 158 沙箱逃逸）表明浏览器安全基线正在加速滚动，对存量 TV 机型（引擎常年停留在旧 Chromium）的暴露面评估应纳入安全审计例行项。</div>
+    <div class="src">原文：<a href="https://www.crccloud.com/security-briefing">CRC Cloud Security Briefing</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Electron 46 进入 alpha（V8 16.0.61）；VS Code 1.147 跟随 Electron 43.8.9 / Chromium 150</h3>
+    <div class="meta">来源：Electron Releases、VS Code Versions 追踪｜日期：2026-11-24 / 11-17</div>
+    <p class="summary">Electron 46.0.0-alpha.13（11/24）携带 V8 16.0.61-electron；VS Code 1.147.0（11/17）基于 Electron 43.8.9 / Chromium 150.0.7871.250。Electron 主线（43/45）近期安全补丁跟随 Chromium 11 月修复节奏。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已发布（alpha）</span><span class="tag">桌面运行时</span></div>
+    <div class="impact"><b>影响：</b>CP 自研 TV 配套工具（开发调试器、内容运营后台桌面端）普遍基于 Electron，安全补丁节奏滞后将影响内容供应链；TV 交付形态（Web App 包）不受直接影响，但联调工具链版本应纳入 CP 对接检查表。</div>
+    <div class="src">原文：<a href="https://releases.electronjs.org/release/v46.0.0-alpha.13">Electron Releases</a> ｜ <a href="https://redirect.github.com/ewanharris/vscode-versions">VS Code Versions</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Ladybird 独立浏览器发布首个可安装 alpha（11/23，macOS/Linux）</h3>
+    <div class="meta">来源：MindPattern Daily（转述 Simon Willison 实测）｜日期：2026-11-23</div>
+    <p class="summary">完全独立引擎（自研 HTML/CSS/JS/WASM）的 Ladybird 发布首个无需自行编译的 alpha；10 月编码 Agent 为其贡献约 6 万项 Web Platform Test 通过（全月 7.5 万+）。实测可跑 ffmpeg-in-WASM 与 Pyodide，Service Worker 等部分 API 仍缺失。</p>
+    <div class="tags"><span class="tag hot">⚪ 背景参考</span><span class="tag ok">已发布（alpha）</span><span class="tag">非 Chromium 引擎</span></div>
+    <div class="impact"><b>影响：</b>「Agent + 大型一致性测试套件」正在把新引擎达标周期从年级压缩到月级；若 TV 端长期需要第二引擎选项（降低 Chromium 依赖），Ladybird 类项目值得放入 2028+ 技术雷达。</div>
+    <div class="src">原文：<a href="https://mindpattern.ai/blog/2026-11-24">MindPattern Daily</a></div>
+  </div>
+
+  <div class="card">
+    <h3>主流 DASH/播放器运行时双更新：dash.js 5.3.0（11/4）与 Shaka Player 5.3.6（11/20）</h3>
+    <div class="meta">来源：Forasoft DASH 技术深度文（引用官方发布记录）｜日期：2026-11-04 / 11-20</div>
+    <p class="summary">DASH-IF 参考播放器 dash.js 升至 5.3.0，Google Shaka Player 升至 5.3.6，Android 侧 Media3 ExoPlayer 1.11 稳定 / 1.12 beta；两者为 TV 端 WebApp 播放器（含 Tizen/webOS）最常用的双底座，安全与性能补丁直接影响 CP 端集成版本选择。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">TV WebApp 播放器</span></div>
+    <div class="impact"><b>影响：</b>建议核对三星认证 App 清单中各 CP 播放器内核版本，将 dash.js ≥5.3 / Shaka ≥5.3.6 列入 2027 机型兼容性基线。</div>
+    <div class="src">原文：<a href="https://www.forasoft.com/learn/video-streaming/articles-streaming/mpeg-dash-deep-dive">Forasoft（引用官方 changelog）</a></div>
+  </div>
+</div>
+
+<div class="core" id="sec-c">
+<h2 style="font-size:18px;color:var(--accent);">C · 外设与输入</h2>
+
+  <div class="card">
+    <h3>Gamepad API 能力边界梳理（11 月口径）：震动支持矩阵与 DualSense 高级能力缺口</h3>
+    <div class="meta">来源：Gamepad Tester Pro（caniuse 数据 11/23 核对）、MDN｜日期：2026-11-23</div>
+    <p class="summary">浏览器 Gamepad API 现状：Chrome/Edge（桌面+Android）支持按键+震动（Chrome 68+），Safari 16.4 起支持震动，Firefox 一般不支持震动；标准映射（Xbox 布局）为主流，第三方手柄 mapping 混乱仍是常态。DualSense 自适应扳机、陀螺仪原始数据不在基础 Gamepad API 内，只能经 WebHID（仅 USB）获取；浏览器无法读取固件/电池/传感器类型。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布（现状梳理）</span><span class="tag">Web 平台能力边界</span></div>
+    <div class="impact"><b>影响：</b>CP 在 TV 上做游戏化交互时，「TV+蓝牙手柄」的基础输入（按键/摇杆）可用而高级触觉不可用；Netflix TV Games 选择「手机当手柄」正是绕开该缺口的务实方案。Tizen 侧若要支撑高阶手柄能力需走平台原生 API 而非 Web 标准。</div>
+    <div class="src">原文：<a href="https://gamepadtester.pro/?p=409/">Gamepad Tester Pro</a> ｜ <a href="https://www.gamepadtesterpro.com/blog/article.php?slug=how-to-test-ps5-controller-buttons">PS5 WebHID 校准实践</a></div>
+  </div>
+
+  <div class="card">
+    <h3>第三方手柄标准化实践：normalize 层与 Playwright 回放测试范式</h3>
+    <div class="meta">来源：DEV Community 技术实践｜日期：2026-11</div>
+    <p class="summary">开发者实践显示：非标准手柄在浏览器中按钮序号错乱，需在 navigator.getGamepads 之上做 normalize 代理层统一为 standard mapping，并用 Playwright 注入录制报告做回归；Sony 单一厂商可控，第三方长尾仍无系统性方案。</p>
+    <div class="tags"><span class="tag hot">⚪ 背景参考</span><span class="tag ok">技术实践</span><span class="tag">输入兼容性</span></div>
+    <div class="impact"><b>影响：</b>对 TV 端游戏化 App 的认证测试有直接参考价值：建议在 Tizen 外设认证中增加「非标准 mapping 手柄」用例，避免 CP 侧重复造轮子。</div>
+    <div class="src">原文：<a href="https://dev.to/fancy39_9841cbc02f99f729c/press-cross-the-overlay-lights-circle-what-the-gamepad-api-hands-you-over-bluetooth-150l">DEV Community</a></div>
+  </div>
+
+  <div class="empty">TV 遥控与配件（蓝牙/指向/语音遥控、Tizen.TV.Accessory API）今日无重大更新——本期检索未见平台侧外设 API 新版本发布。</div>
+</div>
+
+<div class="core" id="sec-d">
+<h2 style="font-size:18px;color:var(--accent);">D · 多媒体与 DRM</h2>
+
+  <div class="card">
+    <h3>🔴 低端 SoC 档位 AV1 硬解盘点：MT9681 / S928X-J / RK3576 全线支持，主流 OTT 档位仍是 H.264 优先</h3>
+    <div class="meta">来源：IT之家 / ITBear（当贝 X9 Max·MT9681）、番茄科技 SoC 横评｜日期：2026-11-20~24</div>
+    <p class="summary">联发科 MT9681（高端 4K 智能投影/电视平台）支持 H.264/HEVC/AV1 解码 + AI 超分 + 1ms 游戏低延迟，已在当贝 X9 Max 落地；Amlogic S928X-J 支持 8Kp60 AV1，RK3576 支持 4Kp120 AV1；而面向主流 IPTV 的 S905X5M 档位解码上限 4Kp75（H.264/HEVC 为主），AV1 并非标配。联发科称全球 60%+ 电视搭载其芯片。</p>
+    <div class="tags"><span class="tag hot">🔴 重点关注</span><span class="tag ok">已正式发布</span><span class="tag">SoC 档位</span><span class="tag">AV1 硬解</span></div>
+    <div class="impact"><b>影响：</b>AV1 已下沉到中高端 4K SoC，但 1–2GB 内存入门档仍以 HEVC 为主——CP 若全面转 AV1 供给（YouTube 已默认），入门机带宽成本与画质将劣化；建议在 E 板块跟踪的入门 SoC 选型中把「AV1 硬解有无」列为 2027 档位划分的正式参数。</div>
+    <div class="src">原文：<a href="https://next.ithome.com/archiver/1/031/356.htm">IT之家</a> ｜ <a href="https://www.sztomato.com/news/streaming-media-player-soc-comparison-best-chips-for-4k-8k-and-oem-projects.html">番茄科技（OEM 视角横评）</a> ｜ <a href="https://www.itbear.com.cn/html/2026-11/1593395.html">ITBear</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Widevine L1 仍是 HD/4K 内容解锁的硬门槛（终端侧实证）</h3>
+    <div class="meta">来源：Acciyo 终端评测、Arytech 行业实践｜日期：2026-11</div>
+    <p class="summary">终端评测再次确认：无 Widevine L1 认证的设备在 Netflix/Disney+/YouTube 上被强制降至 480p/HD 档（如平板类产品仍以「L1 认证」为卖点）；行业侧多 DRM（Widevine L1 + FairPlay + PlayReady）打包、边缘缓存密钥、forensic watermarking 已是直播大事件的标准配置。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">现状确认</span><span class="tag">DRM 等级</span><span class="tag">认证门槛</span></div>
+    <div class="impact"><b>影响：</b>对三星 TV 全系 L1 覆盖不构成新风险，但对 License 机型的认证成本与周期是硬约束；中国区 ChinaDRM/WisePlay 双轨需求不变。</div>
+    <div class="src">原文：<a href="https://www.acciyo.com/oukitel-ot8-antutu-benchmark-score-and-real-world-performance-review">Acciyo（终端实证）</a> ｜ <a href="https://arytech.com/blog/live-video-streaming">Arytech（行业实践）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DRM 服务分层：Cloudflare Stream 不带 DRM、Gumlet 等按 Widevine/FairPlay 分层收费</h3>
+    <div class="meta">来源：Gumlet 官方对比文（2026 年 11 月口径）｜日期：2026-11</div>
+    <p class="summary">Cloudflare Stream 截至 11 月仅有签名 URL/地域规则、无原生 Widevine/FairPlay DRM；Gumlet 等把 DRM 作为 $99/月附加层。内容保护能力正在成为平台服务的分水岭，也意味着中小 CP 上 TV 端的 DRM 成熟度差异在拉大。</p>
+    <div class="tags"><span class="tag hot">⚪ 背景参考</span><span class="tag ok">现状确认</span><span class="tag">DRM 服务化</span></div>
+    <div class="impact"><b>影响：</b>中小 CP 迁移到 TV 端时 DRM 方案成熟度参差，认证测试中 DRM 相关失败的排障成本应计入 CP 接入 SLA。</div>
+    <div class="src">原文：<a href="https://www.gumlet.com/learn/gumlet-vs-cloudflare-stream">Gumlet</a></div>
+  </div>
+</div>
+
+<div class="core" id="sec-e">
+<h2 style="font-size:18px;color:var(--accent);">E · 中国低端 4K / UHD 机型参数</h2>
+
+  <div class="card">
+    <h3>🔴 黑五/双 11 收官价格战延续，存储涨价挤压入门机 BOM</h3>
+    <div class="meta">来源：中关村在线、新浪财经（转载）、Bloomberg 转述｜日期：2026-11-24</div>
+    <p class="summary">电商侧 15% 国补叠加平台补贴把中低端机型价格进一步打穿：创维酷开 2026 款 65 吋补贴后 ¥1699、创维 65A8H 补贴后 ¥6225（原价 ¥10999）、雷鸟鹏 7 26 款 65 吋（65S78A）补贴后 ¥2379。同时存储成本高企：小米 Q3 营收因全球存储短缺连续第三季收缩（Bloomberg 11/24），行业分析称整机涨价 10–40% 将持续到 2028。</p>
+    <div class="tags"><span class="tag hot">🔴 重点关注</span><span class="tag ok">已确认</span><span class="tag">中国市场</span><span class="tag">国补 + 价格战</span></div>
+    <div class="impact"><b>影响：</b>「国补退坡前抢跑 + 存储涨价」双因素下，入门机 2GB/1.5GB 档的 BOM 空间被双向挤压；三星中国区 M 系列（入门 Mini LED）策略与此直接对撞，建议复核 Q4–Q1 中国 SKU 的内存配置与定价余量。</div>
+    <div class="src">原文：<a href="https://tv.zol.com.cn/1276/12765148.html">中关村在线（酷开 65 吋）</a> ｜ <a href="https://finance.sina.com.cn/roll/2026-11-24/doc-inizvkmh0121475.shtml">新浪财经（创维 65A8H，经转载整理）</a> ｜ <a href="https://niotex.com/blog/trends-2026-11-24">Niotex（转述 Bloomberg）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>本期新增低端/中端 4K 机型参数表</h3>
+    <div class="meta">来源：京东 / 天猫商品页参数（未经实测）、百度百科｜日期：2026-11-24 采集</div>
+    <table>
+      <tr><th>型号 SKU</th><th>尺寸 / 分辨率</th><th>RAM+ROM</th><th>SoC / CPU</th><th>刷新率</th><th>亮度 / 色域</th><th>接口</th><th>价格</th><th>备注</th></tr>
+      <tr>
+        <td>Redmi A Pro 2026<br>L43RC-AP</td>
+        <td>43" 4K（3840×2160）</td>
+        <td>3GB + 64GB</td>
+        <td>四核 Cortex-A55</td>
+        <td>60Hz（原生）</td>
+        <td>200–300nit；DCI-P3（京东标 78% 覆盖）</td>
+        <td>2×HDMI 2.0；USB 3.0×1 + USB 2.0×1；2.4G&amp;5G Wi-Fi</td>
+        <td>京东 ¥1274（常卖 ¥1599）／天猫 ¥1257（30 天最低 ¥1223）</td>
+        <td><span class="conflict">口径冲突：京东标「小米澎湃OS」，天猫标「Android」；天猫另标刷屏率 60Hz、上市 2026-04</span></td>
+      </tr>
+      <tr>
+        <td>TCL 雷鸟 鹏7 26款<br>65S78A</td>
+        <td>65" 4K</td>
+        <td>3GB + 64GB</td>
+        <td>灵控系统（宣传 CPU 为 A73 级）</td>
+        <td>288Hz（高阶 VA，全通道）</td>
+        <td>94% DCI-P3</td>
+        <td>HDMI 2.1</td>
+        <td>京东 ¥2379（30 天最低 ¥2375）</td>
+        <td>商品页参数，未经实测</td>
+      </tr>
+      <tr>
+        <td>TCL 雷鸟 鹏6 26款<br>65"</td>
+        <td>65" 4K</td>
+        <td>3GB + 64GB</td>
+        <td>—（商品页未标）</td>
+        <td>144Hz 高刷</td>
+        <td>高色域</td>
+        <td>—</td>
+        <td>天猫 ¥2399（以旧换新补贴另计）</td>
+        <td>商品页参数，未经实测</td>
+      </tr>
+      <tr>
+        <td>创维 65A8H</td>
+        <td>65" 4K</td>
+        <td>2GB + 32GB</td>
+        <td>—（商品页未标）</td>
+        <td>—</td>
+        <td>HDR10+；MEMC；AI 画质引擎</td>
+        <td>远场语音、多屏互动</td>
+        <td>补贴后实付 ¥6225（原价 ¥10999）</td>
+        <td>商品页参数，未经实测</td>
+      </tr>
+      <tr>
+        <td>创维 酷开 2026款 65"</td>
+        <td>65" 4K</td>
+        <td>—（商品页未标）</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>投屏</td>
+        <td>补贴后 ¥1699（原价 ¥3399）</td>
+        <td>商品页参数，未经实测</td>
+      </tr>
+      <tr>
+        <td>康佳 LED43E330C</td>
+        <td>43"</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>¥1049（榜单价）</td>
+        <td>入门价位锚点机型</td>
+      </tr>
+    </table>
+    <p class="summary" style="font-size:12.5px;color:var(--muted);">注：Redmi A Pro 2026 系列横跨 43–75 吋，55/65/75 吋版本为 4K 288Hz（75 吋原生 144Hz + 288Hz 竞技模式）+ 五核 A55 + Wi-Fi 6 + 澎湃OS 3（百度百科口径）；43 吋为 60Hz。上表仅收录本期采集到的新增/变动 SKU。参数口径来源均为电商商品页，未经实测；同一 SKU 不同渠道冲突处已并列标注。</p>
+    <div class="impact"><b>影响：</b>入门 4K 档内存已从 1.5GB 普遍抬升到 3GB+64GB（Redmi/TCL 一线阵营），2GB 创维与 1GB 档康佳处于清库存尾部；「3GB+64GB」正在成为中国入门 4K 的事实标配，海外入门机型定义需以此为对照基准。</div>
+  </div>
+</div>
+
+<div class="zone-title bg">背景参考（F–H）</div>
+<p class="zone-sub">补课性质，不追求时效密度；默认最高 🟡。</p>
+
+<div class="compact" id="sec-f">
+<h2 style="font-size:16px;color:#a8b3bd;">F · 电视产业与市场</h2>
+
+  <div class="card">
+    <h3>🟡 Counterpoint Q3'26 全球电视出货：三星 14% 守第一，海信 13% 重回第二，Walmart 挤进前五</h3>
+    <div class="meta">来源：Counterpoint Research（11/20 发布，IT之家/腾讯转载；EuropeSays 转述韩媒）｜日期：2026-11-20~24</div>
+    <p class="summary">世界杯年全球大盘仍持平，存储成本上行挤压利润。份额：三星 14%（Q2 15%）、海信 13%（Q2 11%，靠欧洲足球营销 + RGB-Mini LED 全线落地反超 TCL）、TCL 10%（Q2 13%）、LG 10%（OLED 高端走量 + 新兴市场，MS 事业部 Q3 营收 5.02 万亿韩元、经营利润 1467 亿韩元扭亏）；第五名是 Walmart（ONN+Vizio 按「品牌所有者」口径合并，Vizio 同比 +150%），小米掉出前五。TrendForce 口径差异明显：三星 17.5% / TCL 15.6% / 海信 15.5% / LG 12.9%。三星为守盘推出入门 Mini LED M 系列，并在中高端削减量子点材料用量；LG 新任 MS 事业部负责人 Lee Sang-woo 上任，webOS 平台业务被抬升为 KPI。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag">Q3'26 数据</span><span class="tag">份额口径冲突已并列</span></div>
+    <div class="impact"><b>影响：</b>两家机构口径差达 3.5 个百分点，引用时须注明口径；三星「减配量子点 + 入门 Mini LED」与 LG「平台收入 KPI 化」共同指向 TV 事业部从硬件毛利转向平台/服务收入，与三星 VD 现有方向互为镜像，值得对标。</div>
+    <div class="src">原文：<a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN2026112013134594d9df5b">IT之家（经转载整理）</a> ｜ <a href="https://www.europesays.com/korea/239220">EuropeSays（转述韩媒）</a> ｜ <a href="https://www.toutiao.com/article/7711067864815436315">今日头条（经转载整理）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 TrendForce：11 月电视面板价格全面持平，Q4 品牌采购环比 -6%</h3>
+    <div class="meta">来源：TrendForce 集邦咨询（11/20，LEDinside 转发）｜日期：2026-11-20~23</div>
+    <p class="summary">11 月电视/显示器/笔电面板价格与前月一致（连续第三月持平）：65 吋均价 $173、55 吋 $123、43 吋 $63、32 吋 $35；Q4 主要电视品牌采购动能预计季减约 6%，面板厂以减产 + 零组件涨价为由的调涨诉求被品牌/ODM 拒绝。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag">面板价格</span></div>
+    <div class="impact"><b>影响：</b>面板端（约占整机 BOM 最大单一项）持平，与存储端继续高位的剪刀差延续——整机降本杠杆仍在「非面板」部分，Q4 存货策略与面板备货节奏可相对从容。</div>
+    <div class="src">原文：<a href="https://www.ledinside.cn/research/20261123-63098.html">LEDinside（TrendForce 转发）</a> ｜ <a href="https://caifuhao.eastmoney.com/news/20261123155700774768340">东方财富（具体报价，经转载整理）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 存储涨价波及整机：eMMC 高位回落但 DDR4 高位持稳，小米 Q3 受限收缩</h3>
+    <div class="meta">来源：中国闪存市场行情（11/24）、同花顺行业追踪（11/24）、TI Web 行业分析｜日期：2026-11-24</div>
+    <p class="summary">本周行情：eMMC 128GB 5.1 报 $26.0（较 10 月 $31 月降 16%，仍处历史高位）；DDR4 16Gb $50.0 持稳；SSD/256GB 周跌 7.94%。Bloomberg 11/24 报道小米因全球存储短缺连续第三季营收收缩；行业分析（「chipflation」）预计电子整机涨价 10–40%、缓解最早 2028 年。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag">BOM 成本</span><span class="tag">存储</span></div>
+    <div class="impact"><b>影响：</b>eMMC 高位小幅回落不改变「存储占 BOM 30–40%」格局，入门机型 64GB 大存储配置的成本压力仍在；2027 机型 ROM 档位（32/64GB）需重新测算性价比拐点。</div>
+    <div class="src">原文：<a href="https://en.chinaflashmarket.com/price/ews/100143">中国闪存市场（英文站行情）</a> ｜ <a href="https://m.10jqka.com.cn/20261124/c682159314.shtml">同花顺（行业追踪）</a> ｜ <a href="https://tiweb.net/why-electronics-are-getting-more-expensive-chipflation">TI Web（行业分析）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 广电总局 17/18 号令 11/27 施行：开机无广告、直播优先、首页免费专区、一键切直播</h3>
+    <div class="meta">来源：上观新闻（解放日报）、网易（行业解读）｜日期：2026-11-24</div>
+    <p class="summary">《有线广播电视运营服务管理规定》《交互式网络电视运营服务管理暂行规定》11/27 起施行：开机直接进全屏直播、不得播放开机广告、智能电视应支持优先呈现直播频道并提供便捷设置入口、首页设免费专区、精简收费栏目、简化遥控操作（遥控器一键切换直播信源）、缩短开机时长；机顶盒预计 2027 年底逐步退出，「一体化电视」全国推广年底前完成部署。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已确认（生效中）</span><span class="tag">中国监管</span></div>
+    <div class="impact"><b>影响：</b>规定明确覆盖有线/IPTV 运营方，电视厂商自带互联网系统仅需提供「直播优先」设置入口——但这正是 Tizen 中国版产品定义项：开机进直播的设置入口、遥控器一键信源键、首页免费专区适配均需在 11/27 后的中国区系统更新中落实，注意与海外版开屏策略分离。</div>
+    <div class="src">原文：<a href="https://m.jfdaily.com/sgh/detail?id=4099805">上观新闻</a> ｜ <a href="https://www.163.com/dy/article/LCF95EPI0556PS9S.html">网易（行业解读）</a></div>
+  </div>
+</div>
+
+<div class="compact" id="sec-g">
+<h2 style="font-size:16px;color:#a8b3bd;">G · Web 标准化与规范进展</h2>
+
+  <div class="card">
+    <h3>🟡 W3C 媒体规范推进：EME v2 Working Draft（10/13）、MSE WD（8/7，含 ManagedMediaSource）</h3>
+    <div class="meta">来源：W3C 规范状态（Forasoft 技术文引用）｜日期：2026-10-13 / 2026-08-07</div>
+    <p class="summary">Encrypted Media Extensions 第二版持续以 Working Draft 演进（2017 REC 后的重写），Media Source Extensions WD（含 ManagedMediaSource——后台页媒体生命周期管理，Safari 17.1+ 已落地）同步更新；两者是 TV WebApp 播放器（MSE + EME）的直接依赖规范。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag test">WD 阶段</span><span class="tag">媒体 / DRM 规范</span></div>
+    <div class="impact"><b>影响：</b>ManagedMediaSource 对 TV 端后台保活/低内存设备缓存治理有直接价值，建议跟踪 Tizen Web Engine 的合入计划；EME v2 变化需在 DRM 认证测试用例中预留回归窗口。</div>
+    <div class="src">原文：<a href="https://www.forasoft.com/learn/video-streaming/articles-streaming/mpeg-dash-deep-dive">Forasoft（引用 W3C 规范状态）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 MPEG 侧：DASH 第六版 ISO/IEC 23009-1:2026 发布，CENC Amendment 1（AES-256）进入 FDIS</h3>
+    <div class="meta">来源：ISO 发布记录（Forasoft 引用）｜日期：2026-07-14 / 2026-08-25 起</div>
+    <p class="summary">DASH 23009-1 第六版（7/14 发布）新增 Content Steering（多 CDN 切换）、CMCD 上报、List MPD 与重写的低延迟分片序列；CENC（23001-7）修正案 1（AES-256 支持）自 8/25 起进入 FDIS 投票。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已发布 / FDIS</span><span class="tag">封装与传输</span></div>
+    <div class="impact"><b>影响：</b>Content Steering 对多 CDN 直播大事件（Netflix NFL/WWE 场景）价值明确，TV 端播放器若不支持将限制 CP 的 CDN 策略；AES-256 CENC 影响打包侧而非终端，终端侧关注后续 cbcs 变体兼容性。</div>
+    <div class="src">原文：<a href="https://www.forasoft.com/learn/video-streaming/articles-streaming/mpeg-dash-deep-dive">Forasoft（引用 ISO 记录）</a></div>
+  </div>
+</div>
+
+<div class="compact" id="sec-h">
+<h2 style="font-size:16px;color:#a8b3bd;">H · AI 技术与 AI Agent</h2>
+
+  <div class="card">
+    <h3>🟡 海信「Qwen Inside」成为 AI 电视公开样板：云上 Qwen-Plus/Flash + 开源微调双轨</h3>
+    <div class="meta">来源：至顶网｜日期：2026-11-24</div>
+    <p class="summary">海信双 11 热销的小墨 E5S Pro 公开技术方案：高并发生活百科/陪伴问答走云端 Qwen-Plus 与 Qwen-Flash（性价比档），核心搜片场景基于 Qwen 开源模型对自有影视媒资库深度微调——「想看诺兰的科幻片」多轮对话定位片源，配套一键识图截图、体育赛事球员识别与赛况总结；阿里以「Qwen Inside」品牌化背书（对标 Intel Inside），双 11 期间 8 家硬件伙伴走直播转化闭环。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">中国</span><span class="tag">AI 电视</span></div>
+    <div class="impact"><b>影响：</b>「云混搭 + 开源微调」替代端侧大模型成为国内 AI 电视的主流务实路线，成本可控且可规模化；三星 Tizen 侧 AI 功能（Bixby/视觉 AI）在中国市场的模型底座与品牌化策略需要类似的可感知锚点，建议纳入中国区 2027 体验规划讨论。</div>
+    <div class="src">原文：<a href="https://www.zhiding.cn/ai-applications/2026/1124/3207155.shtml">至顶网</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 小米：今年 AI 投入 160 亿元，MiMo 端侧大模型进「人车家」终端、澎湃OS 4 超级小爱 2.0</h3>
+    <div class="meta">来源：证券时报（财报电话会）、网易转载｜日期：2026-11-24</div>
+    <p class="summary">小米 CFO 11/24 财报电话会确认：今年 AI 投入 160 亿元，MiMo 大模型 API 调用量与 AI 相关收入持续增长；小米 18 Fold 搭载 MiMo 端侧大模型，澎湃OS 4 的「超级小爱 2.0」深度集成 MiMo。同期 Bloomberg 报道小米 Q3 营收因存储短缺连续三季收缩。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已确认（财报会）</span><span class="tag">端侧 AI</span></div>
+    <div class="impact"><b>影响：</b>小米把端侧模型下放至折叠屏手机，电视端「人车家」入口属性将继续增强；其「AI 投入叙事 + 存储成本承压」并存，价格策略上对三星中国区中端档的挤压将在 Q4–Q1 显现。</div>
+    <div class="src">原文：<a href="https://www.163.com/dy/article/LCH9CNQS053469RG.html">网易（转证券时报）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>🟡 11 月模型混战收束：Claude Fable 5.2 / GPT-6.2 Astra / Gemini 4 Carbon 三分头部，国产开源追至 top50 第 8 席</h3>
+    <div class="meta">来源：Buildez AI Trends、Noometry（11/24 核对）｜日期：2026-11-05~24</div>
+    <p class="summary">11 月密集发布：OpenAI GPT-6 Cyber（11/5，安全专用，ExploitGym 48.5%）与 GPT-6.2 Astra/Sol（11/17）；Google Gemini 4 Carbon GA（11/10）+ Gemini 4 agents 量子算法发现（11/24）；Anthropic Claude Fable 5.2（11/9）+ Claude Ship agent 套件（11/24，可自动审批 PR）；阿里 Qwen4-Max（11/16）、蚂蚁 Ling-3.2-air 124B MIT 开源（11/23）、腾讯 Hy4 flash。Noometry 榜：美国 42/50、中国 8/50，top10 全部美国。行业侧：2026「推理翻转」——推理算力首超训练占 2/3。</p>
+    <div class="tags"><span class="tag hot">🟡 值得跟踪</span><span class="tag ok">已正式发布</span><span class="tag">基准对比</span></div>
+    <div class="impact"><b>影响：</b>Agent 形态（Claude Ship 自动审批、GPT-6 agentic video understanding）正在向「自主执行」范式收敛；对 TV 端而言可复用的是「意图理解 + 多轮对话」能力下沉，端侧小模型（1–4B 级）做搜片/识图的路径已被海信验证。</div>
+    <div class="src">原文：<a href="https://buildez.ai/blog/ai-trends-november-2026-whats-changing">Buildez</a> ｜ <a href="https://noometry.com/ai-race">Noometry</a> ｜ <a href="https://techtimes.com/ai-benchmarks">Tech Times Benchmarks</a></div>
+  </div>
+
+  <div class="card">
+    <h3>⚪ 海信 JUOS「语音直问」：星海大模型解决电视找片最后一公里</h3>
+    <div class="meta">来源：行业专栏（lpqz.cn，自媒体口径）｜日期：2026-11</div>
+    <p class="summary">JUOS 把电视找片从「翻推荐流」改为「直接问」：语音理解意图后结合内容库评分/标签直接给片，定位「即时意图 &gt; 历史偏好」的交互路线；与上条「Qwen Inside」方案互补，共同构成海信 AI 电视的话语体系。</p>
+    <div class="tags"><span class="tag hot">⚪ 背景参考</span><span class="tag test">产品化中</span><span class="tag">语音交互</span></div>
+    <div class="impact"><b>影响：</b>「语音直问→直接给结果」正成为中国 AI 电视交互的事实标准答案；三星中国区语音搜索的对话轮次与命中率需对标该体验水位。</div>
+    <div class="src">原文：<a href="http://www.lpqz.cn/news/122330">行业专栏（自媒体，经转载整理）</a></div>
+  </div>
+</div>
+
+<footer>
+  <p><b>生成时间：</b>2026-11-25 06:00（GMT+8）自动生成｜<b>期号：</b>第 051 期</p>
+  <p><b>数据来源说明：</b>全部选题来自当日/近两日公开网络检索（26 次），每条附原文链接；标注「经转载整理」者为二手转述，引用机构数据时请注意口径冲突并列；电商参数来源均注明「商品页参数，未经实测」。无编造内容。</p>
+  <p><b>下期预告（第 052 期 · 2026-11-26）跟踪线索：</b>
+    ① Netflix AI Discover 标签页灰度范围与 TV 端机型门槛是否公开；
+    ② 广电总局 17/18 号令 11/27 生效首日，国内厂商「开机进直播」适配动作；
+    ③ Disney+ 12 月 Hulu 完全并入统一 App 的 TV 端灰度节奏；
+    ④ Chrome 158 沙箱逃逸（CVE-2026-134401）技术细节解禁后的影响面评估；
+    ⑤ Q3 面板持平后 12 月是否出现年末调价；eMMC $26 低位能否延续；
+    ⑥ Samsung TV Plus 黑五档 FAST 频道扩张动向。</p>
+</footer>
+
+</div>
+</body>
+</html>
